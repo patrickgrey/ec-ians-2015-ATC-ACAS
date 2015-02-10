@@ -91,7 +91,7 @@
         .addPause('step1') // Have to add hide buttons after this as the timeline was forcing the buttons to show again somehow!!
         .set(setButtonArray, {delay:0.1, autoAlpha:0}) // slight delay is required or this tween is triggered, even after the addPause.
         .to(all.text3, dt, {delay:1, autoAlpha:1})
-        .call( ecSvgUtilities.callAudio, ['Descend'])
+        .call( ecSvgUtilities.callAudio, ['Descend', all])
         .to(all.acft1, dt, {delay:dt, x: '+=40', ease:Linear.easeNone})
         .to(all.acft1, dt*3, {x: '+=100',  y: '+=43', rotation: "+=23", ease:Linear.easeNone})
         .to(all.acft2, dt*4, {delay:-dt*4, x: '-=60',  y: '+=21', ease:Linear.easeNone})
@@ -101,13 +101,13 @@
         .timeScale(1)
         .set(setButtonArray, {delay:0.1, autoAlpha:0})
         .to(all.text4, dt, {delay:1, autoAlpha:1})
-        .call( ecSvgUtilities.callAudio, ['audio0'])
+        .call( ecSvgUtilities.callAudio, ['audio0', all])
         .to(all.acft1, dt*3, {delay:dt*2, x: '+=100',  y: '+=15', rotation: "-=23", ease:Linear.easeNone})
         .to(all.acft2, dt*1, {delay:-dt*3,  y: '+=20', rotation: "+=19", ease:Linear.easeNone})
         .to(all.acft2, dt*4, {delay:-dt*3, x: '-=150', ease:Linear.easeNone})
         .to(all.arrow3, dt, {autoAlpha: 1})
         .to(all.arrow4, dt, {autoAlpha: 1})
-        .call( ecSvgUtilities.callAudio, ['audio1'])
+        .call( ecSvgUtilities.callAudio, ['audio1', all])
         .to(all.buttonReplay, dt, {delay:1, autoAlpha:1})*/
         .restart().pause();
         

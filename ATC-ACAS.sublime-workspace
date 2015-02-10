@@ -327,6 +327,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/topic3/ACASTopic3Page3.html",
+			"settings":
+			{
+				"buffer_size": 20203,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/ec_ACAS_t3p3a3_2.js",
+			"settings":
+			{
+				"buffer_size": 5750,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/ecSvgUtilities.js",
+			"settings":
+			{
+				"buffer_size": 2586,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -441,10 +465,20 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS"
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/app",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/app/scripts",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/app/topic3",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/bower_components",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/bower_components/jquery",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/bower_components/jquery/dist"
 	],
 	"file_history":
 	[
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/app/styles/main.scss",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/app/index.html",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/gulpfile.js",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS/.gitignore",
 		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ec-ians-2014-ACAS/gulpfile.js",
 		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ec-ians-2014-ACAS/app/index.html",
 		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ec-ians-2014-ACAS/bower_components/jquery/dist/jquery.js",
@@ -568,11 +602,7 @@
 		"/C/Users/Patrick/AppData/Local/Android/android-sdk/tools/android.bat",
 		"/F/codeClub/term2/week4/myPage.html",
 		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-5.html",
-		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-4.html",
-		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-3.html",
-		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-1.html",
-		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-search.html",
-		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/gulpfile.js"
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-4.html"
 	],
 	"find":
 	{
@@ -742,8 +772,288 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/topic3/ACASTopic3Page3.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/scripts/ec_ACAS_t3p3a3_2.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4611,
+								4611
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1071.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/ecSvgUtilities.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								868,
+								868
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
