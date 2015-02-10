@@ -1,0 +1,303 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATC-ACAS > topic 3 > page 3</title>
+        <meta name="description" content="ATC-ACAS review site">
+        <meta name="author" content="patrickGrey.co.uk">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css styles/pages.css --> 
+        <link rel="stylesheet" href="../styles/pages.css">
+        <!-- endbuild -->
+
+
+    </head>
+    <body>
+    
+        
+        <div class="ec-acas-container-left">
+            <h2>Threat detection and the issuing of advisories</h2>
+            <!-- <object type="application/x-shockwave-flash" 
+                data="flash/RA_follow-up.swf" 
+                width="480" height="540">
+                <param name="movie" value="flash/RA_follow-up.swf" />
+                <param name="quality" value="high"/>
+            </object> -->
+            <p>Range and altitude tests are performed on each altitude-reporting 
+              target, every cycle. <a href="flash/threat_detection.swf" id="ec-ACAS-show-flash1">Both must be 
+              satisfied for a target to be declared a threat.</a></p>
+            <p>When a threat is declared, <a href="flash/determining_sense.swf" id="ec-ACAS-show-flash2">TCAS 
+              uses a two-step process to select an RA.</a>  Firstly, TCAS selects the sense of the RA, and then it determines  the strength required.</p>
+            <p><a href="flash/RA_follow-up.swf" id="ec-ACAS-show-flash3">The advisory 
+              strength is continuously evaluated</a> during the course  of the encounter and can be modified either by increasing it  if necessary, or by weakening it if the threat reduces. This is known 
+              as RA 'follow-up'.</p>
+            <p>As soon as the intruder ceases to be a threat (when the 
+              range  between the TCAS aircraft and threat aircraft increases or when the logic  considers that the horizontal distance at CPA will be sufficient),  the resolution advisory is cancelled and a 'clear-of conflict' annunciation 
+               is issued. The pilot must then return to the initial clearance.</p>
+            <p>TCAS is able to handle multi-threat situations either by 
+              attempting  to resolve the situation with a single RA, which will maintain  safe vertical distance from each of the threat aircraft, or by selecting  an RA that is a composite of non-contradictory climb and  descend restrictions.</p>
+            <p>Click on the links above to look at these features in greater detail.</p>
+
+            
+        </div>
+        
+        <div class="ec-acas-container-right">
+            <div class="ec-ACAS-flash1 ec-acas-hide">
+                
+                <style>
+                    .ec-ACAS-slide-buttons p {
+                        text-align: center;
+                    }
+                </style>
+                
+                <div class="ec-ACAS-slide-buttons">
+                    <p><strong><a href="#" class="ec-acase-previous ec-acas-hide">Previous</a> <span class="ec-ACAS-slide-x">1</span> of 4 <a href="#" class="ec-acase-next">Next</a></strong></p>
+                </div>
+                
+                <div class="ec-ACAS-slide-1 ec-acas-hide">
+                    <h3>Horizontal thresholds</h3>
+                    <p>Do you think that the 'protected volume' which TCAS maintains around own aircraft is of a fixed size?</p>
+                    <p>Horizontal alert thresholds are based on the time-to-go to the CPA. The actual radius of any 'protected volume' depends on the speeds and headings of the aircraft involved.</p>
+                    <p>For any given intruder, the theoretical protected volume around the TCAS-equipped aircraft is generally a truncated sphere with a radius equal to the closure rate multiplied by the tau.</p>
+                    <p>In reality this means that there is no single fixed 'protected volume' around own aircraft, but rather TCAS calulates and maintains a separate 'protected volume' around own airaaft in relation to each aircraft under surveillance.</p>
+                </div>
+                
+                <div class="ec-ACAS-slide-2 ec-acas-hide">
+                    <h3>Miss distance filtering</h3>
+                    <p>In addition, to reduce the number of unnecessary alerts based on the encounter geometry TCAS also filters out aircraft whose horizontal range, projected at CPA, is sufficient to preclude a collision avoidance manoeuver. The protected volumes are, therefore, also laterally truncated by a function of horizontal filtering, called Miss Distance Filtering (MDF). Aircraft whose ranges are projected to exceed twice the associated DMOD value are excluded.</p>
+                    <p>In the example shown, both aircraft will be at FL310 at the CPA. DMOD value for RA = 1.10 nm Projected range at CPA is 2.4 nm</p>
+                    <p>Will an RA be generated?</p>
+                </div>
+                
+                <div class="ec-ACAS-slide-3 ec-acas-hide">
+                    <h3>Vertical thresholds</h3>
+                    <p>Assuming that an aircraft has satisfied the horizontal test, TCAS must also analyse the conflict geometry in the vertical plane before issuing any alert. TCAS analyses the conflict geometry to determine the time left before the aircraft are at co-altitude. TAs and RAs will be triggered as soon as the times to co-altitude fall below tau values.</p>
+                    <p>If one of the aircraft involved is manoeuvring vertically then a refinement to the logic is activat ed in order to reduce the number of RAs produced during level-off manoeuvres.</p>
+                    <p>In the diagram, aircraft A is level and B is descending. Both are above FL200, so the sensitivity level is 7. For B the time values for triggering alerts remain the same as for the sensitivity level (48 and 35 seconds) - 35 seconds corresponds to a vertical distance of 1,400 ft at a rate of 2,400 ft/min. However, for A the tau value for the RA is reduced to 25 seconds corresponding to a distance of 1,000 ft at the same rat e.</p>
+                    <p>This reduction allows A a few more seconds in which to detect the level-off and so prevent an RA from being triggered. This shows that higher vertical dosure rates increase the likelihood of an RA.</p>
+                </div>
+                
+                <div class="ec-ACAS-slide-4 ec-acas-hide">
+                    <h3>Low vertical closure rates</h3>
+                    <p>Generally, for a conflict geometry with a low vertical closure rate, the vertical triggering thresholds for RAs range from 600 to 800 ft, depending on the altitude of own aircraft.</p>
+                </div>
+                
+                <object type="application/x-shockwave-flash" 
+                    data="flash/threat_detection.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/threat_detection.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            <div class="ec-ACAS-flash2 ec-acas-hide">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/determining_sense.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/determining_sense.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            <div class="ec-ACAS-flash3">
+                <style>
+                    
+                </style>
+                <h3>RA follow up</h3>
+                <p>During the course of an encounter, TCAS constantly monitors the conflict geometry. In addition, advisory strength is continuously evaluated and modified RAs are given. Typically, as a threat diminishes pilots may be told to <a herf="#">reduce vertical speed</a>.</p>
+                <p>Occasionally a threat aircraft may manoeuvre vertically in a manner that thwarts an RA. The pilot will then have to either:</p>
+                <ul>
+                    <li><a herf="#">increase vertical speed</a>, for example from 1500 to 2500 ft/min,</li>
+                    <li>or even <a herf="#">reverse the sense</a> of the manoeuvre.</li>
+                </ul>
+                <p>Only one sense reversal is possible during a single conflict.</p>
+                <div class="ec-ACAS-t3p3-activities">
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-1">
+                        <object data="svg/ec-ACAS-t3p3a1.svg" id="activity1" type="image/svg+xml" width="500" height="250" ></object>
+                    </div>
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-2 ec-acas-hide">
+                        <p>Activity 2</p>
+                    </div>
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-3 ec-acas-hide">
+                        <p>Activity 3</p>
+                    </div>
+                </div>
+                <p>Note that some <strong>limitations</strong> to these solutions exist at certain altitudes.</p>
+                
+            </div>
+        </div>
+
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/pages.js"></script>
+        <script src="../scripts/showHideFlash.js"></script>
+        <script src="../scripts/EC_ACAS_Questions_Multi_Choice.js"></script>
+        <script src="../scripts/jquery.pep.min.js"></script>
+        <script src="../scripts/snap.svg-min.js"></script>
+        
+        <script type="text/javascript">
+        
+        // console.log(Snap);
+            // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
+            var ec_ACAS_Pages_inner = (function($, Snap)
+                {
+                    'use strict';
+    
+                    var module = {};
+                    var els = {};
+                    
+                    var s = function (name) {
+                        return els[name].el;
+                    }
+                    
+                    var init = function (svg) {
+                        
+                        var list = svg.selectAll('*[id]');
+                        
+                        for(var i=0 ; i < list.length ; i++) {
+                            var currentID = list[i].node.id;
+                            var currentEl = svg.select('#'+currentID);
+                            els[currentID] = {'el': currentEl};
+                            currentEl.storeAttributes();
+                        }
+                        
+                        reset();
+                        
+                        s('buttonStart').click(function (e) {
+                            step1();
+                        });
+                    };
+                    
+                    var reset = function () {
+                        
+                        for ( var elObj in els ) {
+                            els[elObj].el.resetSVG();
+                        }
+                        
+                        s('buttonNext').hide();
+                        s('buttonReplay').hide();
+                        s('text3').hide();
+                        s('text4').hide();
+                        s('text5').hide();
+                        s('text6').hide();
+                        s('arrow3').hide();
+                        s('arrow4').hide();
+                        
+                        s('buttonStart').makeButton();
+                        s('buttonNext').makeButton();
+                        s('buttonReplay').makeButton();
+                        
+                        // s('acft1').animate({cy: 300}, 50,mina.bounce);
+                    };
+                    
+                    // http://davidwalsh.name/svg-animation
+                    
+                    var step1 = function () {
+                        // setTimeout(function () {
+                        //     els['text5'].el.fadeIn();
+                        // }, 500);
+                        // http://snapsvg.io/docs/#Set.animate look into this for stepped animation
+                        for ( var elObj in els ) {
+                            els[elObj].el.resetSVG();
+                        }
+                    };
+                    
+                    // Could all this code be moved external?
+                    // Write up notes on embedding and plugins
+                    document.getElementById("activity1").addEventListener("load",function(){
+                        
+                        var svg = Snap(document.getElementById("activity1").contentDocument.getElementById("scene1"));
+                        // var saveAttributes = [];
+                        
+                        Snap.plugin(function (Snap, Element) {
+                            
+                            Element.prototype.saveAttributes = [];
+                            
+                            Element.prototype.resetSVG = function() {
+                              this.stop();
+                              for( var a=0; a<this.saveAttributes.length; a++) {
+                                 if( this.data( this.saveAttributes[a] ) ) {
+                                    this.attr( this.saveAttributes[a], this.data( this.saveAttributes[a] ) );
+                                 };
+                              };
+                            };
+
+                            Element.prototype.storeAttributes = function() {
+                              for( var a=0; a<this.saveAttributes.length; a++) {
+                                if( this.attr( this.saveAttributes[a]) ) {
+                                    this.data( this.saveAttributes[a], this.attr( this.saveAttributes[a] ) );
+                                };
+                              };
+                            };
+                            
+                            Element.prototype.hide = function () {
+                                this.attr({'display':'none'});
+                            };
+                            
+                            Element.prototype.fadeIn = function () {
+                                // Could I do this with better performance by creating CSS styles and adding removing?
+                                this.attr({'opacity':'0'});
+                                this.attr({'display':'block'});
+                                this.animate({'opacity':'1'}, 500)
+                            };
+                            
+                            Element.prototype.makeButton = function () {
+                                this.attr({'cursor':'pointer'});
+                            };
+                            
+                        });
+                        
+                        init(svg);
+                        
+                    },false);
+                    
+                    
+                    var pagesScript = ec_ACAS_Pages || {};
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);              
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4']);
+                
+                    var currentSlide = 1;
+                    
+                    function showHideNextPrevious () {
+                        $('.ec-ACAS-slide-x').html(currentSlide);
+                        if (currentSlide > 1) {
+                            $('.ec-acase-previous').show();
+                        }
+                        else {
+                            $('.ec-acase-previous').hide();
+                        }
+                        
+                        if (currentSlide < 4) {
+                            $('.ec-acase-next').show();
+                        }
+                        else {
+                            $('.ec-acase-next').hide();
+                        }
+                    }
+                    
+                    $('.ec-acase-next').click(function (event) {
+                        event.preventDefault();
+                        currentSlide++;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
+                
+                    $('.ec-acase-previous').click(function (event) {
+                        event.preventDefault();
+                        currentSlide--;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
+                    
+                    
+
+                    
+                    return module;
+                }($, Snap));
+        </script>
+<script src="https://julian.com/research/velocity/vmd.min.js"></script>
+</body>
+</html>

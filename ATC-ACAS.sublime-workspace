@@ -1,0 +1,840 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"txt",
+				"text	body (depr)"
+			],
+			[
+				"svg",
+				"svg/"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"aud",
+				"audio/"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"scr",
+				"scripts/"
+			],
+			[
+				"no",
+				"normalize.css"
+			],
+			[
+				"modu",
+				"moduleCode"
+			],
+			[
+				"mod",
+				"moduleCode"
+			],
+			[
+				"text",
+				"text-align-last"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mt",
+				"margin-top"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"word",
+				"wordArray"
+			],
+			[
+				"cont",
+				"container_width"
+			],
+			[
+				"if",
+				"iframe"
+			],
+			[
+				"pt",
+				"padding-top"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"conta",
+				"contact-link"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"fade",
+				"fadeGap"
+			],
+			[
+				"te",
+				"textBox1"
+			],
+			[
+				"detai",
+				"sam2Detail"
+			],
+			[
+				"mess",
+				"messageSAM2"
+			],
+			[
+				"deta",
+				"detailSMM"
+			],
+			[
+				"anim",
+				"animationGap"
+			],
+			[
+				"timel",
+				"timeline"
+			],
+			[
+				"anima",
+				"animationGap"
+			],
+			[
+				"FADE",
+				"fadeIn"
+			],
+			[
+				"get",
+				"getSymbolElement"
+			],
+			[
+				"slot",
+				"slot7Arrow"
+			],
+			[
+				"slot7",
+				"slot7Arrow"
+			],
+			[
+				"show",
+				"showTick"
+			],
+			[
+				"is",
+				"isFirst"
+			],
+			[
+				"fa",
+				"fadeGap"
+			],
+			[
+				"quest",
+				"questionBGMinHeight"
+			],
+			[
+				"ques",
+				"questionText"
+			],
+			[
+				"symbo",
+				"symbolArray"
+			],
+			[
+				"rando",
+				"randomise"
+			],
+			[
+				"proce",
+				"processArrow"
+			],
+			[
+				"bt",
+				"btNext"
+			],
+			[
+				"symb",
+				"symbolElements"
+			],
+			[
+				"Icon",
+				"IconDWH"
+			],
+			[
+				"icone",
+				"IconENV"
+			],
+			[
+				"sym",
+				"symbolElements"
+			],
+			[
+				"IconR",
+				"IconRPL"
+			],
+			[
+				"fad",
+				"fadeGap"
+			],
+			[
+				"cure",
+				"currentScore"
+			],
+			[
+				"curre",
+				"currentQuestion"
+			],
+			[
+				"ctot",
+				"noCtotAnswer"
+			],
+			[
+				"feed",
+				"feedback"
+			],
+			[
+				"ti",
+				"tick"
+			],
+			[
+				"BtN",
+				"btNext"
+			],
+			[
+				"curren",
+				"currentAnswer"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"countr",
+				"countryButton"
+			],
+			[
+				"sort",
+				"sortable"
+			],
+			[
+				"ani",
+				"animationGap"
+			],
+			[
+				"els",
+				"elsArray"
+			],
+			[
+				"curr",
+				"currentTopic"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"page",
+				"pageURL"
+			],
+			[
+				"class",
+				"classString"
+			],
+			[
+				"con",
+				"console"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"selected_items":
+		[
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"i ",
+				"Package Control: Install Package"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"synt css",
+				"Set Syntax: CSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"synt javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"synt md",
+				"Set Syntax: Markdown"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"synt html",
+				"Set Syntax: HTML"
+			],
+			[
+				"synt",
+				"Set Syntax: Sass"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"synt pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"syn tja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"synt java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"synt sas",
+				"Set Syntax: Sass"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 496.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ATC-ACAS"
+	],
+	"file_history":
+	[
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ec-ians-2014-ACAS/gulpfile.js",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ec-ians-2014-ACAS/app/index.html",
+		"/D/Offline/patrickgrey/clients/2015/ians/maintenance/ec-ians-2014-ACAS/bower_components/jquery/dist/jquery.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/svg/ec-ACAS-t3p3a3_2.svg",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/styles/main.scss",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/ec_ACAS_t3p3a3_1.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/styles/pages.scss",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/ecSvgLoadListener.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/ecSvgUtilities.js",
+		"/C/Users/Patrick/AppData/Roaming/npm-cache/yo/1.4.5/package/package.json",
+		"/C/Users/Patrick/AppData/Roaming/npm/node_modules/adm-zip/package.json",
+		"/C/Program Files/nodejs/node_modules/npm/package.json",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/gulpfile.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/package.json",
+		"/C/Users/Patrick/AppData/Roaming/npm/node_modules/yo/package.json",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/velocity.min.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/ec_ACAS_t3p3a3_1_arch08Feb1314.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/svgLoadListener.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/svg/ec-ACAS-t3p3a1.svg",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/svg/ec-ACAS-t3p3a1v2.svg",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/svg/ec-ACAS-t3p3a1_v3.svg",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/scripts/t3p3a3.1.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/scripts/t3p3a1",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/archExampleSVGAnimation.html",
+		"/C/Users/Patrick/Desktop/GSAP Bezier Tween Sample Code with Autorotation/index.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/ACASTopic3Page3Velocity.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/ACASTopic3Page3.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/NMO-ATFCM-FLC-E/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/ATC-R-HDVR/index.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/ATC-R-RWYINC/ATC-R-RWYINC v1.1 - EN/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/GEN-AMC/AMCMenu.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/GEN-AMC/AMC Module 1 V4/AMC Module 1 V4.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/GEN-ATM-INTRO/atmroot/frameset.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/HUM-OJTI-B/ws_module0_course_overview/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/IM-CMXM/pt1.1/Part 1.1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/IM-CMXM/pt1.1/Part 1.1_player.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/IM-CMXM/pt4/Part 4.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/NMO-ATFCM-BEST-E/Best_practices/bp_topics/frames/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/NMO-ATFCM-FE-E/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/NMO-ATFCM-MORE-E/index.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/NMO-CIAM-HELP-E/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/NMO-CITO-HELP-E/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/NMO-IFPS-INTRO-E/CFMU/FDOD/IFPS and Flight Planning v7/index.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/ATC-R-RWYINC/ATC-R-RWYINC v1.1 - EN/wsIndex.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/ATC-I-BASIC-FIS/SCOs/DOCs/ObjectFiles/HTMLImport/ffc560d513dc97f3ad55b3974300319b_H156/_MAIN_MAP2.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/ATC-I-HDG/headingsTutorV2/index.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/ATC-I-HDG/headingsTutorV2/launch.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/maintenance/googleAnalytics/ATC-I-SEAP/t90_6april/sp.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/snap.svg-min.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/velocity.ui.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/showHideFlash.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic4/ACASTopic4Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/ACASTopic3Page3SVGSnap.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/ACASTopic2Page4.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic5/ACASTopic5Page2.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic5/ACASTopic5Page2_backup20141202.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/ACASTopic3Page2.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/ACASTopic3Page3NonSVG.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/game.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/ACASTopic2Page2.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic4/images/ic_volume_up_24px.svg",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic5/styles/slick.css",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic5/ACASTopic5Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/slick.min.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/styles/slick.css",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/bower_components/slick-carousel/slick/slick.css",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/dist/topic5/ACASTopic5Page2.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/dist/topic3/ACASTopic3Page2.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/dist/topic5/ACASTopic5Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/ACASTopic2Page3.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic1/ACASTopicPageTemplate.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/EC_ACAS_Questions_Multi_Choice.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/index.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/pages.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/jquery.pep.min.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/ACASTopic2Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/styles/_normalize.scss",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/.tmp/styles/pages.css",
+		"/C/Users/Patrick/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic1/ACASTopic1Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/ACASTopic3Page4.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic5/ACASTopicXPageX.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic5/TCAS_incident_01.htm",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/controlFlash.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/dist/scripts/controlFlash.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/dist/styles/pages.css",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/dist/styles/main.css",
+		"/C/Users/Patrick/Desktop/ACASpage1/styles/pages.css",
+		"/C/Users/Patrick/Desktop/ACASpage1/topic1/ACASTopic1Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic3/ACASTopic3Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/ACASTopic3Page1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/flash/what_tcas_does.swf",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/ACASTopic2Page5.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/topic2/ACASTopicXPageX.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/scripts/main.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/bower.json",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/styles/_navigation.scss",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/app/styles/_compositions.scss",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS/.gitignore",
+		"/D/GoogleDrive/eurocontrol/ians/2014/ACAS/source/ACAS ATC-ACAS v2.0 2013.SCORM/SCOs/DOCs/ObjectFiles/HTMLImport/ffc560d513dc97f3ad55b3974300319b_H84/index.htm",
+		"/D/GoogleDrive/eurocontrol/ians/2014/ACAS/source/ACAS ATC-ACAS v2.0 2013.SCORM/SCOs/DOCs/ObjectFiles/HTMLImport/ffc560d513dc97f3ad55b3974300319b_H84/topic_1/m01_t01_p00.htm",
+		"/D/Offline/personal/2014/school/codeClub/codio/fivePageSite/dist/styles/main.css",
+		"/D/Offline/personal/2014/school/codeClub/codio/fivePageSite/app/styles/main.scss",
+		"/D/Offline/personal/2014/school/codeClub/codio/fivePageSite/app/index.html",
+		"/D/Offline/personal/2014/school/codeClub/codio/fivePageSite/app/scripts/responsive-carousel.min.js",
+		"/D/Offline/personal/2014/school/codeClub/codio/fivePageSite/app/scripts/responsive-carousel.autoplay.min.js",
+		"/D/Offline/personal/2014/school/codeClub/codio/fivePageSite/app/page2.html",
+		"/D/Offline/personal/2014/school/codeClub/codio/fivePageSite/app/source/evil-laugh.mp3",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-ACAS-DEV/app/customs/JSLibraries/ECL_F10_API.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/dist/index.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/scripts/main.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/scripts/ec-google-analytics-shared-code.js",
+		"/C/Users/Patrick/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/dist/autoGAData.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/autoGAData.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/dist/scripts/main.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/styles/main.scss",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/dist/scripts/ec-google-analytics-shared-code.js",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-statics/STATIC-index.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/scripts/ec-google-analytics-modules.js",
+		"/C/Users/Patrick/AppData/Local/Android/android-sdk/tools/android.bat",
+		"/F/codeClub/term2/week4/myPage.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-5.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-4.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-3.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-item-1.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/app/content-applications/APP-search.html",
+		"/D/Offline/patrickgrey/clients/2014/ians/ec-ians-2014-GA-test-01/gulpfile.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"D:\\Offline\\patrickgrey\\clients\\2014\\ians\\ec-ians-2014-ACAS\\app",
+			"D:\\Offline\\patrickgrey\\clients\\2014\\ians\\ec-ians-2014-ACAS-DEV\\app",
+			"D:\\Offline\\patrickgrey\\patrickgrey.1.1\\app\\",
+			"D:\\Offline\\patrickgrey\\patrickgrey.1.1\\app\\_scss",
+			"D:\\Google Drive\\eurocontrol\\ians\\2013\\nmo-atfcm-intro-e\\module\\app\\topics",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"arrow3",
+			"ec-acas-svg-hide",
+			"ec-ACAS-t3p3-activity",
+			"right",
+			"getSVGElementsWithID",
+			"createAudio",
+			"callAudio",
+			"adm-zip",
+			"vendor",
+			"ec-acas-hide",
+			"ec-ACAS-t3p3-activity-1",
+			"setStartPoint",
+			"getSVGElementsWithID",
+			"setButtonCursorArray",
+			"defineTimelines",
+			"00FF18",
+			"Replay",
+			"replay",
+			"ec-ACAS-t3p3-activities",
+			"ec_ACAS_t3p3a1",
+			"startAnimation",
+			"startAnimation1",
+			"hideOnStartArray",
+			"setStartPoint",
+			"callbackConfig",
+			"getSVGElementsWithID",
+			"activity1",
+			"ec_ACAS_t3p3a3_1_load",
+			"objectID",
+			"activity1",
+			"ec_ACAS_t3p3a1",
+			"ec_ACAS_Pages_inner",
+			"activity1",
+			"timelineArray",
+			"Things",
+			"setAnimationStart",
+			"startAnimation1",
+			"top",
+			"left",
+			"playAudio",
+			"\"",
+			"timeline1",
+			"allElementsWithIDs",
+			"at",
+			"activity1",
+			"1000",
+			"Snap",
+			"ec-ACAS-t3p3-activity",
+			".",
+			"ec-ACAS-show-flash1",
+			"5px",
+			"livereload",
+			"').el",
+			"']",
+			"els[",
+			"storeAttributes",
+			"currentEl",
+			"buttonNext",
+			"data-audio=\"1\"",
+			"text3",
+			",",
+			"arrow3",
+			"text6",
+			"text3",
+			"buttonNext",
+			"buttonReplay",
+			"content-wrap",
+			"ec-ACAS-activity-1-graphic-container",
+			"scene1",
+			"\"",
+			"&quot;",
+			"bg_",
+			"font-size",
+			"activity-1",
+			"OWN AIRCRAFT",
+			"\n",
+			"<a>",
+			"strong",
+			"\n",
+			"10px",
+			"0bf",
+			"333",
+			"666",
+			"999",
+			"363",
+			"5cb85c",
+			"ec-acas-t3p2-slide-3-th",
+			"\n",
+			"showTab",
+			"tabs-style-underline",
+			"woff",
+			"font",
+			"/th",
+			"th",
+			"-1",
+			"all 1s ",
+			"red",
+			"-1",
+			"ec-ACAS-slide-2-activity-3d",
+			";*/\n",
+			"ec-ACAS-slide-2-activity-3d",
+			"ec-ACAS-slide-2-questions-show",
+			"10px",
+			"name=\"\"",
+			"data-acft=",
+			"ec-ACAS-slide-2-tau-table",
+			"ec-ACAS-slide-2-questions",
+			"ec-ACAS-slide-2",
+			"ec-ACAS-slide-2-drag-acft",
+			"xxxx",
+			"ec-acas-t3p2-slide-4-img",
+			"\n",
+			"-?-",
+			"h3>",
+			"ec-ACAS-slide-buttons",
+			"\n",
+			"ec-acas-slide-1-flash",
+			"”",
+			"“",
+			"20px",
+			"ec-ACAS-t2p3-activity-ACAS-icon",
+			"pep",
+			"20px",
+			"120deg",
+			"\n",
+			"p>",
+			"<p>",
+			"p"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<loc>http://www.patrickgrey.co.uk"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 110.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 110.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "ATC-ACAS.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 374.0,
+		"selected_items":
+		[
+		],
+		"width": 384.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 367.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

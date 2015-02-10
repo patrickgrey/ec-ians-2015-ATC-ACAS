@@ -1,0 +1,107 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATC-ACAS > topic 2 > page 5</title>
+        <meta name="description" content="ATC-ACAS review site">
+        <meta name="author" content="patrickGrey.co.uk">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css styles/pages.css --> 
+        <link rel="stylesheet" href="../styles/pages.css">
+        <!-- endbuild -->
+
+
+    </head>
+    <body>
+    
+        
+        <div class="ec-acas-container-left">
+            <h2>Summary and Conclusion</h2>
+            <p>Despite the general positive impact of TCAS, and it has 
+              now attained universal recognition in the world of aviation, it should be emphasised that it is a tool of '<strong>last resort</strong>' designed to prevent mid-air 
+              collision when the primary means of separation has failed. </p>
+            <p>Furthermore, it is not a perfect system, and it cannot 
+              entirely eliminate all risks of collision. Additionally, as in any predictive system, it might itself induce a risk of collision. </p>
+            <p>Nevertheless, many of the failings in the system to date 
+              are due to human factors rather than the technology itself, and this is an area where training can help to improve the performance.</p>
+            <p>TCAS II does not provide: </p>
+            <ul>
+              <li>warning of loss of standard separation,</li>
+              <li> prevention of close encounters, or</li>
+              <li> surveillance supporting lateral manoeuvres.</span></li>
+            </ul>
+            <p> The next topic looks in detail at the operating principles 
+              of TCAS, the cockpit displays and controls, the various resolution advisories and the phraesology to be used when dealing with an RA.</p>
+            <p>Activity 1: <a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash1">Familiarise yourself with the keywords from this topic.</a></p>
+            <p><a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash2">Return to original activity.</a></p>
+            <p>END OF TOPIC</p>
+
+
+
+            
+        </div>
+        
+        <div class="ec-acas-container-right">
+            <div class="ec-ACAS-flash1">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/summary_topic_01.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/summary_topic_01.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            <div class="ec-ACAS-flash2 ec-acas-hide">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/topic_01_keywords.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/topic_01_keywords.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            
+        </div>
+
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/pages.js"></script>
+        
+        <script type="text/javascript">
+
+            // Wait for the page to load first
+            window.onload = function() {
+
+              //Get a reference to the link on the page
+              // with an id of "mylink"
+              var flash1 = document.getElementById("ec-ACAS-show-flash1");
+              var flash2 = document.getElementById("ec-ACAS-show-flash2");
+
+              //Set code to run when the link is clicked
+              // by assigning a function to "onclick"
+              flash1.onclick = function() {
+
+                // Your code here...
+                ec_ACAS_Pages.showHideClasses(['ec-ACAS-flash2'], ['ec-ACAS-flash1']);
+                //If you don't want the link to actually 
+                // redirect the browser to another page,
+                // "google.com" in our example here, then
+                // return false at the end of this block.
+                // Note that this also prevents event bubbling,
+                // which is probably what we want here, but won't 
+                // always be the case.
+                return false;
+              };
+              
+              flash2.onclick = function() {
+                ec_ACAS_Pages.showHideClasses(['ec-ACAS-flash1'], ['ec-ACAS-flash2']);
+                return false;
+              };
+              
+            };
+    </script>
+
+</body>
+</html>

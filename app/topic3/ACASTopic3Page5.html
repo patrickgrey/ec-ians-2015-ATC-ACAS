@@ -1,0 +1,81 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATC-ACAS > topic 3 > page 3</title>
+        <meta name="description" content="ATC-ACAS review site">
+        <meta name="author" content="patrickGrey.co.uk">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css styles/pages.css --> 
+        <link rel="stylesheet" href="../styles/pages.css">
+        <!-- endbuild -->
+
+
+    </head>
+    <body>
+    
+        
+        <div class="ec-acas-container-left">
+            <h2>TCAS and RVSM</h2>
+            <p>There are three particular points of interest in relation 
+              to TCAS and RVSM.</p>
+            <p> The first is related to 1,000 ft level-off and the fact 
+              that aircraft          approaching their cleared levels at high rates of climb or descent          can trigger undesirable TAs or RAs. <a href="flash/rvsm_situation_1.swf" id="ec-ACAS-show-flash1">To 
+              reduce the number           of these unnecessary TAs and RAs triggered during level-off          a series of recommendations have been made for pilots.</a></p>
+            <p>The second point relates to the impact of <a href="flash/turbulence.swf" id="ec-ACAS-show-flash2">turbulence</a> 
+              which can cause           an aircraft to deviate very suddenly at a high, instantantaneous           vertical speed towards an adjacent flight level.</p>
+            <p>The third point is concerned with aircraft that have oscillations 
+                        in altitude keeping or <a href="flash/rvsm_situation_2.swf" id="ec-ACAS-show-flash3">are flying 
+              at a vertical offset</a> towards           the adjacent flight level occupied by another aircraft. &nbsp;In either case,          the relative altitude between the aircraft can fall below 1,000 ft.                  </p>
+
+
+            
+        </div>
+        
+        <div class="ec-acas-container-right">
+            <div class="ec-ACAS-flash1">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/rvsm_situation_1.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/rvsm_situation_1.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            <div class="ec-ACAS-flash2 ec-acas-hide">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/turbulence.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/turbulence.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            <div class="ec-ACAS-flash3 ec-acas-hide">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/rvsm_situation_2.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/rvsm_situation_2.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+        </div>
+
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/pages.js"></script>
+        <script src="../scripts/showHideFlash.js"></script>
+        
+        <script type="text/javascript">
+            // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
+            window.onload = function() {
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);              
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4']);
+            };
+        </script>
+
+</body>
+</html>

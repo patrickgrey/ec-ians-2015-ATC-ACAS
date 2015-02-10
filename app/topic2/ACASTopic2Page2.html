@@ -1,0 +1,689 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATC-ACAS > topic 2 > page 2</title>
+        <meta name="description" content="ATC-ACAS review site">
+        <meta name="author" content="patrickGrey.co.uk">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css styles/pages.css --> 
+        <link rel="stylesheet" href="../styles/pages.css">
+        <!-- endbuild -->
+        <style>
+            .ec-ACAS-top-container {
+                width: 100%;
+                overflow: hidden;
+            }
+            
+            .ec-ACAS-top-container-left {
+                width: 165px;
+                margin-right: 15px;
+            }
+            
+            .ec-ACAS-top-container-right {
+                margin-top: -12px;
+                width: 310px;
+            }
+            
+            .ec-ACAS-top-container-left, .ec-ACAS-top-container-right {
+                float: left;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+    
+        
+        <div class="ec-acas-container-left">
+            <h2>ACAS and TCAS - Concept and Implementation</h2>
+            
+            <p>Increases in air traffic operations have brought with them a greater risk of mid-air collisions between aircraft.</p>
+            
+            <p><strong>ACAS</strong> (Airborne Collision Avoidance System) is the conceptual solution that has been provided to reduce the risk of such accidents. Its accurate use, as a last-resort tool, should ensure greater safety by reducing the risk of mid-air collision between aircraft when other means and methods of separation fail.</p>
+            
+            <p>ACAS is a generic term or <strong>concept philosophy</strong> defined by ICAO and standardised in ANNEX10. ACAS is designed to work both autonomously and independently of the aircraft navigation equipment and autopilot systems as well as any ground systems used for the provision of air traffic services. <strong>TCAS</strong> is the only commercially available implementation of the ICAO standard for ACAS.</p>
+            
+            <p>Currently, <strong>TCAS II</strong> is the only implementation that meets the ACAS ICAO Standards and Recommended Practices (SARPs). Therefore, the term ACAS II is typically used when referring to the standard or concept and TCAS II when referring to the implementation. However, often both terms are used interchangeably. The approved software version is 7.1</p>
+            
+
+            <p><a href="flash/TCAS_overview.swf" id="ec-ACAS-show-flash2">Activity 2: TCAS - a brief overview.</a></p>
+            <p><a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash1">Return to the original activity: ACAS - definition and concepts.</a></p>
+
+            
+        </div>
+        
+        <div class="ec-acas-container-right">
+            <div class="ec-ACAS-flash1">
+                <h3>ACAS: definitions and concepts</h3>
+                <div class="ec-ACAS-top-container">
+                    <div class="ec-ACAS-top-container-left">
+                        <img src="images/topic2Page2.gif" height="165" width="165" alt="ACAS">
+                    </div>
+                    <div class="ec-ACAS-top-container-right">
+                        <p>The Airborne Collision Avoidance System (ACAS) concept is an airborne avionics system that acts independently of ground based systems, auto pilot and NAV systems. It acts as a last resort safety net based on secondary surveillance radar (SSR) transponder and Mode S transponder to provide advice to the pilot on potential conflict aircraft that are equipped with the same equipment.</p>
+                    </div>
+                </div>
+                <div class="ec-ACAS-tab">
+                    <p>Three types of ACAS have been specified in ICAO Annex 10:</p>
+                    
+                    <style>
+                        /* Styles and code created by http://tympanus.net/Development/TabStylesInspiration/ */
+                    
+                        .tabs {
+                            position: relative;
+                            overflow: hidden;
+                            margin: 0 auto;
+                            width: 100%;
+                            font-weight: 300;
+                            /*font-size: 1.25em;*/
+                        }
+
+                        /* Nav */
+                        .tabs nav {
+                            text-align: center;
+                        }
+
+                        .tabs nav ul {
+                            position: relative;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: -moz-flex;
+                            display: -ms-flex;
+                            display: flex;
+                            margin: 0 auto;
+                            padding: 0;
+                            max-width: 1200px;
+                            list-style: none;
+                            -ms-box-orient: horizontal;
+                            -ms-box-pack: center;
+                            -webkit-flex-flow: row wrap;
+                            -moz-flex-flow: row wrap;
+                            -ms-flex-flow: row wrap;
+                            flex-flow: row wrap;
+                            -webkit-justify-content: center;
+                            -moz-justify-content: center;
+                            -ms-justify-content: center;
+                            justify-content: center;
+                        }
+
+                        .tabs nav ul li {
+                            position: relative;
+                            z-index: 1;
+                            display: block;
+                            margin: 0;
+                            text-align: center;
+                            -webkit-flex: 1;
+                            -moz-flex: 1;
+                            -ms-flex: 1;
+                            flex: 1;
+                        }
+
+                        .tabs nav a {
+                            position: relative;
+                            display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            line-height: 2.5;
+                        }
+
+                        .tabs nav a span {
+                            vertical-align: middle;
+                            font-size: 1.25em;
+                        }
+
+                        .tabs nav li.tab-current a {
+                            color: #74777b;
+                            background: #fff;
+                        }
+
+                        .tabs nav a:focus {
+                            outline: none;
+                        }
+                        
+                        
+                        
+                        /* Content */
+                        .content-wrap {
+                            position: relative;
+                            border-right: 1px solid #e7ecea;
+                            border-bottom: 1px solid #e7ecea;
+                            border-left: 1px solid #e7ecea;
+                        }
+
+                        .content-wrap section {
+                            display: none;
+                            /*margin: 0 auto;*/
+                            padding: 1em;
+                            max-width: 1200px;
+                            /*text-align: center;*/
+                        }
+
+                        .content-wrap section.content-current {
+                            display: block;
+                        }
+                        
+                        
+                        /*****************************/
+                        /* Underline */
+                        /*****************************/
+
+                        .tabs-style-underline nav {
+                            background: #fff;
+                        }
+
+                        .tabs-style-underline nav a {
+                            padding: 0.25em 0 0.5em;
+                            border-top: 1px solid #e7ecea;
+                            border-bottom: 1px solid #e7ecea;
+                            border-left: 1px solid #e7ecea;
+                            -webkit-transition: color 0.2s;
+                            transition: color 0.2s;
+                            background: rgba(40,44,42,0.05);
+                        }
+
+                        .tabs-style-underline nav li:last-child a {
+                            border-right: 1px solid #e7ecea;
+                        }
+
+                        .tabs-style-underline nav li a::after {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 6px;
+                            background: #3c9dce;
+                            content: '';
+                            -webkit-transition: -webkit-transform 0.3s;
+                            transition: transform 0.3s;
+                            -webkit-transform: translate3d(0,150%,0);
+                            transform: translate3d(0,150%,0);
+                        }
+
+                        .tabs-style-underline nav li.tab-current a::after {
+                            -webkit-transform: translate3d(0,0,0);
+                            transform: translate3d(0,0,0);
+                        }
+
+                        .tabs-style-underline nav a span {
+                            font-weight: 700;
+                        }
+                        
+                        
+                        
+                        
+                    </style>
+                    
+                    <section>
+                        <div class="tabs tabs-style-underline">
+                            <nav>
+                                <ul>
+                                    <li><a href="#section-underline-1" class="icon icon-home"><span>ACAS I</span></a></li>
+                                    <li><a href="#section-underline-2" class="icon icon-gift"><span>ACAS II</span></a></li>
+                                    <li><a href="#section-underline-3" class="icon icon-upload"><span>ACAS III</span></a></li>
+                                </ul>
+                            </nav>
+                            <div class="content-wrap">
+                                <section id="section-underline-1">
+                                    <ul>
+                                        <li>measures range and closure rates of other aircraft.</li>
+                                        <li>alerts pilot when <strong>intruder</strong> aircraft enters protected volume of airspace and becomes potential <strong>threat</strong> (Traffic Advisory - TA).</li>
+                                        <li>provides information as an aid to &quot;see and avoid&quot; action but does not include the capability for generating Resolution Advisory (RAs). ACAS I is not, nor has it ever been, mandated in Europe and there are no operational rules regarding the use of ACAS I.</li>
+                                    </ul>
+                                    <p><strong>TCAS</strong> implementation: TCAS I</p>
+                                </section>
+                                <section id="section-underline-2">
+                                    <ul>
+                                        <li>measures range and closure rates of other aircraft.</li>
+                                        <li>alerts pilot when <strong>intruder</strong> aircraft enters protected volume of airspace and becomes potential <strong>threat</strong> (Traffic Advisory - TA).</li>
+                                        <li>provides avoidance manoeuvres for pilots in <strong>vertical</strong> sense if intruder becomes <strong>threat</strong> (Resolution Advisory - RA)</li>
+                                        <li>coordinates and provides <strong>complementary RA</strong>s (if both aircraft have Mode S transponders</li>
+                                    </ul>
+                                    <p><strong>TCAS</strong> implementation: TCAS II</p>
+                                </section>
+                                <section id="section-underline-3">
+                                    <ul>
+                                        <li>provides vertical and horizontal RAs in addition to TAs.</li>
+                                        <li>although ACAS III is mentioned as a future system in ICAO Annex 10, ACAS III is unlikely to materialise due to difficulties the current surveillance systems have with horizontal tracking.</li>
+                                        <li>currently, research is being conducted to develop a future collision avoidance system under the working name of ACAS X. If developed and certified, ACAS X will not be commercially available before 2020s. It is unclear at this stage whether ACAS X would provide any horizontal resolutions.</li>
+                                    </ul>
+                                    <p><strong>TCAS</strong> implementation: TCAS III</p>
+                                </section>
+                            </div><!-- /content -->
+                        </div><!-- /tabs -->
+                    </section>
+                    
+                    
+
+                </div>
+                
+            </div>
+            <div class="ec-ACAS-flash2 ec-acas-hide">
+                
+                <style>
+                
+                    .ec-acase-next:after {
+                        position: absolute;
+                        content:'';
+                        width: 0; 
+                        height: 0; 
+                        border-top: 5px solid transparent;
+                        border-left: 10px solid #3c9dce;
+                        border-bottom: 5px solid transparent;
+                        margin-top: 4px;
+                        margin-left: 5px;
+                    }
+                    
+                    .ec-acase-previous:before {
+                        position: absolute;
+                        content:'';
+                        width: 0; 
+                        height: 0; 
+                        border-top: 5px solid transparent;
+                        border-right: 10px solid #3c9dce;
+                        border-bottom: 5px solid transparent;
+                        margin-top: 4px;
+                        margin-left: -15px;
+                    }
+                    
+                    .ec-ACAS-slide-1 {
+                        position: relative;
+                    }
+                    
+                    .ec-ACAS-slide-buttons p {
+                        text-align: center;
+                    }
+                    
+                    .ec-acas-slide-1-flash {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0,0,0,0.85);
+                        text-align: center;
+                    }
+                    
+                    .ec-acas-slide-1-flash object {
+                        margin: 0 auto;
+                        padding-top: 10px;
+                    }
+                    
+                    .ec-ACAS-slide-3-container {
+                        /*padding-top: 50px;*/
+                        position: relative;
+                        width: 100%;
+                        height: 160px;
+                        background: #a6bed7 url(images/topic2Page2Slide3Cloud.jpg);
+                    }
+                    
+                    .ec-ACAS-slide-3-container-inner {
+                        margin: 0 90px 0 50px;
+                        padding-top: 30px;
+                    }
+                    
+                    .ec-ACAS-slide-3-acft-1 {
+                        cursor: pointer;
+                    }
+                    
+                    .ec-ACAS-slide-3-acft-2 {
+                        position: absolute;
+                        right: 30px;
+                        /*padding-top: 13px;*/
+                        -moz-transform: scaleX(-1);
+                        -o-transform: scaleX(-1);
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+                        -ms-filter: fliph; /*IE*/
+                        filter: fliph; /*IE*/
+                    }
+                    
+                    .ec-ACAS-slide-3-orange {
+                        position: absolute;
+                        left: 130px;
+                        width: 150px;
+                        height: 160px;
+                        background: rgba(249,202,90, 0.7);
+                    }
+                    
+                    .ec-ACAS-slide-3-red {
+                        position: absolute;
+                        right: 0px;
+                        width: 240px;
+                        height: 160px;
+                        background: rgba(250,0,0, 0.55);
+                        color: #fff;
+                    }
+                    
+                    .ec-ACAS-slide-3-inner {
+                        /*display: none;*/
+                        width: 80%;
+                        margin: 0 auto;
+                        margin-top: 80px;
+                        font-weight: bold;
+                        
+                    }
+                    
+                    .ec-ACAS-slide-3-red-inner-2 {
+                        margin-top: 10px;
+                        text-align: right;
+                    }
+                    
+                    .ec-ACAS-slide-5-highlight {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        background: #3c9dce;
+                        color: #fff;
+                        border-radius: 10px;
+                    }
+                </style>
+                
+                <div class="ec-ACAS-slide-buttons">
+                    <p><strong><a href="#" class="ec-acase-previous ec-acas-hide">Previous</a> <span class="ec-ACAS-slide-x">1</span> of 5 <a href="#" class="ec-acase-next">Next</a></strong></p>
+                </div>
+                
+                <div class="ec-ACAS-slide-1">
+                    <h3>TCAS Overview: basics (i)</h3>
+                    <p>Traffic Alert and Collision Avoidance System (TCAS II) is an on-board system designed to improve air safety by acting as a <strong>'last-resort' method</strong> of preventing mid-air collisions by recommending <strong>vertical</strong> manoeuvres to pilots when a risk of collision is detected.</p>
+                    <p>Through antennas, TCAS interrogates the !CAO standard compliant transponders of all aircraft in the vicinity. Based upon the replies received, the system tracks the slant range, altitude (when it is included in the reply message) and be.aring of surrounding traffic. The data is passed on to the collision avoidance logic for traffic and resolution advisory selection and display. ( see 'Types of Alert' later in this overview).</p>
+                    <div class="ec-acas-slide-1-img"><img src="images/topic2Page2Slide1.gif" height="211" width="463" alt="TCAS Basics"></div>
+                    <p><a class="ec-acas-slide-1-flash-open" href="#">How does this work? Click here for a more detailed explanation of the interaction between Mode S equipped aircraft.</a></p>
+                    
+                    <div class="ec-acas-slide-1-flash ec-acas-hide">
+                        <object type="application/x-shockwave-flash" 
+                            data="flash/transponder_functioning.swf" 
+                            width="480" height="425">
+                            <param name="movie" value="flash/transponder_functioning.swf" />
+                            <param name="quality" value="high"/>
+                        </object>
+                        <p><a class="ec-acas-slide-1-flash-close" href="#">Close and return.</a></p>
+                    </div>
+                </div>
+                
+                <div class="ec-ACAS-slide-2 ec-acas-hide">
+                    <h3>TCAS Overview: basics (ii)</h3>
+                    <div class="ec-acas-slide-2-questions"></div>
+                    
+                </div>
+                
+                <div class="ec-ACAS-slide-3 ec-acas-hide">
+                    <h3>TCAS Overview: types of alert</h3>
+                    <p>TCAS can issue two types of alert:</p>
+                    <div class="ec-ACAS-slide-3-container">
+                        <div class="ec-ACAS-slide-3-orange ec-ACAS-slide-3-drop">
+                            <div class="ec-ACAS-slide-3-orange-inner ec-ACAS-slide-3-inner ec-acas-hide">The aircraft is declared an intruder.</div>
+                        </div>
+                        <div class="ec-ACAS-slide-3-red ec-ACAS-slide-3-drop">
+                            <div class="ec-ACAS-slide-3-red-inner ec-ACAS-slide-3-inner ec-acas-hide">The intruder is declared a threat.</div>
+                            <div class="ec-ACAS-slide-3-red-inner-2 ec-ACAS-slide-3-inner ec-acas-hide">- Traffic! Traffic!</div>
+                        </div>
+                        <div class="ec-ACAS-slide-3-container-inner">
+                            <img class="ec-ACAS-slide-3-acft-1" src="images/topic2Page2Slide3Acft.png" width="60" alt="aircraft side on">
+                        </div>
+                        <img class="ec-ACAS-slide-3-acft-2" src="images/topic2Page2Slide3Acft.png" width="60" alt="aircraft side on">
+                    </div>
+                    <p>Drag the aircraft on the left into the orange and red danger areas.</p>
+                    <div class="ec-ACAS-slide-3-feedback"></div>
+                </div>
+                
+                <div class="ec-ACAS-slide-4 ec-acas-hide">
+                    <h3>TCAS Overview: the power of the ACAS logic</h3>
+                    <p>i) During the resolution of a conflict, as the situation develops, modified RAs can be displayed telling the pilot to adjust his vertical speed or to level off the aircraft in some way. It is even possible for one sense reversal to be given, e.g. an aircraft which has been told to climb might later be told to descend.</p>
+                    <div class="ec-acas-slide-4-questions"></div>
+                </div>
+                
+                <div class="ec-ACAS-slide-5 ec-acas-hide">
+                    <h3>TCAS Overview: coverage</h3>
+                    <p>The alerts issued by ACAS II depend on the transponder mode of the intruder:</p>
+                    <ul class="ec-ACAS-slide-5-highlight">
+                        <li>There can be no alerts if the transponder is inactive or not compliant with ICAO standards.</li>
+                        <li>TAs are issued if the transponder is active and complies with ICAO standards.</li>
+                        <li>RA.s are issued if the transponder is altitude reporting and complies with ICAO standards.</li>
+                    </ul>
+                    <p>Thus the alerts provided for in the ACAS specification are dependent on both the type and the current operational mode of the transponders carried by the airborne aircraft.</p>
+                    <p>In order to maximise the effectiveness of ACAS, a number of regulations have been passed. For example, mandatory carriage of ACAS was first introduced in the USA in 1993. In Europe, 
+                    
+                    the carriage of ACAS II version 7.1 is mandatory from 1 December 2015 by all aircraft currently equipped with version 7.0 and from 1 March 2012 by all new aircraft above 5,700 kg maximum take-off mass or a maximum passenger seating capacity of more than 19. All new ACAS installations after 1 January 2014 shall be compliant with version 7.1 and after 1 January 2017 all ACAS units shall be compliant with version 7.1.</p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/pages.js"></script>
+        <script src="../scripts/showHideFlash.js"></script>
+        <script src="../scripts/EC_ACAS_Questions_Multi_Choice.js"></script>
+        <script src="../scripts/jquery.pep.min.js"></script>
+        
+        <script type="text/javascript">
+            // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
+            // window.onload = function() {
+                
+                var ec_ACAS_Pages_inner = (function($)
+                {
+                    'use strict';
+    
+                    var module = {};
+                    
+                    var slide3OrangeHTML = '<ul><li><strong>Traffic Advisories</strong> (TAs), aim to help the pilot in the visual search for the intruder aircraft, and by alerting him to be ready for a potential resolution advisory.</li></ul>';
+                    
+                    var slide3RedHTML = '<ul><li><strong>Resolution Advisories</strong> (RAs), are avoidance manoeuvres recommended to the pilot in the <strong>vertical</strong> sense, typically restricted to a range of vertical speed of 500 ft/min. This is to prevent aircraft deviating too far from their cleared levels and producing further conflicts . Assuming both aircraft are TCAS II and Mode 5 equipped, the two systems can also coordinate their RAs via the Mode 5 data link to select complementary resolution senses. Otherwise, TCAS II can use altitude information from Mode C signals to calculate RAs based on observations of the target aircraft"s manoeuvres. </li><li>The time taken for TCAS to <strong>detect</strong> a risk of collision, <strong>calculate</strong> an avoidance manoeuvre and <strong>communicate</strong> this to the crew via an RA is <strong>less than 1 second</strong>.</li></ul>';
+                    
+                    $('.ec-ACAS-slide-3-acft-1').css({'margin-top': '-30px'});
+                    
+                    $('.ec-ACAS-slide-3-acft-1').pep({
+                        axis: 'x',
+                        shouldEase: false,
+                        constrainTo: 'parent',
+                        droppable:   '.ec-ACAS-slide-3-drop',
+                        drag: function(ev, obj){
+                            // overlapping both, just show red 
+                            if (this.activeDropRegions.length === 2 || (this.activeDropRegions.length === 1 && $('.pep-dpa').hasClass('ec-ACAS-slide-3-red'))) {
+                                $('.ec-ACAS-slide-3-red-inner').show();
+                                $('.ec-ACAS-slide-3-orange-inner').hide();
+                                $('.ec-ACAS-slide-3-feedback').html(slide3OrangeHTML+slide3RedHTML);
+                                $('.ec-ACAS-slide-3-red-inner-2').html('- Climb! Climb!');
+                                $('.ec-ACAS-slide-3-red-inner-2').css({'margin-top': '10px'});
+                                $('.ec-ACAS-slide-3-red-inner-2').show();
+                            }
+                            else if (this.activeDropRegions.length === 1) {
+                                $('.ec-ACAS-slide-3-orange-inner').show();
+                                $('.ec-ACAS-slide-3-red-inner').hide();
+                                $('.ec-ACAS-slide-3-feedback').html(slide3OrangeHTML);
+                                $('.ec-ACAS-slide-3-red-inner-2').html('- Traffic! Traffic!');
+                                $('.ec-ACAS-slide-3-red-inner-2').css({'margin-top': '90px'});
+                                $('.ec-ACAS-slide-3-red-inner-2').show();
+                            }
+                            else {
+                                $('.ec-ACAS-slide-3-orange-inner').hide();
+                                $('.ec-ACAS-slide-3-red-inner').hide();
+                                $('.ec-ACAS-slide-3-feedback').html('');
+                                $('.ec-ACAS-slide-3-red-inner-2').hide();
+                            }
+                        }
+                    });
+                    
+                    
+                    
+                    var pagesScript = ec_ACAS_Pages || {};
+                    
+                    var questionFeedback = 'The main feature of TCAS is that it functions according to <strong>time</strong> criteria and not distances.</p>                    <p>From several successive replies, TCAS calculates a time to reach the <strong>CPA</strong> (Closest Point of Approach) with the intruder by --?-- the slant range by the <strong>closure rate</strong>.</p>                    <p>This time value is the main parameter for issuing alerts and the type of alert depends on its value. If the aircraft transmit their altitude, TCAS also computes the time to reach co-altitude.</p>';
+                                        
+                    var t2p1Slide2Question = [
+                        {
+                            'question': 'Which do you think is likely to be the more useful criterion on which to assess the danger of a mid-air collision between two aircraft in conflict:',
+                            'choices':  [
+                                            {'text':'the distance between the aircraft?', 'correctness':'true', 'feedback':'<p>Correct! '+questionFeedback},
+                                            {'text':'the amount of time remaining before they are likely to collide?', 'correctness':'false', 'feedback':'<p>Wrong! ' + questionFeedback}
+                                        ]
+                        }
+                    ];
+                    
+                    EC_ACAS_Questions_Multi_Choice.createQuestion('.ec-acas-slide-2-questions', t2p1Slide2Question);
+                    
+                    var questionSlide4Feedback = 'Analysis of TCAS events to date has shown that pilots should always trust the logic. For the system to be most effective, they should always obey the instructions given in an RA. Even in the case where a TCAS \'climb\' RA is given to an aircraft operating at maximum certified flight level, a very slow rate of climb can be benefical because the other aircraft will have been issued a coordinated \'descend\' RA.<br>iii) Finally, in the extremely rare situation where a conflict develops involving more than two aircraft, TCAS can simultaneously process multiple threats and issue composite RAs.';
+                                        
+                    var t2p1Slide4Question = [
+                        {
+                            'question': 'ii) Imagine a scenario where an aircraft is flying at its maximum certified flight level . The pilot receives a climb RA. Should he:',
+                            'choices':  [
+                                            {'text':'attempt to climb as instructed?', 'correctness':'true', 'feedback':'Correct! '+questionSlide4Feedback},
+                                            {'text':'descend?', 'correctness':'false', 'feedback':'Wrong! ' + questionSlide4Feedback},
+                                            {'text':'ignore the RA and maintain his current flight level?', 'correctness':'false', 'feedback':'Wrong! ' + questionSlide4Feedback}
+                                        ]
+                        }
+                    ];
+                    
+                    EC_ACAS_Questions_Multi_Choice.createQuestion('.ec-acas-slide-4-questions', t2p1Slide4Question);
+                    
+                    $('.ec-acas-slide-1-flash-open').click(function (event) {
+                        event.preventDefault();
+                        $('.ec-acas-slide-1-flash').show();
+                    });
+                    
+                    $('.ec-acas-slide-1-flash-close').click(function (event) {
+                        event.preventDefault();
+                        $('.ec-acas-slide-1-flash').hide();
+                    });
+                    
+                    var currentSlide = 1;
+                    
+                    function showHideNextPrevious () {
+                        $('.ec-ACAS-slide-x').html(currentSlide);
+                        if (currentSlide > 1) {
+                            $('.ec-acase-previous').show();
+                        }
+                        else {
+                            $('.ec-acase-previous').hide();
+                        }
+                        
+                        if (currentSlide < 5) {
+                            $('.ec-acase-next').show();
+                        }
+                        else {
+                            $('.ec-acase-next').hide();
+                        }
+                    }
+                    
+                    $('.ec-acase-next').click(function (event) {
+                        event.preventDefault();
+                        currentSlide++;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
+                
+                    $('.ec-acase-previous').click(function (event) {
+                        event.preventDefault();
+                        currentSlide--;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
+                    
+                    
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1']);
+                    
+                    var hideAllTabs = function () {
+                        for (var i = 1; i < 4; i++) {
+                            $('.ec-ACAS-tab-acas-'+i).hide();
+                        }
+                    };
+                    
+                    module.showTab = function (_tabNumber) {
+                        hideAllTabs();
+                        $('.ec-ACAS-tab-acas-'+_tabNumber).show();
+                    };
+                    
+                    return module;
+                }($));
+            // };
+            
+            /**
+             * cbpFWTabs.js v1.0.0
+             * http://www.codrops.com
+             *
+             * Licensed under the MIT license.
+             * http://www.opensource.org/licenses/mit-license.php
+             * 
+             * Copyright 2014, Codrops
+             * http://www.codrops.com
+             */
+            ;( function( window ) {
+                
+                'use strict';
+
+                function extend( a, b ) {
+                    for( var key in b ) { 
+                        if( b.hasOwnProperty( key ) ) {
+                            a[key] = b[key];
+                        }
+                    }
+                    return a;
+                }
+
+                function CBPFWTabs( el, options ) {
+                    this.el = el;
+                    this.options = extend( {}, this.options );
+                    extend( this.options, options );
+                    this._init();
+                }
+
+                CBPFWTabs.prototype.options = {
+                    start : 0
+                };
+
+                CBPFWTabs.prototype._init = function() {
+                    // tabs elems
+                    this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
+                    // content items
+                    this.items = [].slice.call( this.el.querySelectorAll( '.content-wrap > section' ) );
+                    // current index
+                    this.current = -1;
+                    // show current content item
+                    this._show();
+                    // init events
+                    this._initEvents();
+                };
+
+                CBPFWTabs.prototype._initEvents = function() {
+                    var self = this;
+                    this.tabs.forEach( function( tab, idx ) {
+                        tab.addEventListener( 'click', function( ev ) {
+                            ev.preventDefault();
+                            self._show( idx );
+                        } );
+                    } );
+                };
+
+                CBPFWTabs.prototype._show = function( idx ) {
+                    if( this.current >= 0 ) {
+                        this.tabs[ this.current ].className = this.items[ this.current ].className = '';
+                    }
+                    // change current
+                    this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+                    this.tabs[ this.current ].className = 'tab-current';
+                    this.items[ this.current ].className = 'content-current';
+                };
+
+                // add to global namespace
+                window.CBPFWTabs = CBPFWTabs;
+
+            })( window );
+            
+            (function() {
+
+                [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+                    new CBPFWTabs( el );
+                });
+
+            })();
+        </script>
+
+</body>
+</html>

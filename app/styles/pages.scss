@@ -1,0 +1,94 @@
+@import "_normalize";
+
+html, body {
+    margin: 5px 0 0 5px;
+    padding: 0;
+    color: #036;
+    background: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #3499cc;
+}
+
+h1 {
+    line-height: 25px;
+}
+
+a {
+  font-weight: bold;
+  color: #3499cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+// Structure
+.ec-acas-container-left, .ec-acas-container-right {
+    float: left;
+    width: 100%;
+    
+}
+
+.ec-acas-container-left {
+    max-width: 445px;
+    margin-right: 20px;
+    // background: #f00;
+}
+
+.ec-acas-container-right {
+    max-width: 520px;
+    // background: #ff0;
+}
+
+.ec-acas-hide {
+    display: none;
+}
+
+.ec-acas-svg-hide {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+// End Structure
+
+.ec-ACAS-table {
+    
+    border-collapse: collapse;
+    
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    td, th {
+      vertical-align: top;
+      border: 1px solid #999;
+      padding: 0.5em;
+    }
+    
+    th {
+      text-align: left;
+    }
+    
+    th:nth-child(odd){ 
+        width: 55%;
+    }
+    
+    tr:nth-child(even){ 
+        background-color:#94a6b5;
+        color: #fff;
+    }
+    tr:nth-child(odd){ 
+        background-color:#ced7e7;
+    }
+    
+}

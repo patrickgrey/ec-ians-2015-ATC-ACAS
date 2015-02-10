@@ -1,0 +1,670 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATC-ACAS > topic 3 > page 2</title>
+        <meta name="description" content="ATC-ACAS review site">
+        <meta name="author" content="patrickGrey.co.uk">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css styles/pages.css --> 
+        <link rel="stylesheet" href="../styles/pages.css">
+        <!-- endbuild -->
+
+
+    </head>
+    <body>
+    
+        
+        <div class="ec-acas-container-left">
+            <h2>Operating Principles</h2>
+            <p>The <a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash1">collision 
+              avoidance logic</a>, or CAS (Collision Avoidance System) logic, is predictive. It is based on two basic concepts: the warning time  and the sensitivity level. </p>
+            <p>In effect, TCAS continually performs range and altitude 
+              tests  on other aircraft within the range of scanning in order to see if they are  likely to intrude, or are intruding, into the area of protection.</p>
+            <p>The <a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash2">sensitivity 
+              level</a> is a function of the altitude and defines  the level of protection. </p>
+            <p>The <a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash3">warning 
+              time</a> is mainly based on the time-to-go (not distance-to-go)  to the Closest Point of Approach (CPA). The warning time includes  an additional range protection in case of low closure rates.</p>
+            <p>The range of scanning can be up to 30 nm for Mode S transponders. 
+               For technical reasons the system is most effective in situations  where both aircraft are carrying <a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash4">Mode 
+              S transponders</a>,  but Mode A/C transponders can also be interrogated. If a transponder  does not supply altitude information, then RAs cannot be generated;  although the range and bearing information gathered by the system  in relation to such an intruder will allow it to generate TAs. </p>
+            <p>Click on the links above to look at these features in greater detail. </p>
+
+            
+        </div>
+        
+        <div class="ec-acas-container-right">
+            <div class="ec-ACAS-flash1">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/logic_and_tracking.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/logic_and_tracking.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            <div class="ec-ACAS-flash2 ec-acas-hide">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/sensitivity_level.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/sensitivity_level.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+            <div class="ec-ACAS-flash3 ec-acas-hide">
+                
+                <style>
+                    .ec-acase-next:after {
+                        position: absolute;
+                        content:'';
+                        width: 0; 
+                        height: 0; 
+                        border-top: 5px solid transparent;
+                        border-left: 10px solid #3c9dce;
+                        border-bottom: 5px solid transparent;
+                        margin-top: 4px;
+                        margin-left: 5px;
+                    }
+                    
+                    .ec-acase-previous:before {
+                        position: absolute;
+                        content:'';
+                        width: 0; 
+                        height: 0; 
+                        border-top: 5px solid transparent;
+                        border-right: 10px solid #3c9dce;
+                        border-bottom: 5px solid transparent;
+                        margin-top: 4px;
+                        margin-left: -15px;
+                    }
+                    
+                    .ec-ACAS-slide-1 {
+                        position: relative;
+                    }
+                    
+                    .ec-ACAS-slide-buttons p {
+                        text-align: center;
+                    }
+                    
+                    .ec-acas-t3p2-slide-1-img {
+                        width: 100%;
+                        max-width: 400px;
+                    }
+                    
+                    .ec-acas-t3p2-slide-4-img {
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                    
+                    .ec-acas-t3p2-slide-1-tau {
+                        width: auto;
+                        height: 10px;
+                        display: inline;
+                    }
+                    
+                    
+                    .ec-ACAS-slide-2-tau-table .ec-ACAS-table tr:nth-child(odd) {
+                        color: #ced7e7;
+                    }
+                    
+                    .ec-ACAS-slide-2-tau-table .ec-ACAS-table tr:nth-child(even) {
+                        color: #94a6b5;
+                    }
+                    
+                    .ec-ACAS-table tr:nth-child(odd).ec-acas-t3p2-slide-3-th {
+                        background-color: #eee;
+                        color: #036;
+                        font-weight: bold;
+                        cursor: default;
+                    }
+                    
+                    .ec-ACAS-table tr {
+                        cursor: pointer;
+                    }
+                    
+                    .ec-ACAS-slide-2-drag-container {
+                        overflow: hidden;
+                    }
+                    
+                    .ec-ACAS-slide-2-acft-img {
+                        position: absolute;
+                        top: 0;
+                        width: 50px;
+                        height: auto;
+                        padding-right: 20px;
+                        -webkit-transition: all 1s ease-in-out;
+                        -moz-transition: all 1s ease-in-out;
+                        -ms-transition: all 1s ease-in-out;
+                        -o-transition: all 1s ease-in-out;
+                        transition: all 1s ease-in-out;
+                    }
+                    
+                    .ec-ACAS-slide-2-drag-acft, .ec-ACAS-slide-2-tau-table, .ec-ACAS-slide-2-tau-nb {
+                        float: left;
+                        position: relative;
+                    }
+                    
+                    .ec-ACAS-slide-2-tau-nb {
+                        width: 40%;
+                        padding-left: 20px;
+                        color: #999;
+                    }
+                    
+                    .ec-ACAS-slide-2-drag-acft {
+                        display: block;
+                        width: 70px;
+                        height: 190px;
+                        /*background: #f00;*/
+                    }
+                    
+                    .ec-ACAS-table td, th {
+                      padding: 0.25em 0.5em;
+                    }
+                    
+                    .ec-ACAS-slide-2-questions div, .ec-ACAS-slide-2-questions select {
+                        display: inline-block;
+                    }
+                    
+                    .ec-ACAS-slide-2-questions span {
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                    }
+                    
+                    .ec-ACAS-slide-2-activity-3d {
+                        position: relative;
+                        width: 500px;
+                        height: 200px;
+                        background: url('images/ec-acas-t3p3-3dAcft.png');
+                        overflow: hidden;
+                    }
+                    /* inner cylinder */
+                    .ec-ACAS-t3p2-cylinder-container-1 {
+                        position: absolute;
+                        top: 40px;
+                        left: 45px;
+                        opacity: 0; /*0.5*/
+                        -webkit-transition: all 0.5s ease-in-out;
+                        -moz-transition: all 0.5s ease-in-out;
+                        -ms-transition: all 0.5s ease-in-out;
+                        -o-transition: all 0.5s ease-in-out;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-top-1, .ec-ACAS-t3p2-cylinder-bottom-1, .ec-ACAS-t3p2-cylinder-middle-1 {
+                        position: absolute;
+                        width: 330px;
+                        height: 40px;
+                        background: red;
+                        border: 1px solid red;
+                        -webkit-transition: all 0.5s ease-in-out;
+                        -moz-transition: all 0.5s ease-in-out;
+                        -ms-transition: all 0.5s ease-in-out;
+                        -o-transition: all 0.5s ease-in-out;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-top-1 {
+                        border: 1px solid white;
+                        border-radius: 50%;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-bottom-1 {
+                        top: 50px;
+                        border-radius: 50%;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-middle-1 {
+                        position: absolute;
+                        top: 20px; /* Half cylinder height */
+                        height: 50px;
+                    }
+                    
+                    /* outer cylinder */
+                    .ec-ACAS-t3p2-cylinder-container-2 {
+                        position: absolute;
+                        top: 35px;
+                        left: -30px;
+                        opacity: 0;/*0.3*/
+                        transform:  scale(1.5, 1.2);
+                        -webkit-transition: all 0.5s ease-in-out;
+                        -moz-transition: all 0.5s ease-in-out;
+                        -ms-transition: all 0.5s ease-in-out;
+                        -o-transition: all 0.5s ease-in-out;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-top-2, .ec-ACAS-t3p2-cylinder-bottom-2, .ec-ACAS-t3p2-cylinder-middle-2 {
+                        position: absolute;
+                        width: 314px;
+                        height: 40px;
+                        background: orange;
+                        border: 1px solid orange;
+                        -webkit-transition: all 0.5s ease-in-out;
+                        -moz-transition: all 0.5s ease-in-out;
+                        -ms-transition: all 0.5s ease-in-out;
+                        -o-transition: all 0.5s ease-in-out;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-top-2 {
+                        border: 1px solid red;
+                        border-radius: 50%;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-bottom-2 {
+                        top: 50px;
+                        border-radius: 50%;
+                    }
+                    
+                    .ec-ACAS-t3p2-cylinder-middle-2 {
+                        position: absolute;
+                        top: 20px; /* Half cylinder height */
+                        height: 50px;
+                    }
+                    
+                    
+                </style>
+                
+                <h2>Warning times - the tau concept</h2>
+                
+                <div class="ec-ACAS-slide-buttons">
+                    <p><strong><a href="#" class="ec-acase-previous ec-acas-hide">Previous</a> <span class="ec-ACAS-slide-x">1</span> of 4 <a href="#" class="ec-acase-next">Next</a></strong></p>
+                </div>
+                
+                <div class="ec-ACAS-slide-1">
+                    <h3>Tau</h3>
+                    <p>Warning times, which are a function of the sensitivity level, are <strong>threshold</strong> values which define the boundaries of the protected airspace around an aircraft and enable TCAS to deliver alerts at the appropriate moment. The CAS logic <strong>compares</strong> the <strong>time-to-go to CPA</strong> to the <strong>warning times</strong> corresponding to the current SL in order to classify an aircraft as an intruder or a threat.</p>
+                    <p>Warning times are known as 'tau' values, named after the Greek letter for t - <img src="images/ec-acas-t3p2-tau-character.png" class="ec-acas-t3p2-slide-1-tau" alt="tau"> ( = time).</p>
+                    <img src="images/ec-acas-t3p2-tau.png" class="ec-acas-t3p2-slide-1-img" alt="">
+                    <p>Thus an aircraft under surveillance may be on a course which will lead to it satisfy the range and altitude criteria for an alert, but only when the time-to-go to CPA falls below the tau thresholds, and the aircraft becomes classified by TCAS as an intruder, will a TA or an RA be issued.</p>
+                    <p>The times are adjusted according to the sensitivity level to avoid excessive false alarm rates.</p>
+                </div>
+                
+                <div class="ec-ACAS-slide-2 ec-acas-hide">
+                    <h3>Table of tau values</h3>
+                    <div class="ec-ACAS-slide-2-drag-container">
+                        <div class="ec-ACAS-slide-2-drag-acft">
+                            <img src="images/topic2Page2Slide3Acft.png" class="ec-ACAS-slide-2-acft-img" alt="">
+                            <p></p>
+                        </div>
+                        <div class="ec-ACAS-slide-2-tau-table">
+                            <table class="ec-ACAS-table">
+                              <!-- <tr>
+                                <th colspan="4">Tau Values</th>
+                              </tr> -->
+
+                              <tr class="ec-acas-t3p2-slide-3-th">
+                                <td>Altitude</td>
+                                <td>SL</td>
+                                <td>TA</td>
+                                <td>RA</td>
+                              </tr>
+                              <tr data-acft="0">
+                                <td>&gt; FL200</td>
+                                <td>7</td>
+                                <td>48</td>
+                                <td>35</td>
+                              </tr>
+                              <tr data-acft="1">
+                                <td>FL100 - FL200</td>
+                                <td>6</td>
+                                <td>45</td>
+                                <td>30</td>
+                              </tr>
+                              <tr data-acft="2">
+                                <td>FL050 - FL100</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>25</td>
+                              </tr>
+                              <tr data-acft="3">
+                                <td>2350 ft - FL050</td>
+                                <td>4</td>
+                                <td>30</td>
+                                <td>20</td>
+                              </tr>
+                              <tr data-acft="4">
+                                <td>1000 ft - 2350 ft</td>
+                                <td>3</td>
+                                <td>25</td>
+                                <td>15</td>
+                              </tr>
+                              <tr data-acft="5">
+                                <td>0 - 1000 ft</td>
+                                <td>2</td>
+                                <td>20</td>
+                                <td>none</td>
+                              </tr>
+                            </table>
+                        </div>
+                        <div class="ec-ACAS-slide-2-tau-nb">
+                            <p>N.B. The tau values shown are only valid for the general case. The RA-related tau values can be reduced for some geometric configurations, such as 1000 ft level off, so as to reduce the number of unecessary alerts.</p>
+                        </div>
+                    </div>
+                    <p>Select the rows above to reveal the tau values. Once you have done that, try the questions.</p>
+                    <a class="ec-ACAS-slide-2-questions-show" href="#">Select here to try the questions.</a>
+                    <a class="ec-ACAS-slide-2-questions-hide ec-acas-hide" href="#">Select here to return to the activity.</a>
+                    
+                    <div class="ec-ACAS-slide-2-activity-3d">
+                    
+                        <div class="ec-ACAS-t3p2-cylinder-container-1">
+                            <div class="ec-ACAS-t3p2-cylinder-middle-1"></div>
+                            <div class="ec-ACAS-t3p2-cylinder-bottom-1"></div>
+                            <div class="ec-ACAS-t3p2-cylinder-top-1"></div>
+                        </div>
+                        
+                        <div class="ec-ACAS-t3p2-cylinder-container-2">
+                            <div class="ec-ACAS-t3p2-cylinder-middle-2"></div>
+                            <div class="ec-ACAS-t3p2-cylinder-bottom-2"></div>
+                            <div class="ec-ACAS-t3p2-cylinder-top-2"></div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="ec-ACAS-slide-2-questions ec-acas-hide">
+                        <ol>
+                            <li>Warning times are 
+                                <div>
+                                    <select name="ec-ACAS-slide-2-question-1" id="ec-ACAS-slide-2-question-1" class="ec-ACAS-slide-2-question-1">
+                                        <option value="-1">?</option>
+                                        <option value="1">greater</option>
+                                        <option value="0">smaller</option>
+                                    </select>
+                                    <span></span>
+                                </div>
+                                 at higher sensitivity levels because aircraft are less manoeuvrable at higher altitudes and speeds.</li>
+                            <li>If two aircraft are in conflict at FL160, a TA will be issued 
+                                <div>
+                                    <select name="ec-ACAS-slide-2-question-1" id="ec-ACAS-slide-2-question-1" class="ec-ACAS-slide-2-question-1">
+                                        <option value="-1">?</option>
+                                        <option value="1">45</option>
+                                        <option value="0">90</option>
+                                    </select>
+                                    <span></span>
+                                </div>
+                                seconds before CPA and an RA 
+                                <div>
+                                    <select name="ec-ACAS-slide-2-question-2" id="ec-ACAS-slide-2-question-2" class="ec-ACAS-slide-2-question-2">
+                                        <option value="-1">?</option>
+                                        <option value="1">30</option>
+                                        <option value="0">60</option>
+                                    </select>
+                                    <span></span>
+                                </div> 
+                                seconds before.</li>
+                            <li>RAs are not issued when an aircraft is within 
+                                <div>
+                                    <select name="ec-ACAS-slide-2-question-3" id="ec-ACAS-slide-2-question-3" class="ec-ACAS-slide-2-question-3">
+                                        <option value="-1">?</option>
+                                        <option value="1">1,000 ft</option>
+                                        <option value="0">2,350 ft</option>
+                                    </select>
+                                    <span></span>
+                                </div>
+                                 of the ground.</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="ec-ACAS-slide-3 ec-acas-hide">
+                    <h3>DMOD - Distance Modification (i)</h3>
+                    <p>In cases where the closure rate is very low, TAs and RAs will be triggered according to range criteria, even though time to CPA exceeds the stipulated values for such events. This <strong>D</strong>istance <strong>MOD</strong>ification provides extra protection. Like tau values, DMOD values are a function of the sensitivity level and vary according to aircraft altitude.</p>
+                    <p>The DMOD values for the various sensitivity levels are shown below:</p>
+                    <table class="ec-ACAS-table">
+                      <tr>
+                        <th colspan="4">DMON Values (NM)</th>
+                      </tr>
+                      <tr class="ec-acas-t3p2-slide-3-th">
+                        <td>Altitude</td>
+                        <td>SL</td>
+                        <td>TA</td>
+                        <td>RA</td>
+                      </tr>
+                      <tr>
+                        <td>&gt; FL200</td>
+                        <td>7</td>
+                        <td>1.30</td>
+                        <td>1.10</td>
+                      </tr>
+                      <tr>
+                        <td>FL100 - FL200</td>
+                        <td>6</td>
+                        <td>1.00</td>
+                        <td>0.80</td>
+                      </tr>
+                      <tr>
+                        <td>FL050 - FL100</td>
+                        <td>5</td>
+                        <td>0.75</td>
+                        <td>0.55</td>
+                      </tr>
+                      <tr>
+                        <td>2350 ft - FL050</td>
+                        <td>4</td>
+                        <td>0.48</td>
+                        <td>0.35</td>
+                      </tr>
+                      <tr>
+                        <td>1000 ft - 2350 ft</td>
+                        <td>3</td>
+                        <td>0.33</td>
+                        <td>0.20</td>
+                      </tr>
+                      <tr>
+                        <td>0 - 1000 ft</td>
+                        <td>2</td>
+                        <td>0.30</td>
+                        <td>none</td>
+                      </tr>
+                    </table>
+                    
+                </div>
+                
+                <div class="ec-ACAS-slide-4 ec-acas-hide">
+                    <h3>DMOD (ii)</h3>
+                    <img src="images/ec-acas-t3p2-slide-4.gif" class="ec-acas-t3p2-slide-4-img" alt="">
+                    <p>Two aircraft are converging on the same level at 5 degrees at FL330. At 240 seconds they will be approximately 30 NM from the CPA, however, they will only be separated by approximately 2.5 NM horizontally, and they will have actually lost separation. From that point onwards it is only a short matter of time before a TA or RA will be triggered.</p>
+                    <p>Frequently, the STCA will be triggered before this point, and before such a TA or RA is issued. If the aircraft continue on their current headings, a TA will be triggered when the horizontal distance between the aircraft is reduced to 1.3 NM and a RA at 1.1 NM.</p>
+                </div>
+                
+                <!-- <object type="application/x-shockwave-flash" 
+                    data="flash/tau.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/tau.swf" />
+                    <param name="quality" value="high"/>
+                </object> -->
+            </div>
+            <div class="ec-ACAS-flash4 ec-acas-hide">
+                <object type="application/x-shockwave-flash" 
+                    data="flash/transponder_types.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/transponder_types.swf" />
+                    <param name="quality" value="high"/>
+                </object>
+            </div>
+        </div>
+
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/pages.js"></script>
+        <script src="../scripts/showHideFlash.js"></script>
+        <script src="../scripts/EC_ACAS_Questions_Multi_Choice.js"></script>
+        <script src="../scripts/jquery.pep.min.js"></script>
+        
+        <script type="text/javascript">
+            // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
+            var ec_ACAS_Pages_inner = (function($)
+                {
+                    'use strict';
+    
+                    var module = {};
+                    
+                    var pagesScript = ec_ACAS_Pages || {};
+                    
+                    var hasClickedTable = false;
+                    
+                    var cylidenrModel = [   //330, 314 (scaled 1.5)
+                                            {'width1': 330, 'width2': 314},
+                                            {'width1': 282, 'width2': 290},
+                                            {'width1': 234, 'width2': 258},
+                                            {'width1': 185, 'width2': 194},
+                                            {'width1': 137, 'width2': 162},
+                                            {'width1': 0, 'width2': 130}
+                                        ];
+                    
+                    /**
+                     * Set cylinder styles based on row ID.
+                     * @param  {string} rowID current row clicked so we know which values to set.
+                     */
+                    var changeCylinders = function (rowID) {
+                        
+                        var width1 = cylidenrModel[rowID].width1;
+                        var width2 = cylidenrModel[rowID].width2;
+                        
+                        var left1 = 45+((330 - width1)/2);
+                        var left2 = -30+(((314 - width2)/2)*1.5);
+                        
+                        $('.ec-ACAS-t3p2-cylinder-top-1, .ec-ACAS-t3p2-cylinder-bottom-1, .ec-ACAS-t3p2-cylinder-middle-1').css({
+                            'width': width1+'px'
+                        });
+                        $('.ec-ACAS-t3p2-cylinder-top-1, .ec-ACAS-t3p2-cylinder-bottom-1, .ec-ACAS-t3p2-cylinder-middle-1').css({
+                            'opacity': (width1 === 0) ? 0 : 1
+                        });
+                        
+                        $('.ec-ACAS-t3p2-cylinder-container-1').css({
+                            'left': left1+'px'
+                        });
+                        
+                        $('.ec-ACAS-t3p2-cylinder-top-2, .ec-ACAS-t3p2-cylinder-bottom-2, .ec-ACAS-t3p2-cylinder-middle-2').css({
+                            'width': width2+'px'
+                        });
+                        $('.ec-ACAS-t3p2-cylinder-container-2').css({
+                            'left': left2+'px'
+                        });
+                    };
+                    
+                    /**
+                     * Check for first click and call changeCylinders with delay to allow acft position to change.
+                     * @param  {string} rowID current row clicked so we know which values to set.
+                     */
+                    var tableClicked = function (rowID) {
+                        if (!hasClickedTable) {
+                            hasClickedTable = true;
+                            firstClick(rowID);
+                        }
+                        else {
+                            setTimeout(function(){changeCylinders(rowID);}, 1000);
+                        }
+                    };
+                    
+                    /**
+                     * FadeIn cylinders and calling tableClicked.
+                     * @param  {string} rowID passed back to tableClicked.
+                     */
+                    var firstClick = function (rowID) {
+                        $('.ec-ACAS-t3p2-cylinder-container-1').css({'opacity':'0.5'});
+                        $('.ec-ACAS-t3p2-cylinder-container-2').css({'opacity':'0.3'});
+                        // setTimeout(function(){tableClicked(rowID);}, 500);
+                        tableClicked(rowID);
+                    };
+                    
+                    // tableClicked(5);
+                    
+                    $('.ec-ACAS-slide-2-tau-table tr:nth-child(odd)').click(function(){
+                        if (!$(this).hasClass('ec-acas-t3p2-slide-3-th')) {
+                            $(this).css({'color': '#036'});
+                            var currentAcft = parseInt($(this).attr('data-acft'));
+                            var topValue = acftVertical[currentAcft];
+                            $('.ec-ACAS-slide-2-acft-img').css({'top': topValue});
+                            tableClicked(currentAcft);
+                        }
+                    });
+                    
+                    $('.ec-ACAS-slide-2-tau-table tr:nth-child(even)').click(function(){
+                        $(this).css({'color': '#fff'});
+                        var currentAcft = parseInt($(this).attr('data-acft'));
+                        var topValue = acftVertical[currentAcft];
+                        $('.ec-ACAS-slide-2-acft-img').css({'top': topValue});
+                        tableClicked(currentAcft);
+                    });
+                    
+                    
+                    $('.ec-ACAS-slide-2-questions-show').click(function(){
+                        $(this).hide();
+                        $('.ec-ACAS-slide-2-activity-3d').hide();
+                        $('.ec-ACAS-slide-2-questions-hide').show();
+                        $('.ec-ACAS-slide-2-questions').show();
+                    });
+                    
+                    $('.ec-ACAS-slide-2-questions-hide').click(function(){
+                        $(this).hide();
+                        $('.ec-ACAS-slide-2-activity-3d').show();
+                        $('.ec-ACAS-slide-2-questions-show').show();
+                        $('.ec-ACAS-slide-2-questions').hide();
+                    });
+                    
+                    var acftVertical = ['28px', '55px', '82px', '109px', '136px', '163px'];
+                    
+                    $('.ec-ACAS-slide-2-questions select').change(function (e) {
+                        
+                            var feedback = $(this).siblings('span');
+                            if ($(this).val() != '-1') {
+                                var background = $(this).val() === '1' ? 'tick' : 'cross';
+                                feedback.css({'background':'url("images/'+background+'.png") no-repeat', 'background-size':'15px'});
+                            }
+                            else {
+                                feedback.css({'background':'none'});
+                            }
+                    });
+                    
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);              
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4']);              
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash4', ['ec-ACAS-flash4'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash3']);              
+                
+                    var currentSlide = 1;
+                    
+                    function showHideNextPrevious () {
+                        $('.ec-ACAS-slide-x').html(currentSlide);
+                        if (currentSlide > 1) {
+                            $('.ec-acase-previous').show();
+                        }
+                        else {
+                            $('.ec-acase-previous').hide();
+                        }
+                        
+                        if (currentSlide < 4) {
+                            $('.ec-acase-next').show();
+                        }
+                        else {
+                            $('.ec-acase-next').hide();
+                        }
+                    }
+                    
+                    $('.ec-acase-next').click(function (event) {
+                        event.preventDefault();
+                        currentSlide++;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
+                
+                    $('.ec-acase-previous').click(function (event) {
+                        event.preventDefault();
+                        currentSlide--;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
+                    
+                    
+
+                    
+                    return module;
+                }($));
+        </script>
+
+</body>
+</html>

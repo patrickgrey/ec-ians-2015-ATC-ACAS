@@ -1,0 +1,167 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>E-learning template site</title>
+        <meta name="description" content="NMO-ATFCM-INTRO-E review site">
+        <meta name="author" content="patrickGrey.co.uk">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+
+        <script>
+
+            var moduleModel = (function () {
+
+                'use strict';
+
+                // This model is used to build and work the navigation.
+                // IDs format must follow 'tn' for topics and 'pn' for pages.
+                var topicsAndPages = {
+
+                    'topic1':   {
+                                'title': 'Introduction',
+                                'pages':    {
+                                                'p1': {'pageTitle':'Course Objectives', 'pageURL':'ACASTopic1Page1'}
+                                                
+                                            }
+                            },
+                    'topic2':   {
+                                'title': 'ACAS Overview',
+                                'pages':    {
+                                                'p1': {'pageTitle':'Course Objectives', 'pageURL':'ACASTopic2Page1'},
+                                                'p2': {'pageTitle':'ACAS and TCAS - Concept and Implementation', 'pageURL':'ACASTopic2Page2'},
+                                                'p3': {'pageTitle':'Responsibilities for ATC and Pilots', 'pageURL':'ACASTopic2Page3'},
+                                                'p4': {'pageTitle':'Evaluation of Operational Use', 'pageURL':'ACASTopic2Page4'},
+                                                'p5': {'pageTitle':'Summary and Conclusion', 'pageURL':'ACASTopic2Page5'}
+                                                
+                                            }
+                            },
+                    'topic3':   {
+                                'title': 'TCAS system and logic',
+                                'pages':    {
+                                                'p1': {'pageTitle':'TCAS Operating Principles and Advisories', 'pageURL':'ACASTopic3Page1'},
+                                                'p2': {'pageTitle':'Operating Principles', 'pageURL':'ACASTopic3Page2'},
+                                                'p3': {'pageTitle':'Threat detection and the issuing of advisories', 'pageURL':'ACASTopic3Page3'},
+                                                'p4': {'pageTitle':'TCAS-TCAS coordination', 'pageURL':'ACASTopic3Page4'},
+                                                'p5': {'pageTitle':'TCAS and RVSM', 'pageURL':'ACASTopic3Page5'},
+                                                'p6': {'pageTitle':'Summary and Conclusion', 'pageURL':'ACASTopic3Page6'}
+                                                
+                                            }
+                            },
+                    'topic4':   {
+                                'title': 'TCAS cockpit display',
+                                'pages':    {
+                                                'p1': {'pageTitle':'Cockpit Presentation', 'pageURL':'ACASTopic4Page1'}
+                                                
+                                            }
+                            },
+                    'topic5':   {
+                                'title': 'TCAS in operation',
+                                'pages':    {
+                                                'p1': {'pageTitle':'Summing up', 'pageURL':'ACASTopic5Page1'},
+                                                'p2': {'pageTitle':'Example Incidents', 'pageURL':'ACASTopic5Page2'}
+                                                
+                                            }
+                            }
+                };
+
+                return {
+                    topicsAndPages: topicsAndPages,
+                    currentPage: {'topic': 'topic1', 'page': 'p1'}
+                };
+            }());
+
+
+        </script>
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex5-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">Topics:</span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex5-collapse">
+          <ul class="nav navbar-nav nav-topics-ul">
+            <li class="active"><a href="pleaseEnableJavaScript.html">Loading...</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+        <span class="navbar-selection-name navbar-topic-name">Topic Name</span>
+      </nav>
+
+
+        <div class="iFrameContainer">
+
+
+            <iframe id="iframeContent" src="loading.html" frameborder="0" width="100%" height="600px"></iframe>
+
+
+        </div>
+
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex6-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Pages:</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex6-collapse">
+              <ul class="nav navbar-nav nav-pages-ul">
+                <li class="active"><a href="pleaseEnableJavaScript.html">Loading...</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+            <span class="navbar-selection-name navbar-page-name">Page Name</span>
+        </nav>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- Adding a comment to see if it shows up in git -->
+</body>
+</html>
