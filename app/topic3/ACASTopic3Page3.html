@@ -48,11 +48,31 @@
         </div>
         
         <div class="ec-acas-container-right">
-            <div class="ec-ACAS-flash1 ec-acas-hide">
+            <div class="ec-ACAS-flash1">
                 
                 <style>
                     .ec-ACAS-slide-buttons p {
                         text-align: center;
+                    }
+                    
+                    .ec-ACAS-slide-1-1-radio {
+                        margin-left: 1em;
+                    }
+                    
+                    .ec-ACAS-slide-1-1-label {
+                        font-size: 1.5em;
+                    }
+                    
+                    .ec-ACAS-slide-1-1-feedback {
+                        margin-left: 2em;
+                    }
+                    
+                    .ec-ACAS-slide-1-1-activity {
+                        float: right;
+                        width: 50%;
+                        height: 200px;
+                        margin: 0 0 1em 1em;
+                        background: #f00;
                     }
                 </style>
                 
@@ -60,9 +80,13 @@
                     <p><strong><a href="#" class="ec-acase-previous ec-acas-hide">Previous</a> <span class="ec-ACAS-slide-x">1</span> of 4 <a href="#" class="ec-acase-next">Next</a></strong></p>
                 </div>
                 
-                <div class="ec-ACAS-slide-1 ec-acas-hide">
+                <div class="ec-ACAS-slide-1">
                     <h3>Horizontal thresholds</h3>
+                    <div class="ec-ACAS-slide-1-1-activity"></div>
                     <p>Do you think that the 'protected volume' which TCAS maintains around own aircraft is of a fixed size?</p>
+                        <input class="ec-ACAS-slide-1-1-radio" type="radio" name="radio" id="ec-ACAS-slide-1-1-yes"> <label class="ec-ACAS-slide-1-1-label" for="ec-ACAS-slide-1-1-yes">Yes</label>
+                        <input class="ec-ACAS-slide-1-1-radio" type="radio" name="radio" id="ec-ACAS-slide-1-1-no"> <label class="ec-ACAS-slide-1-1-label" for="ec-ACAS-slide-1-1-no">No</label>
+                        <span class="ec-ACAS-slide-1-1-label ec-ACAS-slide-1-1-feedback">Correct!</span>
                     <p>Horizontal alert thresholds are based on the time-to-go to the CPA. The actual radius of any 'protected volume' depends on the speeds and headings of the aircraft involved.</p>
                     <p>For any given intruder, the theoretical protected volume around the TCAS-equipped aircraft is generally a truncated sphere with a radius equal to the closure rate multiplied by the tau.</p>
                     <p>In reality this means that there is no single fixed 'protected volume' around own aircraft, but rather TCAS calulates and maintains a separate 'protected volume' around own airaaft in relation to each aircraft under surveillance.</p>
@@ -103,7 +127,7 @@
                     <param name="quality" value="high"/>
                 </object>
             </div>
-            <div class="ec-ACAS-flash3">
+            <div class="ec-ACAS-flash3 ec-acas-hide">
                 <style>
                     a {cursor: pointer;}
                     
