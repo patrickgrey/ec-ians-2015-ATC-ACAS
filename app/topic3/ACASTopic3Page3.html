@@ -88,12 +88,12 @@
                     <p>Generally, for a conflict geometry with a low vertical closure rate, the vertical triggering thresholds for RAs range from 600 to 800 ft, depending on the altitude of own aircraft.</p>
                 </div>
                 
-                <object type="application/x-shockwave-flash" 
+                <!-- <object type="application/x-shockwave-flash" 
                     data="flash/threat_detection.swf" 
                     width="480" height="540">
                     <param name="movie" value="flash/threat_detection.swf" />
                     <param name="quality" value="high"/>
-                </object>
+                </object> -->
             </div>
             <div class="ec-ACAS-flash2 ec-acas-hide">
                 <object type="application/x-shockwave-flash" 
@@ -158,11 +158,11 @@
                     <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-1 ec-acas-svg-hide">
                         <object data="svg/ec-ACAS-t3p3a1_v3.svg" id="ec_ACAS_t3p3a3_1" type="image/svg+xml" width="500" height="250" ></object>
                     </div>
-                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-2">
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-2 ec-acas-svg-hide">
                         <object data="svg/ec-ACAS-t3p3a3_2.svg" id="ec_ACAS_t3p3a3_2" type="image/svg+xml" width="500" height="250" ></object>
                     </div>
-                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-3 ec-acas-svg-hide">
-                        <p>Activity 3</p>
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-3">
+                        <object data="svg/ec-ACAS-t3p3a3_3.svg" id="ec_ACAS_t3p3a3_3" type="image/svg+xml" width="500" height="250" ></object>
                     </div>
                     <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-4 ec-acas-svg-hide">
                         <p>The CAS logic may inhibit a 'Climb' or 'Increase climb' advisory in some cases due to aircraft climb performance limitations at high altitude, or in the landing configuration. These limitations are known by the logic, which will then choose a viable alternative RA. The limitations are set beforehand by the certification authorities according to the type of aircraft.</p>
@@ -183,6 +183,7 @@
         <script src="../scripts/ecSvgUtilities.js"></script>
         <script src="../scripts/ec_ACAS_t3p3a3_1.js"></script>
         <script src="../scripts/ec_ACAS_t3p3a3_2.js"></script>
+        <script src="../scripts/ec_ACAS_t3p3a3_3.js"></script>
         
         <script type="text/javascript">
             // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
@@ -206,6 +207,12 @@
                         {svgDocID: 'ec_ACAS_t3p3a3_2'}
                     );
                     
+                    ecSvgLoadListener.addSVGListener(
+                        document.getElementById('ec_ACAS_t3p3a3_3'), 
+                        ec_ACAS_t3p3a3_3.init,
+                        {svgDocID: 'ec_ACAS_t3p3a3_3'}
+                    );
+                    
                     function hideAllSVGActivities () {
                         // console.log($('.ec-ACAS-t3p3-activities').width());
                         $('.ec-ACAS-t3p3-activities').css({'opacity': 0});
@@ -217,17 +224,23 @@
                     
                     // Show the activities container if any of the links are selected.
                     // Opacity is used as hiding with display none breaks animation!
-                    $('#ec-ACAS-show-ra-1, #ec-ACAS-show-ra-2, #ec-ACAS-show-ra-3, #ec-ACAS-show-ra-4').click(function (event) {
+                    /*$('#ec-ACAS-show-ra-1, #ec-ACAS-show-ra-2, #ec-ACAS-show-ra-3, #ec-ACAS-show-ra-4').click(function (event) {
                         event.preventDefault();
                         hideAllSVGActivities();
                         $('.ec-ACAS-t3p3-activities').css('opacity', 1);
-                    });
+                    });*/
                     
                     
-                    function showSVGActivity (classString, timeline) {
+                    function showSVGActivity (classString, timeline, forceReset) {
                         if (event) {event.preventDefault();}
                         hideAllSVGActivities();
-                        if(timeline) {timeline.play(0);}
+                        if(forceReset) {
+                            forceReset();
+                        }
+                        if(timeline) {
+                            
+                            timeline.play(0);
+                        }
                         $(classString).css({'opacity': 1, 'z-index': 2});
                         $('.ec-ACAS-t3p3-activities').css('opacity', 1);
                     }
@@ -238,11 +251,11 @@
                     });
                     
                     $('#ec-ACAS-show-ra-2').click(function (event) {
-                        showSVGActivity ('.ec-ACAS-t3p3-activity-2', ec_ACAS_t3p3a3_2.getTimeline());
+                        showSVGActivity ('.ec-ACAS-t3p3-activity-2', ec_ACAS_t3p3a3_2.getTimeline(), ec_ACAS_t3p3a3_2.forceReset);
                     });
                     
                     $('#ec-ACAS-show-ra-3').click(function (event) {
-                        showSVGActivity ('.ec-ACAS-t3p3-activity-3', null);
+                        showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3.getTimeline(), ec_ACAS_t3p3a3_3.forceReset);
                     });
                     
                     $('#ec-ACAS-show-ra-4').click(function (event) {
@@ -252,13 +265,15 @@
                     // Close container
                     $('.ec-ACAS-t3p3-activities-close').click(function (event) {
                         event.preventDefault();
-                        ec_ACAS_t3p3a3_1.getTimeline().pause(0);
+                        // ec_ACAS_t3p3a3_1.getTimeline().pause(0);
                         $('.ec-ACAS-t3p3-activities').css('opacity', 0);
                         hideAllSVGActivities();
                     });
                     
                     hideAllSVGActivities();
-                    showSVGActivity ('.ec-ACAS-t3p3-activity-2', ec_ACAS_t3p3a3_2.getTimeline());
+                    showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3.getTimeline());
+                    
+                    
                     // Show specific animation related to link and hide others for third main link.
                     /*ec_ACAS_ShowHideFlash.init('ec-ACAS-show-ra-1', ['ec-ACAS-t3p3-activity-1'], ['ec-ACAS-t3p3-activity-2', 'ec-ACAS-t3p3-activity-3', 'ec-ACAS-t3p3-activity-4']);
                     ec_ACAS_ShowHideFlash.init('ec-ACAS-show-ra-2', ['ec-ACAS-t3p3-activity-2'], ['ec-ACAS-t3p3-activity-1', 'ec-ACAS-t3p3-activity-3', 'ec-ACAS-t3p3-activity-4']);

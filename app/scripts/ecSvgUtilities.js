@@ -22,8 +22,10 @@
      * in case more checking is required later or other file types introduced.
      * @param  {[string]} audioName [name of media file to play]
      */
-    module.callAudio = function (audioName, all) {
-        all[audioName].play();
+    module.callAudio = function (audioName) {
+        // all[audioName].play();
+        var audio = document.getElementById(audioName);
+        audio.play();
     };
     
     /**

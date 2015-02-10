@@ -41,15 +41,17 @@
         // to make referencing easier, removing the need to declare lots of
         // variables for each element.
         all = all || ecSvgUtilities.getSVGElementsWithID(document.getElementById(svgLoaderArgsObject.svgDocID).getSVGDocument());
+        // console.log(all);
         // An array of elements that will be hidden at the start of the animation.
         hideOnStartArray = [
             all.text3, all.text4, all.text5, all.text6, all.text6_1_,
             all.buttonReplay, all.buttonNext, 
-            all.arrow1, all.arrow2, all.arrow3_1_, all.arrow4_1_, all.arrow5, all.arrow6
+            all.arrow2, all.arrow4_1_, all.arrow5, all.arrow6
+            // all.arrow1, all.arrow3_1_, 
         ];
         // Style elements as buttons.
         setButtonArray = [
-            all.buttonReplay, all.buttonNext, all.buttonStart
+            all.buttonReplay, all.buttonNext
         ];
         
         ecSvgUtilities.createAudio(audioArray, audioPath, all);
@@ -60,7 +62,7 @@
         timeline0.play(0);
         // Use the line below to jump forward in the timeline
         // to speed up development
-        // timeline0.seek('step2+=4').resume();
+        // timeline0.seek('step3+=0.5').resume();
     };
     
     /**
@@ -71,7 +73,15 @@
         return timeline0;
     };
     
-    
+    /**
+     * For some reason, the bezier wouldn't reset so I need to call this to
+     * hard reset the animation.
+     */
+    module.forceReset = function () {
+        if(all){
+            TweenMax.set(all.acft1, {x:0, y:0, rotation: 0});
+        }
+    };
     
     
     
@@ -87,31 +97,59 @@
         timeline0
         .to(all.scene1, dt, {delay:0.3, autoAlpha:1})
         .to(all.text5, dt, {delay:dt, autoAlpha:1})
+        .set(all.acft1, {x:0, y:0})
         .to(all.buttonNext, dt, {autoAlpha:1})
         .addPause('step1') // Have to add hide buttons after this as the timeline was forcing the buttons to show again somehow!!
         .set(setButtonArray, {delay:0.1, autoAlpha:0}) // slight delay is required or this tween is triggered, even after the addPause.
         .to(all.text3, dt, {delay:1, autoAlpha:1})
-        .call( ecSvgUtilities.callAudio, ['Descend', all])
-        .to(all.acft1, dt, {delay:dt, x: '+=40', ease:Linear.easeNone})
-        .to(all.acft1, dt*3, {x: '+=100',  y: '+=43', rotation: "+=23", ease:Linear.easeNone})
-        .to(all.acft2, dt*4, {delay:-dt*4, x: '-=60',  y: '+=21', ease:Linear.easeNone})
-        /*.to(all.text6, dt, {delay:1, autoAlpha:1})
-        .to(all.buttonNext, dt, {delay:1, autoAlpha:1})
+        .call( ecSvgUtilities.callAudio, ['Descend'])
+        .to(all.acft2, dt*2, {x: '-=60',  y: '+=21', ease:Linear.easeNone})
+        .to(all.acft1, dt, {delay:-dt*2, x: 30, y: 0, ease:Linear.easeNone})
+        .to(all.acft1, dt, {delay:-dt, x: 60, y: 5, rotation: 10, ease:Linear.easeNone})
+        .to(all.arrow2, dt, { autoAlpha: 1})
+        .to(all.text6, dt, {autoAlpha:1})
+        .to(all.buttonNext, dt, {autoAlpha:1})
         .addPause('step2')
-        .timeScale(1)
+        .set(setButtonArray, {delay:0.1, autoAlpha:0})
+        .to(all.acft2, dt*2, {x: '-=60',  y: '+=31', rotation: "-=5", ease:Linear.easeNone})
+        .to(all.arrow4_1_, dt, {autoAlpha:1})
+        .to(all.text6_1_, dt, {delay:1, autoAlpha:1})
+        .to(all.buttonNext, dt, {autoAlpha:1})
+        .addPause('step3')
         .set(setButtonArray, {delay:0.1, autoAlpha:0})
         .to(all.text4, dt, {delay:1, autoAlpha:1})
-        .call( ecSvgUtilities.callAudio, ['audio0', all])
-        .to(all.acft1, dt*3, {delay:dt*2, x: '+=100',  y: '+=15', rotation: "-=23", ease:Linear.easeNone})
-        .to(all.acft2, dt*1, {delay:-dt*3,  y: '+=20', rotation: "+=19", ease:Linear.easeNone})
-        .to(all.acft2, dt*4, {delay:-dt*3, x: '-=150', ease:Linear.easeNone})
-        .to(all.arrow3, dt, {autoAlpha: 1})
-        .to(all.arrow4, dt, {autoAlpha: 1})
-        .call( ecSvgUtilities.callAudio, ['audio1', all])
-        .to(all.buttonReplay, dt, {delay:1, autoAlpha:1})*/
+        .call( ecSvgUtilities.callAudio, ['Increase_Descent'])
+        .to(all.acft1, 4, {
+            delay:3, 
+            bezier: {
+                type:'thru',
+                values:[{x:60,y:5},
+                       {x:139,y:26},
+                       {x:243,y:88},
+                       {x:289,y:92}],
+                autoRotate: true,
+                timeResolution: 8,
+                ease:Linear.easeNone
+            }
+            
+        })
+        .to(all.arrow5, dt, {autoAlpha:1})
+        .call( ecSvgUtilities.callAudio, ['Clear_Of_Conflict'])
+        .to(all.buttonReplay, dt, {autoAlpha:1})
         .restart().pause();
         
     };
+    
+    /*.to("#div1", 1, {x:400,y:75})
+    .to("#div1", 1, 
+   {
+     bezier:
+     {
+       values:[{x:400,y:75},
+               {x:350,y:50},
+               {x:300,y:100}]
+     }
+   })*/
     
     /**
      * Add event listeners to buttons
