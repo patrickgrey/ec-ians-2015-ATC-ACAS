@@ -13,14 +13,14 @@ var ec_ACAS_ShowHideFlash = (function($)
      * @return none
      */
     module.init = function (_elementID, _showClasses, _hideClasses) {
-            var el = $('#'+_elementID);
+            /*var el = $('#'+_elementID);
             var showClasses = _showClasses;
-            var hideClasses = _hideClasses;
+            var hideClasses = _hideClasses;*/
             var handleClick = function (event) {
                 event.preventDefault();
-                pagesScript.showHideClasses (showClasses, hideClasses);
+                pagesScript.showHideClasses (_showClasses, _hideClasses);
             };
-            el.click(handleClick);
+            $('#'+_elementID).click(handleClick);
     };
 
     return module;

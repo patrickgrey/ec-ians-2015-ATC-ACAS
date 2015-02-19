@@ -29,11 +29,11 @@
                 <param name="quality" value="high"/>
             </object> -->
             <p>Range and altitude tests are performed on each altitude-reporting 
-              target, every cycle. <a href="flash/threat_detection.swf" id="ec-ACAS-show-page1">Both must be 
+              target, every cycle. <a href="flash/threat_detection.swf" id="ec-ACAS-show-flash1">Both must be 
               satisfied for a target to be declared a threat.</a></p>
-            <p>When a threat is declared, <a href="flash/determining_sense.swf" id="ec-ACAS-show-page2">TCAS 
+            <p>When a threat is declared, <a href="flash/determining_sense.swf" id="ec-ACAS-show-flash2">TCAS 
               uses a two-step process to select an RA.</a>  Firstly, TCAS selects the sense of the RA, and then it determines  the strength required.</p>
-            <p><a href="flash/RA_follow-up.swf" id="ec-ACAS-show-page3">The advisory 
+            <p><a href="flash/RA_follow-up.swf" id="ec-ACAS-show-flash3">The advisory 
               strength is continuously evaluated</a> during the course  of the encounter and can be modified either by increasing it  if necessary, or by weakening it if the threat reduces. This is known 
               as RA 'follow-up'.</p>
             <p>As soon as the intruder ceases to be a threat (when the 
@@ -50,15 +50,11 @@
         <div class="ec-acas-container-right">
         
         
-            <div class="ec-ACAS-page ec-ACAS-page1">
-                
-                <p>Page 1</p>
+        
+        
+            <div class="ec-ACAS-slide ec-ACAS-flash1 ec-acas-hide">
                 
                 <style>
-                    .ec-acas-page-1-previous {
-                        display: none;
-                    }
-                    
                     .ec-ACAS-slide-buttons p {
                         text-align: center;
                     }
@@ -91,10 +87,10 @@
                 </style>
                 
                 <div class="ec-ACAS-slide-buttons">
-                    <p><strong><a href="#" class="ec-acas-page-1-previous">Previous</a> <span class="ec-ACAS-page-1-slide-x">1</span> of 4 <a href="#" class="ec-acas-page-1-next">Next</a></strong></p>
+                    <p><strong><a href="#" class="ec-acase-previous ec-acas-hide">Previous</a> <span class="ec-ACAS-slide-x">1</span> of 4 <a href="#" class="ec-acase-next">Next</a></strong></p>
                 </div>
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-1">
+                <div class="ec-ACAS-slide ec-ACAS-slide-1">
                     <h3>Horizontal thresholds</h3>
                     <div class="ec-ACAS-slide-1-1-activity"></div>
                     <p>Do you think that the 'protected volume' which TCAS maintains around own aircraft is of a fixed size?</p>
@@ -108,14 +104,14 @@
                     </div>
                 </div>
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-2 ec-acas-hide">
+                <div class="ec-ACAS-slide ec-ACAS-slide-2 ec-acas-hide">
                     <h3>Miss distance filtering</h3>
                     <p>In addition, to reduce the number of unnecessary alerts based on the encounter geometry TCAS also filters out aircraft whose horizontal range, projected at CPA, is sufficient to preclude a collision avoidance manoeuver. The protected volumes are, therefore, also laterally truncated by a function of horizontal filtering, called Miss Distance Filtering (MDF). Aircraft whose ranges are projected to exceed twice the associated DMOD value are excluded.</p>
                     <p>In the example shown, both aircraft will be at FL310 at the CPA. DMOD value for RA = 1.10 nm Projected range at CPA is 2.4 nm</p>
                     <p>Will an RA be generated?</p>
                 </div>
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-3 ec-acas-hide">
+                <div class="ec-ACAS-slide ec-ACAS-slide-3 ec-acas-hide">
                     <h3>Vertical thresholds</h3>
                     <p>Assuming that an aircraft has satisfied the horizontal test, TCAS must also analyse the conflict geometry in the vertical plane before issuing any alert. TCAS analyses the conflict geometry to determine the time left before the aircraft are at co-altitude. TAs and RAs will be triggered as soon as the times to co-altitude fall below tau values.</p>
                     <p>If one of the aircraft involved is manoeuvring vertically then a refinement to the logic is activat ed in order to reduce the number of RAs produced during level-off manoeuvres.</p>
@@ -123,17 +119,19 @@
                     <p>This reduction allows A a few more seconds in which to detect the level-off and so prevent an RA from being triggered. This shows that higher vertical dosure rates increase the likelihood of an RA.</p>
                 </div>
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-4 ec-acas-hide">
+                <div class="ec-ACAS-slide ec-ACAS-slide-4 ec-acas-hide">
                     <h3>Low vertical closure rates</h3>
                     <p>Generally, for a conflict geometry with a low vertical closure rate, the vertical triggering thresholds for RAs range from 600 to 800 ft, depending on the altitude of own aircraft.</p>
                 </div>
                 
+                <!-- <object type="application/x-shockwave-flash" 
+                    data="flash/threat_detection.swf" 
+                    width="480" height="540">
+                    <param name="movie" value="flash/threat_detection.swf" />
+                    <param name="quality" value="high"/>
+                </object> -->
             </div>
-            
-            
-            
-            <div class="ec-ACAS-page ec-ACAS-page2 ec-acas-hide">
-                <p>Page 2</p>
+            <div class="ec-ACAS-slide ec-ACAS-flash2 ec-acas-hide">
                 <object type="application/x-shockwave-flash" 
                     data="flash/determining_sense.swf" 
                     width="480" height="540">
@@ -141,17 +139,11 @@
                     <param name="quality" value="high"/>
                 </object>
             </div>
-            
-            
-            
-            <div class="ec-ACAS-page ec-ACAS-page3 ec-acas-hide">
-                
-                <p>Page 3</p>
-                
+            <div class="ec-ACAS-slide ec-ACAS-flash3">
                 <style>
                     a {cursor: pointer;}
                     
-                    .ec-ACAS-t3p3-page-3-activities {
+                    .ec-ACAS-t3p3-activities {
                         position: absolute;
                         width: 500px;
                         height: 250px;
@@ -201,26 +193,22 @@
                 <p>Note that some <a herf="#" id="ec-ACAS-show-ra-4">limitations</a> to these solutions exist at certain altitudes.</p>
                 <p>For the TCAS II version 7.1 instead of &quot;Adjust vertical speed, adjust&quot; the new RA will be issued &quot;Level off, level off&quot;, it means that vertical rate must be reduced to 0 ft/min and level off must be achieved promptly, not at the next standard level.</p>
                 <p>Select the links above to see illustrations.</p>
-                
-                
-                <div class="ec-ACAS-t3p3-page-3-activities ec-acas-hide">
+                <div class="ec-ACAS-t3p3-activities">
                     <a  href="#" class="ec-ACAS-t3p3-activities-close">Close</a>
-                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-page-3-activity-1 ec-acas-hide">
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-1">
                         <object data="svg/ec-ACAS-t3p3a1_v3.svg" id="ec_ACAS_t3p3a3_1" type="image/svg+xml" width="500" height="250" ></object>
                     </div>
-                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-page-3-activity-2 ec-acas-hide">
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-2 ec-acas-hide">
                         <object data="svg/ec-ACAS-t3p3a3_2.svg" id="ec_ACAS_t3p3a3_2" type="image/svg+xml" width="500" height="250" ></object>
                     </div>
-                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-page-3-activity-3 ec-acas-hide">
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-3 ec-acas-hide">
                         <object data="svg/ec-ACAS-t3p3a3_3.svg" id="ec_ACAS_t3p3a3_3" type="image/svg+xml" width="500" height="250" ></object>
                     </div>
-                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-page-3-activity-4 ec-acas-hide">
+                    <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-activity-4 ec-acas-hide">
                         <p>The CAS logic may inhibit a 'Climb' or 'Increase climb' advisory in some cases due to aircraft climb performance limitations at high altitude, or in the landing configuration. These limitations are known by the logic, which will then choose a viable alternative RA. The limitations are set beforehand by the certification authorities according to the type of aircraft.</p>
                         <p>For all aircraft, 'Increase descent' advisories are inhibited below 1450 ft AGL and all descent RAs are inhibited below 1100 ft AGL. All RAs are inhibited below 1000 ft AGL. Stall, windshear, and ground proximity warnings take precedence over RA alerts.</p>
                     </div>
                 </div>
-                
-                
                 
             </div>
         </div>
@@ -246,93 +234,15 @@
                     var module = {};
                     var pagesScript = ec_ACAS_Pages || {};
                     
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page1', ['ec-ACAS-page1'], ['ec-ACAS-page2', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page2', ['ec-ACAS-page2'], ['ec-ACAS-page1', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page3', ['ec-ACAS-page3'], ['ec-ACAS-page1', 'ec-ACAS-page2']);
-                    
-                    /**
-                     * SLIDES
-                     */
-                    var currentSlide = 1;
-                    var currentSlideMax = 4;
-                    
-                    function slidesNextPrevious () {
-                        $('.ec-ACAS-page-1-slide-x').html(currentSlide);
-                        currentSlide > 1 ? $('.ec-acas-page-1-previous').show() : $('.ec-acas-page-1-previous').hide();
-                        currentSlide  < currentSlideMax ? $('.ec-acas-page-1-next').show() : $('.ec-acas-page-1-next').hide();
-                    }
-                    
-                    $('.ec-acas-page-1-next').click(function (event) {
-                        event.preventDefault();
-                        currentSlide++;
-                        slidesNextPrevious ();
-                        pagesScript.showHideClasses (['ec-ACAS-page-1-slide-'+currentSlide], ['ec-ACAS-slide']);
-                    });
-                
-                    $('.ec-acas-page-1-previous').click(function (event) {
-                        event.preventDefault();
-                        currentSlide--;
-                        slidesNextPrevious ();
-                        pagesScript.showHideClasses (['ec-ACAS-page-1-slide-'+currentSlide], ['ec-ACAS-slide']);
-                    });
-                    
-                    
-                    /**
-                     * ACTIVITIES
-                     */
-                    
-                    // Close container
-                    $('.ec-ACAS-t3p3-activities-close').click(function (event) {
-                        pagesScript.showHideClasses ([], ['ec-ACAS-t3p3-page-3-activities', 'ec-ACAS-t3p3-activity']);
-                    });
-                    
-                    // Show hide activities
-                    $('#ec-ACAS-show-ra-1').click(function (event) {
-                        pagesScript.showHideClasses (['ec-ACAS-t3p3-page-3-activities', 'ec-ACAS-t3p3-page-3-activity-1'], ['ec-ACAS-t3p3-activity']);
-                    });
-                    
-                    $('#ec-ACAS-show-ra-2').click(function (event) {
-                        pagesScript.showHideClasses (['ec-ACAS-t3p3-page-3-activities', 'ec-ACAS-t3p3-page-3-activity-2'], ['ec-ACAS-t3p3-activity']);
-                    });
-                    
-                    $('#ec-ACAS-show-ra-3').click(function (event) {
-                        pagesScript.showHideClasses (['ec-ACAS-t3p3-page-3-activities', 'ec-ACAS-t3p3-page-3-activity-3'], ['ec-ACAS-t3p3-activity']);
-                    });
-                    
-                    $('#ec-ACAS-show-ra-4').click(function (event) {
-                        pagesScript.showHideClasses (['ec-ACAS-t3p3-page-3-activities', 'ec-ACAS-t3p3-page-3-activity-4'], ['ec-ACAS-t3p3-activity']);
-                    });
-                    
-                    // Only start animation once svg had loaded in object element.
-                    ecSvgLoadListener.addSVGListener(
-                        document.getElementById('ec_ACAS_t3p3a3_1'), 
-                        ec_ACAS_t3p3a3_1.init,
-                        {svgDocID: 'ec_ACAS_t3p3a3_1'}
-                    );
-                    
-                    ecSvgLoadListener.addSVGListener(
-                        document.getElementById('ec_ACAS_t3p3a3_2'), 
-                        ec_ACAS_t3p3a3_2.init,
-                        {svgDocID: 'ec_ACAS_t3p3a3_2'}
-                    );
-                    
-                    ecSvgLoadListener.addSVGListener(
-                        document.getElementById('ec_ACAS_t3p3a3_3'), 
-                        ec_ACAS_t3p3a3_3.init,
-                        {svgDocID: 'ec_ACAS_t3p3a3_3'}
-                    );
-                    
-                    
-                    
-                    /*$('.ec-ACAS-page-1-1-question').click(function (event) {
+                    $('.ec-ACAS-slide-1-1-question').click(function (event) {
                         var clicked = $(event.target).attr('id');
-                        $('.ec-ACAS-page-1-1-text').show();
-                        if (clicked === 'ec-ACAS-page-1-1-yes' || clicked === 'ec-ACAS-page-1-1-label-yes') {
-                            // $('.ec-ACAS-page-1-1-feedback').show();
-                            $('.ec-ACAS-page-1-1-feedback').html('Correct! :-)').removeClass('ec-ACAS-page-1-1-feedback-wrong').show();
+                        $('.ec-ACAS-slide-1-1-text').show();
+                        if (clicked === 'ec-ACAS-slide-1-1-yes' || clicked === 'ec-ACAS-slide-1-1-label-yes') {
+                            // $('.ec-ACAS-slide-1-1-feedback').show();
+                            $('.ec-ACAS-slide-1-1-feedback').html('Correct! :-)').removeClass('ec-ACAS-slide-1-1-feedback-wrong').show();
                         }
                         else {
-                            $('.ec-ACAS-page-1-1-feedback').html('Wrong! :-(').addClass('ec-ACAS-page-1-1-feedback-wrong').show();
+                            $('.ec-ACAS-slide-1-1-feedback').html('Wrong! :-(').addClass('ec-ACAS-slide-1-1-feedback-wrong').show();
                         }
                     });
                     
@@ -353,18 +263,23 @@
                         document.getElementById('ec_ACAS_t3p3a3_3'), 
                         ec_ACAS_t3p3a3_3.init,
                         {svgDocID: 'ec_ACAS_t3p3a3_3'}
-                    );*/
+                    );
                     
-                    /*function hideAllSVGActivities () {
+                    function hideAllSVGActivities () {
                         // console.log($('.ec-ACAS-t3p3-activities').width());
-                        $('.ec-ACAS-t3p3-activities').css({'opacity': 0});
+                        /*$('.ec-ACAS-t3p3-activities').css({'opacity': 0});
                         $('.ec-ACAS-t3p3-activity-1').css({'opacity': 0, 'z-index': 1});
                         $('.ec-ACAS-t3p3-activity-2').css({'opacity': 0, 'z-index': 1});
                         $('.ec-ACAS-t3p3-activity-3').css({'opacity': 0, 'z-index': 1});
-                        $('.ec-ACAS-t3p3-activity-4').css({'opacity': 0, 'z-index': 1});
+                        $('.ec-ACAS-t3p3-activity-4').css({'opacity': 0, 'z-index': 1});*/
+                        $('.ec-ACAS-t3p3-activities').hide();
+                        $('.ec-ACAS-t3p3-activity-1').hide();
+                        $('.ec-ACAS-t3p3-activity-2').hide();
+                        $('.ec-ACAS-t3p3-activity-3').hide();
+                        $('.ec-ACAS-t3p3-activity-4').hide();
                     }
                     
-                    function showSVGActivity (classString, timeline, forceReset) {
+                    /*function showSVGActivity (classString, timeline, forceReset) {
                         if (event) {event.preventDefault();}
                         hideAllSVGActivities();
                         if(forceReset) {
@@ -374,12 +289,41 @@
                             
                             timeline.play(0);
                         }
-                        $(classString).css({'opacity': 1, 'z-index': 2});
-                        $('.ec-ACAS-t3p3-activities').css('opacity', 1);
+                        // $(classString).css({'opacity': 1, 'z-index': 2});
+                        // $('.ec-ACAS-t3p3-activities').css('opacity', 1);
+                        $(classString).show();
+                        $('.ec-ACAS-t3p3-activities').show();
+                    }*/
+                    
+                    function showSVGActivity (classString, activityReset, callbackConfig) {
+                        if (event) {event.preventDefault();}
+                        
+                        hideAllSVGActivities();
+                        // $(classString).css({'opacity': 1, 'z-index': 2});
+                        // $('.ec-ACAS-t3p3-activities').css('opacity', 1);
+                        $(classString).show();
+                        $('.ec-ACAS-t3p3-activities').show();
+                        activityReset(callbackConfig);
                     }
                     
                     
                     $('#ec-ACAS-show-ra-1').click(function (event) {
+                        showSVGActivity ('.ec-ACAS-t3p3-activity-1', ec_ACAS_t3p3a3_1.reset, {svgDocID: 'ec_ACAS_t3p3a3_1'});
+                    });
+                    
+                    /*$('#ec-ACAS-show-ra-2').click(function (event) {
+                        showSVGActivity ('.ec-ACAS-t3p3-activity-2', ec_ACAS_t3p3a3_2);
+                    });
+                    
+                    $('#ec-ACAS-show-ra-3').click(function (event) {
+                        showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3);
+                    });*/
+                    
+                    $('#ec-ACAS-show-ra-4').click(function (event) {
+                        showSVGActivity ('.ec-ACAS-t3p3-activity-4', null);
+                    });
+                    
+                    /*$('#ec-ACAS-show-ra-1').click(function (event) {
                         showSVGActivity ('.ec-ACAS-t3p3-activity-1', ec_ACAS_t3p3a3_1.getTimeline());
                     });
                     
@@ -393,27 +337,61 @@
                     
                     $('#ec-ACAS-show-ra-4').click(function (event) {
                         showSVGActivity ('.ec-ACAS-t3p3-activity-4', null);
-                    });
+                    });*/
                     
                     // Close container
                     $('.ec-ACAS-t3p3-activities-close').click(function (event) {
                         event.preventDefault();
                         // ec_ACAS_t3p3a3_1.getTimeline().pause(0);
-                        $('.ec-ACAS-t3p3-activities').css('opacity', 0);
+                        // $('.ec-ACAS-t3p3-activities').css('opacity', 0);
                         hideAllSVGActivities();
                     });
                     
-                    hideAllSVGActivities();
-                    showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3.getTimeline());
+                    // hideAllSVGActivities();
+                    // showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3.reset);
+                    // showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3.getTimeline());
                     
                     
                     // Show specific animation related to link and hide others for third main link.
                     // Show/hide the main Flash containers
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page1', ['ec-ACAS-page1'], ['ec-ACAS-page2', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page2', ['ec-ACAS-page2'], ['ec-ACAS-page1', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page3', ['ec-ACAS-page3'], ['ec-ACAS-page1', 'ec-ACAS-page2']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);              
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4']);
                     
-                    */
+                    // Slide system
+                    var currentSlide = 1;
+                    var currentSlideMax = 4;
+                    
+                    function showHideNextPrevious () {
+                        $('.ec-ACAS-slide-x').html(currentSlide);
+                        if (currentSlide > 1) {
+                            $('.ec-acase-previous').show();
+                        }
+                        else {
+                            $('.ec-acase-previous').hide();
+                        }
+                        
+                        if (currentSlide < currentSlideMax) {
+                            $('.ec-acase-next').show();
+                        }
+                        else {
+                            $('.ec-acase-next').hide();
+                        }
+                    }
+                    
+                    $('.ec-acase-next').click(function (event) {
+                        event.preventDefault();
+                        currentSlide++;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
+                
+                    $('.ec-acase-previous').click(function (event) {
+                        event.preventDefault();
+                        currentSlide--;
+                        showHideNextPrevious ();
+                        pagesScript.showHideClasses (['ec-ACAS-slide-'+currentSlide], ['ec-ACAS-slide-1', 'ec-ACAS-slide-2', 'ec-ACAS-slide-3', 'ec-ACAS-slide-4', 'ec-ACAS-slide-5']);
+                    });
                     
                     return module;
                     
