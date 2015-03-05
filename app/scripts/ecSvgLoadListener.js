@@ -12,16 +12,22 @@ var ecSvgLoadListener = (function () {
     
     module.addSVGListener = function (svgObject, callback, callbackConfig) {
         
-        var callbackConfig = callbackConfig || {};
+        var callbackConfig = callbackConfig || {},
+            svgObject = svgObject,
+            callback = callback,
+            callbackConfig = callbackConfig;
+        
         
         // There seems to be a race condition between the document
         // and the Object document svg content.
-        if(svgObject.getSVGDocument()) {
+        // MAYBE THIS SHOULD BE A TRY CATCH!!!
+        try {
+            svgObject.getSVGDocument();
             callback(callbackConfig);
         }
-        else {
+        catch (e) {
             svgObject.addEventListener("load", function svgObjectLoad(event){
-                console.log('loaded');
+                // console.log('loaded');
                 svgObject.removeEventListener("load", svgObjectLoad, false); //remove listener, no longer needed
                 callback(callbackConfig);
             },false);

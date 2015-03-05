@@ -170,6 +170,7 @@
     /* UTILITY FUNCTIONS */
     
     var callAudio = function (audioName) {
+        console.log('play audio');
         all[audioName].play();
     };
     /**
@@ -186,6 +187,8 @@
             // $(audio).attr('controls','');
             audio.src = audioPath + '/' + audioArray[i] + '.mp3';
             document.body.appendChild(audio);
+            audio.pause();
+            audio.currentTime = 0;
             all['audio'+i] = audio;
         };
     };

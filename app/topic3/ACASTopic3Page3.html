@@ -52,8 +52,6 @@
         
             <div class="ec-ACAS-page ec-ACAS-page1">
                 
-                <p>Page 1</p>
-                
                 <style>
                     .ec-acas-page-1-previous {
                         display: none;
@@ -67,7 +65,7 @@
                         margin-left: 1em;
                     }
                     
-                    .ec-ACAS-slide-1-1-label {
+                    .ec-ACAS-radio-label {
                         font-size: 1.5em;
                     }
                     
@@ -81,38 +79,105 @@
                         color: red;
                     }
                     
-                    .ec-ACAS-slide-1-1-activity {
+                    .ec-ACAS-t3-p3-a1-s1 {
                         float: right;
-                        width: 50%;
-                        height: 200px;
+                        /*width: 50%;*/
+                        /*height: 200px;*/
                         margin: 0 0 1em 1em;
-                        background: #f00;
+                        max-width: 220px;
+                        /*background: #f00;*/
                     }
+                    
+                    .ec-ACAS-t3-p3-a1-s1-caption {
+                        color: #999;
+                    }
+                    
+                    .ec-ACAS-t3-p3-a1-s1-slider {
+                        display: block;
+                        width: 220px;
+                    }
+                    
+                    .ec-ACAS-page-1-slide-4-caption {
+                        color: #666;
+                        text-align: center;
+                    }
+                    
+                    .ec-ACAS-page-1-slide-4-table {
+                        width: 200px;
+                        margin: 2em auto 0 auto;
+                        /*border-spacing: 10px;
+                        border-collapse: separate;*/
+                        text-align: center;
+                    }
+                    
+                    .ec-ACAS-page-1-slide-4-table thead{
+                        background: #3499cc;
+                        color: #fff;
+                    }
+                    
+                    .ec-ACAS-page-1-slide-4-table td, .ec-ACAS-page-1-slide-4-table th{
+                        padding: 5px 10px;
+                    }
+                    
+                    .ec-ACAS-page-1-slide-4-table tbody tr:nth-child(odd) {
+                        background: #eee;
+                    }
+                    
+                    .ec-ACAS-slide-1-1-img {
+                        float: right;
+                    }
+                    
+                    .ec-ACAS-slider{
+                        width: 1020px;
+                        margin:10px;
+                        background-color:#ff0;
+                    }
+                    
+                    .ec-ACAS-t3-p3-a1-s2 {
+                        margin: 1em 0 0 0;
+                    }
+                    
+                    
                 </style>
                 
                 <div class="ec-ACAS-slide-buttons">
                     <p><strong><a href="#" class="ec-acas-page-1-previous">Previous</a> <span class="ec-ACAS-page-1-slide-x">1</span> of 4 <a href="#" class="ec-acas-page-1-next">Next</a></strong></p>
                 </div>
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-1">
+                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-1 ec-acas-hide">
                     <h3>Horizontal thresholds</h3>
-                    <div class="ec-ACAS-slide-1-1-activity"></div>
+                    <div class="ec-ACAS-t3-p3-a1-s1">
+                        <object data="svg/ec-ACAS-t3p3a1s1.svg" id="ec-ACAS-t3-p3-a1-s1-svg" type="image/svg+xml" width="220" height="250" ></object>
+                        <input class="ec-ACAS-t3-p3-a1-s1-slider" type="range" min="1" max="100" value="1" >
+                        <figcaption class="ec-ACAS-t3-p3-a1-s1-caption">Drag the slider to see how different closure rates affect the radius of the &quot;protected volume&quot;</figcaption>
+                    </div>
+                    
                     <p>Do you think that the 'protected volume' which TCAS maintains around own aircraft is of a fixed size?</p>
-                        <input class="ec-ACAS-slide-1-1-radio ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-yes"> <label id="ec-ACAS-slide-1-1-label-yes" class="ec-ACAS-slide-1-1-label  ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-yes">Yes</label>
-                        <input class="ec-ACAS-slide-1-1-radio ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-no"> <label id="ec-ACAS-slide-1-1-label-no" class="ec-ACAS-slide-1-1-label  ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-no">No</label>
-                        <span class="ec-ACAS-slide-1-1-label ec-ACAS-slide-1-1-feedback">Correct! :-)</span>
-                    <div class="ec-ACAS-slide-1-1-text">
+                        <input class="ec-ACAS-slide-1-1-radio ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-yes"> <label id="ec-ACAS-slide-1-1-label-yes" class="ec-ACAS-radio-label ec-ACAS-radio-label  ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-yes">Yes</label>
+                        <input class="ec-ACAS-slide-1-1-radio ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-no"> <label id="ec-ACAS-radio-label-no" class="ec-ACAS-radio-label ec-ACAS-radio-label  ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-no">No</label>
+                        <span class="ec-ACAS-radio-label ec-ACAS-slide-1-1-feedback">Correct! :-)</span>
+                    <div class="ec-ACAS-slide-1-1-text ec-acas-display-none">
                         <p>Horizontal alert thresholds are based on the time-to-go to the CPA. The actual radius of any 'protected volume' depends on the speeds and headings of the aircraft involved.</p>
                         <p>For any given intruder, the theoretical protected volume around the TCAS-equipped aircraft is generally a truncated sphere with a radius equal to the closure rate multiplied by the tau.</p>
-                        <p>In reality this means that there is no single fixed 'protected volume' around own aircraft, but rather TCAS calulates and maintains a separate 'protected volume' around own airaaft in relation to each aircraft under surveillance.</p>
+                        <img class="ec-ACAS-slide-1-1-img" src="images/ec-acas-t3p3-act1-slide1.png" height="118" width="187" alt="">
+                        <p>In reality this means that there is no single fixed 'protected volume' around own aircraft, but rather TCAS calulates and maintains a separate 'protected volume' around own aircraft in relation to each aircraft under surveillance.</p>
+                        
                     </div>
                 </div>
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-2 ec-acas-hide">
+                
+                
+                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-2">
                     <h3>Miss distance filtering</h3>
                     <p>In addition, to reduce the number of unnecessary alerts based on the encounter geometry TCAS also filters out aircraft whose horizontal range, projected at CPA, is sufficient to preclude a collision avoidance manoeuver. The protected volumes are, therefore, also laterally truncated by a function of horizontal filtering, called Miss Distance Filtering (MDF). Aircraft whose ranges are projected to exceed twice the associated DMOD value are excluded.</p>
                     <p>In the example shown, both aircraft will be at FL310 at the CPA. DMOD value for RA = 1.10 nm Projected range at CPA is 2.4 nm</p>
                     <p>Will an RA be generated?</p>
+                    <input class="ec-ACAS-t3-p3-a1-s2-radio ec-ACAS-t3-p3-a1-s2-question" type="radio" name="radio" id="ec-ACAS-t3-p3-a1-s2-yes"> <label id="ec-ACAS-t3-p3-a1-s2-label-yes" class="ec-ACAS-radio-label ec-ACAS-t3-p3-a1-s2-label  ec-ACAS-t3-p3-a1-s2-question" for="ec-ACAS-t3-p3-a1-s2-yes">Yes</label>
+                    <input class="ec-ACAS-t3-p3-a1-s2-radio ec-ACAS-t3-p3-a1-s2-question" type="radio" name="radio" id="ec-ACAS-t3-p3-a1-s2-no"> <label id="ec-ACAS-t3-p3-a1-s2-label-no" class="ec-ACAS-radio-label ec-ACAS-t3-p3-a1-s2-label  ec-ACAS-t3-p3-a1-s2-question" for="ec-ACAS-t3-p3-a1-s2-no">No</label>
+                    <span class="ec-ACAS-t3-p3-a1-s2-label ec-ACAS-t3-p3-a1-s2-feedback  ec-acas-display-none">Correct! :-)</span>
+                    <div class="ec-ACAS-t3-p3-a1-s2">
+                        <object data="svg/ec-ACAS-t3p3a1s2.svg" id="ec-ACAS-t3-p3-a1-s2-svg" type="image/svg+xml" width="220" height="250" ></object>
+                    </div>
                 </div>
                 
                 <div class="ec-ACAS-slide ec-ACAS-page-1-slide-3 ec-acas-hide">
@@ -125,7 +190,58 @@
                 
                 <div class="ec-ACAS-slide ec-ACAS-page-1-slide-4 ec-acas-hide">
                     <h3>Low vertical closure rates</h3>
-                    <p>Generally, for a conflict geometry with a low vertical closure rate, the vertical triggering thresholds for RAs range from 600 to 800 ft, depending on the altitude of own aircraft.</p>
+                    <p>Generally, for a conflict geometry with a low vertical closure rate, the vertical triggering thresholds for RAs range from 600 to 800 ft and Vertical Safe Distance (ALIM) varies from 300 ft to 700 ft depending on own aircraft's altitude regime.</p>
+                    <figcaption class="ec-ACAS-page-1-slide-4-caption">Vertical Threshold for Traffic Resolution Advisory (ZTHR) and Vertical Safe Distance table</figcaption>
+                    <table class="ec-ACAS-page-1-slide-4-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2"><i>ZTHR</i> (feet)<br/>Alt. Threshold</th>
+                                <th><i>ALIM</i><br/>(feet)</th>
+                            </tr>
+                            <tr>
+                                <th>TA</th>
+                                <th>RA</th>
+                                <th>RA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>850</td>
+                                <td>no RA</td>
+                                <td>no RA</td>
+                            </tr>
+                            <tr>
+                                <td>850</td>
+                                <td>600</td>
+                                <td>300</td>
+                            </tr>
+                            <tr>
+                                <td>850</td>
+                                <td>600</td>
+                                <td>300</td>
+                            </tr>
+                            <tr>
+                                <td>850</td>
+                                <td>600</td>
+                                <td>350</td>
+                            </tr>
+                            <tr>
+                                <td>850</td>
+                                <td>600</td>
+                                <td>400</td>
+                            </tr>
+                            <tr>
+                                <td>850</td>
+                                <td>700</td>
+                                <td>600</td>
+                            </tr>
+                            <tr>
+                                <td>1200</td>
+                                <td>800</td>
+                                <td>700</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 
             </div>
@@ -133,7 +249,6 @@
             
             
             <div class="ec-ACAS-page ec-ACAS-page2 ec-acas-hide">
-                <p>Page 2</p>
                 <object type="application/x-shockwave-flash" 
                     data="flash/determining_sense.swf" 
                     width="480" height="540">
@@ -145,8 +260,6 @@
             
             
             <div class="ec-ACAS-page ec-ACAS-page3 ec-acas-hide">
-                
-                <p>Page 3</p>
                 
                 <style>
                     a {cursor: pointer;}
@@ -186,9 +299,6 @@
                         padding-right: 1em;
                     }
                     
-                    .ec-ACAS-slide-1-1-text {
-                        display: none;
-                    }
                 </style>
                 <h3>RA follow up</h3>
                 <p>During the course of an encounter, TCAS constantly monitors the conflict geometry. In addition, advisory strength is continuously evaluated and modified RAs are given. Typically, as a threat diminishes pilots may be told to <a herf="ACASTopic3Page3.html" id="ec-ACAS-show-ra-1">reduce vertical speed</a>.</p>
@@ -217,6 +327,7 @@
                     <div class="ec-ACAS-t3p3-activity ec-ACAS-t3p3-page-3-activity-4 ec-acas-hide">
                         <p>The CAS logic may inhibit a 'Climb' or 'Increase climb' advisory in some cases due to aircraft climb performance limitations at high altitude, or in the landing configuration. These limitations are known by the logic, which will then choose a viable alternative RA. The limitations are set beforehand by the certification authorities according to the type of aircraft.</p>
                         <p>For all aircraft, 'Increase descent' advisories are inhibited below 1450 ft AGL and all descent RAs are inhibited below 1100 ft AGL. All RAs are inhibited below 1000 ft AGL. Stall, windshear, and ground proximity warnings take precedence over RA alerts.</p>
+                        
                     </div>
                 </div>
                 
@@ -226,16 +337,18 @@
         </div>
 
         <script src="../scripts/jquery.min.js"></script>
-        <script src="../scripts/pages.js"></script>
-        <script src="../scripts/showHideFlash.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script> -->
         <script src="../scripts/TweenMax.min.js"></script>
+        <script src="../scripts/pages.js"></script>
+        <script src="../scripts/showHideFlash.js"></script>
         
         <script src="../scripts/ecSvgLoadListener.js"></script>
         <script src="../scripts/ecSvgUtilities.js"></script>
-        <script src="../scripts/ec_ACAS_t3p3a3_1.js"></script>
-        <script src="../scripts/ec_ACAS_t3p3a3_2.js"></script>
-        <script src="../scripts/ec_ACAS_t3p3a3_3.js"></script>
+        <script src="../scripts/source/ec-ACAS-t3-p3-a1-s1.js"></script>
+        <script src="../scripts/source/ec-ACAS-t3-p3-a1-s2.js"></script>
+        <script src="../scripts/source/ec_ACAS_t3p3a3_1.js"></script>
+        <script src="../scripts/source/ec_ACAS_t3p3a3_2.js"></script>
+        <script src="../scripts/source/ec_ACAS_t3p3a3_3.js"></script>
         
         <script type="text/javascript">
             // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
@@ -246,13 +359,13 @@
                     var module = {};
                     var pagesScript = ec_ACAS_Pages || {};
                     
+                    /**
+                     * SLIDES
+                     */
                     ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page1', ['ec-ACAS-page1'], ['ec-ACAS-page2', 'ec-ACAS-page3']);
                     ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page2', ['ec-ACAS-page2'], ['ec-ACAS-page1', 'ec-ACAS-page3']);
                     ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page3', ['ec-ACAS-page3'], ['ec-ACAS-page1', 'ec-ACAS-page2']);
                     
-                    /**
-                     * SLIDES
-                     */
                     var currentSlide = 1;
                     var currentSlideMax = 4;
                     
@@ -278,7 +391,7 @@
                     
                     
                     /**
-                     * ACTIVITIES
+                     * ACTIVITIES SHOW / HIDE / LOAD
                      */
                     
                     // Close container
@@ -322,98 +435,27 @@
                         {svgDocID: 'ec_ACAS_t3p3a3_3'}
                     );
                     
-                    
-                    
-                    /*$('.ec-ACAS-page-1-1-question').click(function (event) {
-                        var clicked = $(event.target).attr('id');
-                        $('.ec-ACAS-page-1-1-text').show();
-                        if (clicked === 'ec-ACAS-page-1-1-yes' || clicked === 'ec-ACAS-page-1-1-label-yes') {
-                            // $('.ec-ACAS-page-1-1-feedback').show();
-                            $('.ec-ACAS-page-1-1-feedback').html('Correct! :-)').removeClass('ec-ACAS-page-1-1-feedback-wrong').show();
-                        }
-                        else {
-                            $('.ec-ACAS-page-1-1-feedback').html('Wrong! :-(').addClass('ec-ACAS-page-1-1-feedback-wrong').show();
-                        }
-                    });
-                    
-                    // Only start animation once svg had loaded in object element.
                     ecSvgLoadListener.addSVGListener(
-                        document.getElementById('ec_ACAS_t3p3a3_1'), 
-                        ec_ACAS_t3p3a3_1.init,
-                        {svgDocID: 'ec_ACAS_t3p3a3_1'}
+                        document.getElementById('ec-ACAS-t3-p3-a1-s1-svg'), 
+                        ec_ACAS_t3_p3_a1_s1.init,
+                        {svgDocID: 'ec-ACAS-t3-p3-a1-s1-svg'}
                     );
                     
                     ecSvgLoadListener.addSVGListener(
-                        document.getElementById('ec_ACAS_t3p3a3_2'), 
-                        ec_ACAS_t3p3a3_2.init,
-                        {svgDocID: 'ec_ACAS_t3p3a3_2'}
+                        document.getElementById('ec-ACAS-t3-p3-a1-s2-svg'), 
+                        ec_ACAS_t3_p3_a1_s2.init,
+                        {svgDocID: 'ec-ACAS-t3-p3-a1-s2-svg'}
                     );
                     
-                    ecSvgLoadListener.addSVGListener(
-                        document.getElementById('ec_ACAS_t3p3a3_3'), 
-                        ec_ACAS_t3p3a3_3.init,
-                        {svgDocID: 'ec_ACAS_t3p3a3_3'}
-                    );*/
                     
-                    /*function hideAllSVGActivities () {
-                        // console.log($('.ec-ACAS-t3p3-activities').width());
-                        $('.ec-ACAS-t3p3-activities').css({'opacity': 0});
-                        $('.ec-ACAS-t3p3-activity-1').css({'opacity': 0, 'z-index': 1});
-                        $('.ec-ACAS-t3p3-activity-2').css({'opacity': 0, 'z-index': 1});
-                        $('.ec-ACAS-t3p3-activity-3').css({'opacity': 0, 'z-index': 1});
-                        $('.ec-ACAS-t3p3-activity-4').css({'opacity': 0, 'z-index': 1});
-                    }
+                    /**
+                     * ACTIVITIES 
+                     */
                     
-                    function showSVGActivity (classString, timeline, forceReset) {
-                        if (event) {event.preventDefault();}
-                        hideAllSVGActivities();
-                        if(forceReset) {
-                            forceReset();
-                        }
-                        if(timeline) {
-                            
-                            timeline.play(0);
-                        }
-                        $(classString).css({'opacity': 1, 'z-index': 2});
-                        $('.ec-ACAS-t3p3-activities').css('opacity', 1);
-                    }
+                    // s1-a1
                     
                     
-                    $('#ec-ACAS-show-ra-1').click(function (event) {
-                        showSVGActivity ('.ec-ACAS-t3p3-activity-1', ec_ACAS_t3p3a3_1.getTimeline());
-                    });
                     
-                    $('#ec-ACAS-show-ra-2').click(function (event) {
-                        showSVGActivity ('.ec-ACAS-t3p3-activity-2', ec_ACAS_t3p3a3_2.getTimeline(), ec_ACAS_t3p3a3_2.forceReset);
-                    });
-                    
-                    $('#ec-ACAS-show-ra-3').click(function (event) {
-                        showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3.getTimeline(), ec_ACAS_t3p3a3_3.forceReset);
-                    });
-                    
-                    $('#ec-ACAS-show-ra-4').click(function (event) {
-                        showSVGActivity ('.ec-ACAS-t3p3-activity-4', null);
-                    });
-                    
-                    // Close container
-                    $('.ec-ACAS-t3p3-activities-close').click(function (event) {
-                        event.preventDefault();
-                        // ec_ACAS_t3p3a3_1.getTimeline().pause(0);
-                        $('.ec-ACAS-t3p3-activities').css('opacity', 0);
-                        hideAllSVGActivities();
-                    });
-                    
-                    hideAllSVGActivities();
-                    showSVGActivity ('.ec-ACAS-t3p3-activity-3', ec_ACAS_t3p3a3_3.getTimeline());
-                    
-                    
-                    // Show specific animation related to link and hide others for third main link.
-                    // Show/hide the main Flash containers
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page1', ['ec-ACAS-page1'], ['ec-ACAS-page2', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page2', ['ec-ACAS-page2'], ['ec-ACAS-page1', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page3', ['ec-ACAS-page3'], ['ec-ACAS-page1', 'ec-ACAS-page2']);
-                    
-                    */
                     
                     return module;
                     
