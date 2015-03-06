@@ -53,11 +53,10 @@
             // $('.ec-ACAS-slide-1-1-text').show().addClass('ec-ACAS-fade-in');
             $('.ec-ACAS-slide-1-1-text').fadeIn();
             if (clicked === 'ec-ACAS-slide-1-1-label-no' || clicked === 'ec-ACAS-slide-1-1-no') {
-                // $('.ec-ACAS-page-1-1-feedback').show();
-                $('.ec-ACAS-slide-1-1-feedback').html('Correct! :-)').removeClass('ec-ACAS-slide-1-1-feedback-wrong').show();
+                $('.ec-ACAS-t3-p3-a1-s1-feedback').html('Correct! :-)').removeClass('ec-ACAS-feedback-wrong ec-acas-display-none').show();
             }
             else {
-                $('.ec-ACAS-slide-1-1-feedback').html('Wrong! :-(').addClass('ec-ACAS-slide-1-1-feedback-wrong').show();
+                $('.ec-ACAS-t3-p3-a1-s1-feedback').html('Wrong! :-(').addClass('ec-ACAS-feedback-wrong').show();
             }
         });
         

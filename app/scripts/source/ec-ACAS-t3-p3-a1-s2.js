@@ -19,9 +19,13 @@
         
         $(all.buttonReplay).hide();
         $(all.feedback).hide();
+        ecSvgUtilities.addButtonBehaviour(all.buttonReplay, replay);
         
+        tl.set(all.feedback, {autoAlpha:0})
         tl.set(all.buttonReplay, {autoAlpha:0})
           .to(all.acft2, 1, {x:"-=81"})
+          .set(all.feedback, {display:'block'})
+          .to(all.feedback, 0.5, {autoAlpha:1})
           .set(all.buttonReplay, {display:'block'})
           .to(all.buttonReplay, 0.5, {autoAlpha:1})
           .pause();
@@ -37,14 +41,22 @@
             t2.play();
             if (clicked === 'ec-ACAS-t3-p3-a1-s2-no' || clicked === 'ec-ACAS-t3-p3-a1-s2-label-no') {
                 // $('.ec-ACAS-page-1-1-feedback').show();
-                $('.ec-ACAS-slide-1-1-feedback').html('Correct! :-)').removeClass('ec-ACAS-slide-1-1-feedback-wrong').show();
+                $('.ec-ACAS-t3-p3-a1-s2-feedback').html('Correct! :-)').removeClass('ec-ACAS-feedback-wrong').show();
             }
             else {
-                $('.ec-ACAS-slide-1-1-feedback').html('Wrong! :-(').addClass('ec-ACAS-slide-1-1-feedback-wrong').show();
+                $('.ec-ACAS-t3-p3-a1-s2-feedback').html('Wrong! :-(').addClass('ec-ACAS-feedback-wrong').show();
             }
         });
         
     };
+    
+    function replay () {
+        $('#ec-ACAS-t3-p3-a1-s2-no, #ec-ACAS-t3-p3-a1-s2-yes').attr('checked',false);
+        $('.ec-ACAS-t3-p3-a1-s2-feedback').hide();
+        tl.restart().pause();
+        t2.restart().pause();
+        $(all.buttonReplay).hide();
+    }
     
     // $('.ec-ACAS-t3-p3-a1-s1-slider').change(function (event) {
     //     console.log('slider', this.value);

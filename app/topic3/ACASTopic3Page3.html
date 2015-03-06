@@ -61,7 +61,7 @@
                         text-align: center;
                     }
                     
-                    .ec-ACAS-slide-1-1-radio {
+                    .ec-ACAS-radio-input {
                         margin-left: 1em;
                     }
                     
@@ -69,13 +69,15 @@
                         font-size: 1.5em;
                     }
                     
-                    .ec-ACAS-slide-1-1-feedback {
+                    .ec-ACAS-radio-feedback {
                         margin-left: 2em;
-                        color: green;
-                        display: none;
                     }
                     
-                    .ec-ACAS-slide-1-1-feedback-wrong {
+                    .ec-ACAS-feedback-correct {
+                        color: green;
+                    }
+                    
+                    .ec-ACAS-feedback-wrong {
                         color: red;
                     }
                     
@@ -137,14 +139,21 @@
                         margin: 1em 0 0 0;
                     }
                     
-                    
+                    .ec-ACAS-t3-p3-a1-s3-img-container {
+                        float: right;
+                        width: 150px;
+                        height: 300px;
+                        margin-left: 2em;
+                        text-align: center;
+                        /*background: #f00;*/
+                    }
                 </style>
                 
                 <div class="ec-ACAS-slide-buttons">
                     <p><strong><a href="#" class="ec-acas-page-1-previous">Previous</a> <span class="ec-ACAS-page-1-slide-x">1</span> of 4 <a href="#" class="ec-acas-page-1-next">Next</a></strong></p>
                 </div>
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-1 ec-acas-hide">
+                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-1">
                     <h3>Horizontal thresholds</h3>
                     <div class="ec-ACAS-t3-p3-a1-s1">
                         <object data="svg/ec-ACAS-t3p3a1s1.svg" id="ec-ACAS-t3-p3-a1-s1-svg" type="image/svg+xml" width="220" height="250" ></object>
@@ -153,9 +162,15 @@
                     </div>
                     
                     <p>Do you think that the 'protected volume' which TCAS maintains around own aircraft is of a fixed size?</p>
-                        <input class="ec-ACAS-slide-1-1-radio ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-yes"> <label id="ec-ACAS-slide-1-1-label-yes" class="ec-ACAS-radio-label ec-ACAS-radio-label  ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-yes">Yes</label>
-                        <input class="ec-ACAS-slide-1-1-radio ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-no"> <label id="ec-ACAS-radio-label-no" class="ec-ACAS-radio-label ec-ACAS-radio-label  ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-no">No</label>
-                        <span class="ec-ACAS-radio-label ec-ACAS-slide-1-1-feedback">Correct! :-)</span>
+                        
+                        <input class="ec-ACAS-radio-input ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-yes"> 
+                        <label id="ec-ACAS-slide-1-1-label-yes" class="ec-ACAS-radio-label ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-yes">Yes</label>
+                        
+                        <input class="ec-ACAS-radio-input ec-ACAS-slide-1-1-question" type="radio" name="radio" id="ec-ACAS-slide-1-1-no"> 
+                        <label id="ec-ACAS-radio-label-no" class="ec-ACAS-radio-label ec-ACAS-radio-label  ec-ACAS-slide-1-1-question" for="ec-ACAS-slide-1-1-no">No</label>
+                        
+                        <span class="ec-ACAS-t3-p3-a1-s1-feedback ec-ACAS-radio-label ec-ACAS-radio-feedback ec-ACAS-feedback-correct ec-acas-display-none">Correct! :-)</span>
+                        
                     <div class="ec-ACAS-slide-1-1-text ec-acas-display-none">
                         <p>Horizontal alert thresholds are based on the time-to-go to the CPA. The actual radius of any 'protected volume' depends on the speeds and headings of the aircraft involved.</p>
                         <p>For any given intruder, the theoretical protected volume around the TCAS-equipped aircraft is generally a truncated sphere with a radius equal to the closure rate multiplied by the tau.</p>
@@ -167,14 +182,20 @@
                 
                 
                 
-                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-2">
+                <div class="ec-ACAS-slide ec-ACAS-page-1-slide-2 ec-acas-hide">
                     <h3>Miss distance filtering</h3>
                     <p>In addition, to reduce the number of unnecessary alerts based on the encounter geometry TCAS also filters out aircraft whose horizontal range, projected at CPA, is sufficient to preclude a collision avoidance manoeuver. The protected volumes are, therefore, also laterally truncated by a function of horizontal filtering, called Miss Distance Filtering (MDF). Aircraft whose ranges are projected to exceed twice the associated DMOD value are excluded.</p>
                     <p>In the example shown, both aircraft will be at FL310 at the CPA. DMOD value for RA = 1.10 nm Projected range at CPA is 2.4 nm</p>
                     <p>Will an RA be generated?</p>
-                    <input class="ec-ACAS-t3-p3-a1-s2-radio ec-ACAS-t3-p3-a1-s2-question" type="radio" name="radio" id="ec-ACAS-t3-p3-a1-s2-yes"> <label id="ec-ACAS-t3-p3-a1-s2-label-yes" class="ec-ACAS-radio-label ec-ACAS-t3-p3-a1-s2-label  ec-ACAS-t3-p3-a1-s2-question" for="ec-ACAS-t3-p3-a1-s2-yes">Yes</label>
-                    <input class="ec-ACAS-t3-p3-a1-s2-radio ec-ACAS-t3-p3-a1-s2-question" type="radio" name="radio" id="ec-ACAS-t3-p3-a1-s2-no"> <label id="ec-ACAS-t3-p3-a1-s2-label-no" class="ec-ACAS-radio-label ec-ACAS-t3-p3-a1-s2-label  ec-ACAS-t3-p3-a1-s2-question" for="ec-ACAS-t3-p3-a1-s2-no">No</label>
-                    <span class="ec-ACAS-t3-p3-a1-s2-label ec-ACAS-t3-p3-a1-s2-feedback  ec-acas-display-none">Correct! :-)</span>
+                    
+                    <input class="ec-ACAS-radio-input ec-ACAS-t3-p3-a1-s2-question" type="radio" name="radio" id="ec-ACAS-t3-p3-a1-s2-yes"> 
+                    <label id="ec-ACAS-t3-p3-a1-s2-label-yes" class="ec-ACAS-radio-label ec-ACAS-t3-p3-a1-s2-label  ec-ACAS-t3-p3-a1-s2-question" for="ec-ACAS-t3-p3-a1-s2-yes">Yes</label>
+                    
+                    <input class="ec-ACAS-radio-input ec-ACAS-t3-p3-a1-s2-question" type="radio" name="radio" id="ec-ACAS-t3-p3-a1-s2-no"> 
+                    <label id="ec-ACAS-t3-p3-a1-s2-label-no" class="ec-ACAS-radio-label ec-ACAS-t3-p3-a1-s2-label  ec-ACAS-t3-p3-a1-s2-question" for="ec-ACAS-t3-p3-a1-s2-no">No</label>
+                    
+                    <span class="ec-ACAS-t3-p3-a1-s2-feedback ec-ACAS-radio-label ec-ACAS-radio-feedback ec-ACAS-feedback-correct ec-acas-display-none">Correct! :-)</span>
+                    
                     <div class="ec-ACAS-t3-p3-a1-s2">
                         <object data="svg/ec-ACAS-t3p3a1s2.svg" id="ec-ACAS-t3-p3-a1-s2-svg" type="image/svg+xml" width="220" height="250" ></object>
                     </div>
@@ -184,6 +205,11 @@
                     <h3>Vertical thresholds</h3>
                     <p>Assuming that an aircraft has satisfied the horizontal test, TCAS must also analyse the conflict geometry in the vertical plane before issuing any alert. TCAS analyses the conflict geometry to determine the time left before the aircraft are at co-altitude. TAs and RAs will be triggered as soon as the times to co-altitude fall below tau values.</p>
                     <p>If one of the aircraft involved is manoeuvring vertically then a refinement to the logic is activat ed in order to reduce the number of RAs produced during level-off manoeuvres.</p>
+                    <div class="ec-ACAS-t3-p3-a1-s3-img-container">
+                        <a href="#" class="ec-acas-t3-p3-a1-s4-img2"><img src="images/ec-acas-t3-p3-a1-s4-img2.png" height="100" width="150" alt="Acft B"></a>
+                        <a href="#" class="ec-acas-t3-p3-a1-s4-img1"><img src="images/ec-acas-t3-p3-a1-s4-img1.png" height="100" width="150" alt="Acft A"></a>
+                        <p id="ec-acas-t3-p3-a1-s4-feedback">Select the aircraft that would receive an RA first.</p>
+                    </div>
                     <p>In the diagram, aircraft A is level and B is descending. Both are above FL200, so the sensitivity level is 7. For B the time values for triggering alerts remain the same as for the sensitivity level (48 and 35 seconds) - 35 seconds corresponds to a vertical distance of 1,400 ft at a rate of 2,400 ft/min. However, for A the tau value for the RA is reduced to 25 seconds corresponding to a distance of 1,000 ft at the same rat e.</p>
                     <p>This reduction allows A a few more seconds in which to detect the level-off and so prevent an RA from being triggered. This shows that higher vertical dosure rates increase the likelihood of an RA.</p>
                 </div>
@@ -346,6 +372,7 @@
         <script src="../scripts/ecSvgUtilities.js"></script>
         <script src="../scripts/source/ec-ACAS-t3-p3-a1-s1.js"></script>
         <script src="../scripts/source/ec-ACAS-t3-p3-a1-s2.js"></script>
+        <script src="../scripts/source/ec-ACAS-t3-p3-a1-s3.js"></script>
         <script src="../scripts/source/ec_ACAS_t3p3a3_1.js"></script>
         <script src="../scripts/source/ec_ACAS_t3p3a3_2.js"></script>
         <script src="../scripts/source/ec_ACAS_t3p3a3_3.js"></script>

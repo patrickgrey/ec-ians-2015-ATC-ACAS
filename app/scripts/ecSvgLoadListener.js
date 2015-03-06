@@ -26,9 +26,9 @@ var ecSvgLoadListener = (function () {
             callback(callbackConfig);
         }
         catch (e) {
-            svgObject.addEventListener("load", function svgObjectLoad(event){
+            svgObject.addEventListener('load', function svgObjectLoad(event){
                 // console.log('loaded');
-                svgObject.removeEventListener("load", svgObjectLoad, false); //remove listener, no longer needed
+                svgObject.removeEventListener('load', svgObjectLoad, false); //remove listener, no longer needed
                 callback(callbackConfig);
             },false);
         }

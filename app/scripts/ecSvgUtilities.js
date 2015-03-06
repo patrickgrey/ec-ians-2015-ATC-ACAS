@@ -22,9 +22,20 @@
      * in case more checking is required later or other file types introduced.
      * @param  {[string]} audioName [name of media file to play]
      */
+    module.addButtonBehaviour = function (button, callback) {
+        button.style.cursor = 'pointer';
+        button.addEventListener('click', callback);
+    };
+    
+    /**
+     * Play dynamic HTML5 audio element. Put into a function
+     * in case more checking is required later or other file types introduced.
+     * @param  {[string]} audioName [name of media file to play]
+     */
     module.callAudio = function (audioName) {
         // all[audioName].play();
         var audio = document.getElementById(audioName);
+        audio.volume = 1;
         audio.play();
     };
     
@@ -45,6 +56,7 @@
                 audio.setAttribute("id", id);
                 // $(audio).attr('controls','');
                 audio.src = audioPath + '/' + audioArray[i] + '.mp3';
+                audio.volume = 0;
                 document.body.appendChild(audio);
                 all[id] = audio;
             }
