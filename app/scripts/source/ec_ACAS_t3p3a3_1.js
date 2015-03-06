@@ -118,7 +118,7 @@
         .call( callAudio, ['audio0'])
         .to(all.acft1, dt*3, {delay:dt*2, x: '+=100',  y: '+=15', rotation: "-=23", ease:Linear.easeNone})
         .to(all.acft2, dt*1, {delay:-dt*3,  y: '+=20', rotation: "+=19", ease:Linear.easeNone})
-        .addPause()
+        // .addPause()
         .to(all.acft2, dt*4, {delay:-dt*3, x: '-=150', ease:Linear.easeNone})
         .to(all.arrow3, dt, {autoAlpha: 1})
         .to(all.arrow4, dt, {autoAlpha: 1})

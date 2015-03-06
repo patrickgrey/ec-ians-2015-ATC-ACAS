@@ -52,15 +52,47 @@
         
         <div class="ec-acas-container-right">
         
-            <div class="ec-ACAS-flash1">
-                <object type="application/x-shockwave-flash" 
+        
+        
+        
+        
+            <div class="ec-ACAS-t4-p1-a1">
+                
+                <div class="ec-ACAS-t4-p1-a1-slides-controls">
+                    <p><strong><a href="#" class="ec-acas-slides-previous">Previous</a> <span class="ec-ACAS-slides-x-of-x" data-total="4">1</span> of 4 <a href="#" class="ec-acas-slides-next">Next</a></strong></p>
+                </div>
+                
+                <dic class="ec-ACAS-t4-p1-a1-s1">
+                    <p>Slide 1</p>
+                </dic>
+                
+                <dic class="ec-ACAS-t4-p1-a1-s2 ec-acas-hide">
+                    <p>Slide 2</p>
+                </dic>
+                
+                <dic class="ec-ACAS-t4-p1-a1-s3 ec-acas-hide">
+                    <p>Slide 3</p>
+                </dic>
+                
+                <dic class="ec-ACAS-t4-p1-a1-s4 ec-acas-hide">
+                    <p>Slide 4</p>
+                </dic>
+                
+                
+                <!-- <object type="application/x-shockwave-flash" 
                     data="flash/traffic_display_symbology.swf" 
                     width="480" height="540">
                     <param name="movie" value="flash/traffic_display_symbology.swf" />
                     <param name="quality" value="high"/>
-                </object>
+                </object> -->
             </div>
-            <div class="ec-ACAS-flash2 ec-acas-hide">
+            
+            
+            
+            
+            
+            
+            <div class="ec-ACAS-t4-p1-a2 ec-acas-hide">
                 <object type="application/x-shockwave-flash" 
                     data="flash/EFIS_displays.swf" 
                     width="480" height="540">
@@ -68,7 +100,13 @@
                     <param name="quality" value="high"/>
                 </object>
             </div>
-            <div class="ec-ACAS-flash3 ec-acas-hide">
+            
+            
+            
+            
+            
+            
+            <div class="ec-ACAS-t4-p1-a3 ec-acas-hide">
               <style>
                   .ec-ACAS-table tr:nth-child(odd).ec-acas-t4p1-slide-3-th {
                         background-color: #eee;
@@ -196,15 +234,23 @@
         </div>
 
         <script src="../scripts/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script> -->
+        <script src="../scripts/TweenMax.min.js"></script>
         <script src="../scripts/pages.js"></script>
         <script src="../scripts/showHideFlash.js"></script>
         
+        <script src="../scripts/ecSvgLoadListener.js"></script>
+        <script src="../scripts/ecSvgUtilities.js"></script>
+        
         <script type="text/javascript">
+            
+            ec_ACAS_Pages.initSlides('.ec-ACAS-t4-p1-a1-slides-controls', ['.ec-ACAS-t4-p1-a1-s1', '.ec-ACAS-t4-p1-a1-s2', '.ec-ACAS-t4-p1-a1-s3', '.ec-ACAS-t4-p1-a1-s4']);
+            
             // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
             window.onload = function() {
-                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
-                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
-                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4']);
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-t4-p1-a1'], ['ec-ACAS-t4-p1-a2', 'ec-ACAS-t4-p1-a3']);
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-t4-p1-a2'], ['ec-ACAS-t4-p1-a3', 'ec-ACAS-t4-p1-a1']);
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-t4-p1-a3'], ['ec-ACAS-t4-p1-a1', 'ec-ACAS-t4-p1-a2']);
             };
             
             //
