@@ -115,6 +115,62 @@
         };
     };
     
+    module.createDropdownQuestion = function (_parent, _config) {
+        var selectOptions = _config.selectOptions || [],
+            placeholder = _config.placeholder || 'Please select',
+            dropDown = $('<select></select>');
+            
+            selectOptions.shuffle();
+            dropDown.appendTo(_parent);
+            
+            var tickCrossCSS = {
+                'position': 'absolute',
+                'height': dropDown.height().toString() + 'px',
+                'width': dropDown.height().toString() + 'px',
+                'right': '1px',
+                'top': '-1px',
+                'display': 'none',
+                'background': '#fff'
+            }
+            
+            
+            var crossImage = $('<img />', {src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMDkvMTU7THe5AAAAs0lEQVQ4jeWTTRGEMAyFn4RKQAoSKgEJSIgEJFTCSkACEpBQB28v2ZnQTVuY4cKQmZzSfHn5KfBOIxAIpLtgKwESiJVCMwEhEHqgSUEksBaxSCCb+NYEakUaH50iP8+eegsbnITRAUmzRQNcnGTr0ymQAW63gBQWimGTwH4ZpLC5oix1T6IAeZs7KOy2q5v8OMmxMsPs/pRGW6LxYH7G3x16wFTOp1J0V1XdVkUVSPPh4+wLUfrXZaRzOuAAAAAASUVORK5CYII='}).appendTo(_parent);
+            crossImage.css(tickCrossCSS);
+            
+            var tickImage = $('<img />', {src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMDkvMTU7THe5AAABAUlEQVQ4jc3TsVUCQRDG8R9KLh0omSF2QGSqViB0oO9tLuQXUAIlQGqiViB2cCVgBwa791jwDjxI/LKdmf3vfLuz/DsVrqBzIqSHOe7Q754AGmKBC4wF5dmRoBHe0upBMOcYm4U5HjPQokq162wbNM5B7WDboGllLdffbBYmeEmrpeC+ruxwZ/GyK9AXRk2lnbShl4rWW+0XBvjM6m8EqyZYN214F+clgoNZOiC/4Od9IKLN4U5skkAzXKbYh2C2D8TG5tBmCGEpfpFKfUF5CHYOXpVu9TFI8eusZro7T03KX3NSk//msL3fsGhjuZN/Eqzbw6LyLmqnvJ0Kq/QgrfUDOX85tvBi/64AAAAASUVORK5CYII='}).appendTo(_parent);
+            tickImage.css(tickCrossCSS);
+            
+            var currentOption = $('<option />', {value: -1, text: placeholder}).appendTo(dropDown);
+            // console.log(currentOption);
+            currentOption.attr('data-correctness', 'none');
+            
+            for (var i = selectOptions.length - 1; i >= 0; i--) {
+                var labelText = selectOptions[i].labelText;
+                currentOption = $('<option  />', {value: i, text: labelText}).appendTo(dropDown);
+                currentOption.attr('data-correctness', selectOptions[i].correctness);
+            };
+            
+            
+            
+            dropDown.change(function (e) {
+                crossImage.hide();
+                tickImage.hide();
+                var selected = $(this).find( 'option:selected' );
+                if(selected.attr('data-correctness') === 'false') {
+                    crossImage.show().delay(1000).fadeOut();
+                }
+                else if(selected.attr('data-correctness') === 'true') {
+                    tickImage.show();
+                }
+ 
+// <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMDkvMTU7THe5AAABAUlEQVQ4jc3TsVUCQRDG8R9KLh0omSF2QGSqViB0oO9tLuQXUAIlQGqiViB2cCVgBwa791jwDjxI/LKdmf3vfLuz/DsVrqBzIqSHOe7Q754AGmKBC4wF5dmRoBHe0upBMOcYm4U5HjPQokq162wbNM5B7WDboGllLdffbBYmeEmrpeC+ruxwZ/GyK9AXRk2lnbShl4rWW+0XBvjM6m8EqyZYN214F+clgoNZOiC/4Od9IKLN4U5skkAzXKbYh2C2D8TG5tBmCGEpfpFKfUF5CHYOXpVu9TFI8eusZro7T03KX3NSk//msL3fsGhjuZN/Eqzbw6LyLmqnvJ0Kq/QgrfUDOX85tvBi/64AAAAASUVORK5CYII="/>
+
+
+
+
+            });
+    };
+    
     // module.radioSelected = function (radioGroupName) {
     //     var feedback = $('.'+$(this).attr('data-parent')+'-feedback');
     //     console.log($(this).attr('data-parent'));

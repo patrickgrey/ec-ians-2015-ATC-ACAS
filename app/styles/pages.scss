@@ -110,10 +110,22 @@ a:hover {
 }
 
 .ec-ACAS-cols-2 {
-    overflow: hidden;
+    overflow: auto;
     width: 100%;
 }
 
 .ec-ACAS-instructions {
     color: orange;
+}
+
+.ec-ACAS-slides-controls {
+    text-align: center;
+}
+
+.ec-ACAS-feedback-correct {
+    color: green;
+}
+
+.ec-ACAS-feedback-wrong {
+    color: red;
 }

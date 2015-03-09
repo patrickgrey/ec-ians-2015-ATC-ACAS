@@ -54,10 +54,14 @@
         
         
             <style>
-                .ec-ACAS-cols-2-1, .ec-ACAS-cols-2-2 {
-                    float: left;
+                
+                .ec-ACAS-t4-p1-a1-s1-col-left, .ec-ACAS-t4-p1-a1-s1-col-right {
+                    display: inline-block;
+                }
+                
+                .ec-ACAS-t4-p1-a1-s1-col-right {
+                    margin-left: 10px;
                     width: 50%;
-                    height: 200px;
                 }
                 
                 .ec-ACAS-t4-p1-a1-s1-activity {
@@ -81,6 +85,58 @@
                     vertical-align: top;
                     padding-top: 10px; 
                 }
+                
+                /*Keep buttons absolute position relative to parent not page*/
+                .ec-ACAS-t4-p1-a1-s1-activity-container {
+                    position: relative;
+                }
+                
+                .ec-acas-t4-p1-a1-s1-activity-answers {
+                    position: absolute;
+                    top: 30px;
+                    left: 50px;
+                    padding-top: 5px;
+                    background: #eee;
+                    border-radius: 5px;
+                }
+                
+                .ec-acas-t4-p1-a1-s1-activity-answers-list {
+                    list-style: none;
+                    padding: 0 10px 0 10px;
+                }
+                
+                .ec-acas-t4-p1-a1-s1-activity-answers-list-item {
+                    display: inline;
+                }
+                
+                .ec-acas-t4-p1-a1-s1-activity-button-close {
+                    display: block;
+                    position: absolute;
+                    top: -20px;
+                    right: -20px;
+                    padding-top: 5px;
+                    width: 30px;
+                    height: 30px;
+                    background: #f00;
+                    border-radius: 50%;
+                    font-size: 2em;
+                    color: #fff;
+                    text-align: center;
+                    border: 4px solid #fff;
+                }
+                
+                .ec-ACAS-t4-p1-a1-s2-img, .ec-ACAS-t4-p1-a1-s3-img {
+                    float: left;
+                    margin: 0.5em 1em 1.5em 0;
+                }
+                
+                .ec-ACAS-t4-p1-a1-s3-img {
+                    margin: 0.5em 1em 2.5em 0;
+                }
+                
+                .ec-acas-dropdown-question {
+                    position: relative;
+                }
             </style>
         
         
@@ -90,33 +146,37 @@
                     <p><strong><a href="#" class="ec-acas-slides-previous">Previous</a> <span class="ec-ACAS-slides-x-of-x" data-total="4">1</span> of 4 <a href="#" class="ec-acas-slides-next">Next</a></strong></p>
                 </div>
                 
-                <dic class="ec-ACAS-t4-p1-a1-s1">
+                <div class="ec-ACAS-t4-p1-a1-s1 ec-acas-hide">
                 
-                    <div class="ec-ACAS-cols-2">
-                        <div class="ec-ACAS-cols-2-1">
+                    <div >
+                        <div class="ec-ACAS-t4-p1-a1-s1-col-left" >
                             <img src="images/ec-ACAS-t4-p1-a1-s1-trafficSymbols.png" height="187" width="239" alt="Traffic symbols">
                         </div>
-                        <div class="ec-ACAS-cols-2-2">
+                        <div class="ec-ACAS-t4-p1-a1-s1-col-right ec-ACAS-t4-p1-a1-s1-activity-container">
+                        
                             <ul class="ec-ACAS-t4-p1-a1-s1-activity">
-                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"><span class="ec-acas-t4-p1-a1-s1-activity-text">non intruding traffic</span></li>
-                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"><span class="ec-acas-t4-p1-a1-s1-activity-text">Proximate traffic</span></li>
-                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"><span class="ec-acas-t4-p1-a1-s1-activity-text">intruder</span></li>
-                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"><span class="ec-acas-t4-p1-a1-s1-activity-text">threat</span></li>
+                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><a href="#" data-answer="0" data-order="1" class="ec-acas-t4-p1-a1-s1-activity-open ec-acas-t4-p1-a1-s1-activity-open-1"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"></a><span class="ec-acas-t4-p1-a1-s1-activity-text">non intruding traffic</span></li>
+                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><a href="#" data-answer="0" data-order="2" class="ec-acas-t4-p1-a1-s1-activity-open ec-acas-t4-p1-a1-s1-activity-open-2"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"></a><span class="ec-acas-t4-p1-a1-s1-activity-text">Proximate traffic</span></li>
+                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><a href="#" data-answer="0" data-order="3" class="ec-acas-t4-p1-a1-s1-activity-open ec-acas-t4-p1-a1-s1-activity-open-3"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"></a><span class="ec-acas-t4-p1-a1-s1-activity-text">intruder</span></li>
+                              <li class="ec-ACAS-t4-p1-a1-s1-activity-option"><a href="#" data-answer="0" data-order="4" class="ec-acas-t4-p1-a1-s1-activity-open ec-acas-t4-p1-a1-s1-activity-open-4"><img class="ec-ACAS-t4-p1-a1-s1-activity-img" src="images/questionMarkIcon.png" height="40" width="40"></a><span class="ec-acas-t4-p1-a1-s1-activity-text">threat</span></li>
                             </ul>
-                            <div class="ec-acas-t4-p1-a1-s1-activity-answers">
-                                <ul>
-                                  <li><imgsrc="images/ec-ACAS-t4-p1-a1-s1-non-intrude.png" height="40" width="40"></li>
-                                  <li><imgsrc="images/ec-ACAS-t4-p1-a1-s1-proximate.png" height="40" width="40"></li>
-                                  <li><imgsrc="images/ec-ACAS-t4-p1-a1-s1-intruder.png" height="40" width="40"></li>
-                                  <li><imgsrc="images/ec-ACAS-t4-p1-a1-s1-threat.png" height="40" width="40"></li>
+                            
+                            <div class="ec-acas-t4-p1-a1-s1-activity-answers ec-acas-display-none">
+                                <ul class="ec-acas-t4-p1-a1-s1-activity-answers-list">
+                                  <li class="ec-acas-t4-p1-a1-s1-activity-answers-list-item"><a href="#" class="ec-acas-t4-p1-a1-s1-activity-button-4"><img src="images/ec-ACAS-t4-p1-a1-s1-threat.png" height="40" width="40"></a></li>
+                                  <li class="ec-acas-t4-p1-a1-s1-activity-answers-list-item"><a href="#" class="ec-acas-t4-p1-a1-s1-activity-button-1"><img src="images/ec-ACAS-t4-p1-a1-s1-non-intrude.png" height="40" width="40"></a></li>
+                                  <li class="ec-acas-t4-p1-a1-s1-activity-answers-list-item"><a href="#" class="ec-acas-t4-p1-a1-s1-activity-button-3"><img src="images/ec-ACAS-t4-p1-a1-s1-intruder.png" height="40" width="40"></a></li>
+                                  <li class="ec-acas-t4-p1-a1-s1-activity-answers-list-item"><a href="#" class="ec-acas-t4-p1-a1-s1-activity-button-2"><img src="images/ec-ACAS-t4-p1-a1-s1-proximate.png" height="40" width="40"></a></li>
+                                  <li class="ec-acas-t4-p1-a1-s1-activity-answers-list-item"><a href="#" class="ec-acas-t4-p1-a1-s1-activity-button-close">x</a></li>
                                 </ul>
                             </div>
+                            
                         </div>
                     </div>
                     
                     <div class="ec-ACAS-t4-p1-a1-s1-instructions">
                         <p class="ec-ACAS-instructions">The symbology used to represent traffic is very intuitive. Which symbol do you think corresponds to each category of traffic?</p>
-                        <p class="ec-ACAS-instructions">Click on each &apos;?&apos; then select the appropriate symbol.</p>
+                        <p class="ec-ACAS-instructions ec-ACAS-t4-p1-a1-s1-correctness">Click on each &apos;?&apos; then select the appropriate symbol.</p>
                     </div>
                     
                     <div class="ec-ACAS-t4-p1-a1-s1-feedback  ec-acas-display-none">
@@ -124,25 +184,35 @@
                         <p>Targets are displayed by different symbols, according to their ACAS status:</p>
                         <ul>
                           <li>a hollow blue or white diamond - for non intruding traffic,</li>
-                          <li>a solid amber circle - for intruders (which trigger a TA), and</li>
+                          <li>a solid yellow circle - for intruders (which trigger a TA), and</li>
                           <li>a solid red square - for threats (which trigger an RA).</li>
                         </ul>
                         <p>&apos;Proximate&apos; traffic are identified by a solid white or blue diamond. In the event of an advisory, this symbol indicates that the aircraft is not the intruder generating the advisory, illustrating that the closest traffic may not necessarily be the most threatening.</p>
                     </div>
                     
-                </dic>
+                </div>
                 
-                <dic class="ec-ACAS-t4-p1-a1-s2 ec-acas-hide">
-                    <p>Slide 2</p>
-                </dic>
+                <div class="ec-ACAS-t4-p1-a1-s2 ec-acas-hide">
+                    <img class="ec-ACAS-t4-p1-a1-s2-img" src="images/ec-ACAS-t4-p1-a1-s2-trafficSymbols.png" height="187" width="239" alt="Traffic symbols">
+                    <p>Each symbol is displayed on the screen according to its relative position to own aircraft. The display accuracy depends on the selected scale.</p>
+                    <p>When the 10 NM scale is in use, the positional accuracy is approximately +/- 1 NM in range and +/- 10 degrees in bearing.</p>
+                    <p>The &apos;own aircraft&apos; symbol, representing the TCAS equipment host aircraft, is an arrowhead or aeroplane-like symbol coloured white or blue.</p>
+                    <p>Vertical data is also shown with the relevant symbol if the intruder is reporting altitude. The relative altitude, in <strong>hundreds</strong> of feet, is displayed above the symbol if the intruder is <span class="ec-acas-dropdown-question ec-acas-t4-p1-a1-s2-dropdown-question-1"></span> own aircraft or <span class="ec-acas-dropdown-question ec-acas-t4-p1-a1-s2-dropdown-question-2"></span> it in the opposite case. In some aircraft, the flight level of the intruder can be displayed instead of its relative altitude. Finally, an arrow is shown when the target aircraft is climbing or descending at <strong>more than 500 ft/min</strong>.</p>
+                    <div class="ec-ACAS-t4-p1-a1-s2-question"></div>
+                </div>
                 
-                <dic class="ec-ACAS-t4-p1-a1-s3 ec-acas-hide">
-                    <p>Slide 3</p>
-                </dic>
+                <div class="ec-ACAS-t4-p1-a1-s3">
+                    <img class="ec-ACAS-t4-p1-a1-s3-img" src="images/ec-ACAS-t4-p1-a1-s3-display.png" height="222" width="224" alt="">
+                    <p>The symbology, along with visual information relating to RAs, is integrated into the VSI (and EFIS displays).</p>
+                    <p>An RA is a combination of the red and green arcs. The green arc indicates the required vertical rate and the red arc the vertical rates to avoid.</p>
+                    <p>Note: two red arcs may flank the range of required vertical speeds if more than one threat is present.</p>
+                    <p>The dotted circle around the own aircraft symbol in the VSI represents a radius of 2 nm. The display range can vary from 4 to 30 nm ahead of own aircraft.</p>
+                    
+                </div>
                 
-                <dic class="ec-ACAS-t4-p1-a1-s4 ec-acas-hide">
+                <div class="ec-ACAS-t4-p1-a1-s4 ec-acas-hide">
                     <p>Slide 4</p>
-                </dic>
+                </div>
                 
                 
                 <!-- <object type="application/x-shockwave-flash" 
@@ -304,9 +374,12 @@
         <script src="../scripts/TweenMax.min.js"></script>
         <script src="../scripts/pages.js"></script>
         <script src="../scripts/showHideFlash.js"></script>
+        <script src="../scripts/EC_ACAS_Questions_Multi_Choice.js"></script>
         
         <script src="../scripts/ecSvgLoadListener.js"></script>
         <script src="../scripts/ecSvgUtilities.js"></script>
+        <script src="../scripts/source/ec-ACAS-t4-p1-a1-s1.js"></script>
+        <script src="../scripts/source/ec-ACAS-t4-p1-a1-s2.js"></script>
         
         <script type="text/javascript">
             
