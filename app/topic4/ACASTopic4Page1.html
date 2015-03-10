@@ -10,6 +10,225 @@
         <meta name="description" content="ATC-ACAS review site">
         <meta name="author" content="patrickGrey.co.uk">
         <meta name="viewport" content="width=device-width">
+        
+        <style>
+            .ec-ACAS-t4-p1-a1-s4-window {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 1000px;
+                height: 588px;
+                background: #fff;
+                border: 1px solid #eee;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-window-close{
+                position: absolute;
+                top: 3px;
+                right: 3px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                /*padding: 10px;*/
+                background: #f00;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target {
+                position: absolute;
+                width: 155px;
+                height: 155px;
+                background: black;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-1 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-1.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-2 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-2.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-3 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-3.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-4 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-4.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-5 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-5.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-6 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-6.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-7 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-7.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-8 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-8.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-9 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-9.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-10 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-10.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-11 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-11.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-12 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-12.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-13 {
+                background: url('images/drags/ec-ACAS-t4-p1-a1-s4-drag-13.png') no-repeat;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-1,
+            .ec-ACAS-t4-p1-a1-s4-target-2,
+            .ec-ACAS-t4-p1-a1-s4-target-3,
+            .ec-ACAS-t4-p1-a1-s4-target-4,
+            .ec-ACAS-t4-p1-a1-s4-target-5 {
+                top: 5px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-6,
+            .ec-ACAS-t4-p1-a1-s4-target-7,
+            .ec-ACAS-t4-p1-a1-s4-target-8,
+            .ec-ACAS-t4-p1-a1-s4-target-9,
+            .ec-ACAS-t4-p1-a1-s4-target-10 {
+                top: 166px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-11,
+            .ec-ACAS-t4-p1-a1-s4-target-12,
+            .ec-ACAS-t4-p1-a1-s4-target-13 {
+                top: 325px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-1,
+            .ec-ACAS-t4-p1-a1-s4-target-6 {
+                left: 5px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-2,
+            .ec-ACAS-t4-p1-a1-s4-target-7,
+            .ec-ACAS-t4-p1-a1-s4-target-11 {
+                left: 165px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-3,
+            .ec-ACAS-t4-p1-a1-s4-target-8,
+            .ec-ACAS-t4-p1-a1-s4-target-12 {
+                left: 325px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-4,
+            .ec-ACAS-t4-p1-a1-s4-target-9,
+            .ec-ACAS-t4-p1-a1-s4-target-13 {
+                left: 485px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-target-5,
+            .ec-ACAS-t4-p1-a1-s4-target-10 {
+                left: 645px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag, .ec-ACAS-t4-p1-a1-s4-drag-large {
+                position: absolute;
+                width: 155px;
+                height: 48px;
+                padding-top: 12px;
+                line-height: 16px;
+                text-align: center;
+                font-weight: bold;
+                background: #eee;
+                border-radius: 8px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-3line {
+                height: 55px;
+                padding-top: 5px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-1line {
+                height: 40px;
+                padding-top: 20px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-1,
+            .ec-ACAS-t4-p1-a1-s4-drag-2,
+            .ec-ACAS-t4-p1-a1-s4-drag-3,
+            .ec-ACAS-t4-p1-a1-s4-drag-4,
+            .ec-ACAS-t4-p1-a1-s4-drag-5,
+            .ec-ACAS-t4-p1-a1-s4-drag-6,
+            .ec-ACAS-t4-p1-a1-s4-drag-7,
+            .ec-ACAS-t4-p1-a1-s4-drag-8,
+            .ec-ACAS-t4-p1-a1-s4-drag-9 {
+                left: 805px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-10,
+            .ec-ACAS-t4-p1-a1-s4-drag-11,
+            .ec-ACAS-t4-p1-a1-s4-drag-12,
+            .ec-ACAS-t4-p1-a1-s4-drag-13 {
+                left: 645px;
+            }
+            
+            /* .ec-ACAS-t4-p1-a1-s4-drag-12 {
+                left: 485px;
+            } */
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-1 {
+                top: 5px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-2 {
+                top: 70px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-3 {
+                top: 135px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-4 {
+                top: 200px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-5 {
+                top: 265px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-6, .ec-ACAS-t4-p1-a1-s4-drag-10 {
+                top: 330px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-7, .ec-ACAS-t4-p1-a1-s4-drag-11 {
+                top: 395px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-8, .ec-ACAS-t4-p1-a1-s4-drag-12 {
+                top: 460px;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-drag-9, .ec-ACAS-t4-p1-a1-s4-drag-13 {
+                top: 525px;
+            }
+            
+            
+        </style>
 
         <!-- build:css styles/pages.css --> 
         <link rel="stylesheet" href="../styles/pages.css">
@@ -18,7 +237,37 @@
 
     </head>
     <body>
-    
+        <!--  ec-acas-display-none -->
+        <div class="ec-ACAS-t4-p1-a1-s4-window">
+            <a class="ec-ACAS-t4-p1-a1-s4-window-close" href="#">X</a>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-1"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-2"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-3"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-4"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-5"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-6"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-7"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-8"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-9"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-10"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-11"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-12"></div>
+            <div class="ec-ACAS-t4-p1-a1-s4-target ec-ACAS-t4-p1-a1-s4-target-13"></div>
+            
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-1">Traffic,<br/>Traffic</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-2">Adjust vertical speed,<br/>Adjust</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-3">Level off,<br/>level off</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-4">Monitor vertical speed,<br/>monitor</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-5">Maintain<br/>vertical speed</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-6">Climb,<br/>climb</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-7">Increase climb,<br/>Increase climb</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-8">Climb,<br/>climb now</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-9">Descend,<br/>descend</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-10">Increase Descend,<br/>Increase descend</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-11">Descend,<br/>Descend now</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag-large ec-ACAS-t4-p1-a1-s4-drag-3line ec-ACAS-t4-p1-a1-s4-drag-12">Adjust vertical speed, Adjust /<br/>Level off, level off</a>
+            <a href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-1line ec-ACAS-t4-p1-a1-s4-drag-13">Clear of conflict</a>
+        </div>
         
         <div class="ec-acas-container-left">
             <h2>Cockpit Presentation</h2>
@@ -201,7 +450,7 @@
                     <div class="ec-ACAS-t4-p1-a1-s2-question"></div>
                 </div>
                 
-                <div class="ec-ACAS-t4-p1-a1-s3">
+                <div class="ec-ACAS-t4-p1-a1-s3 ec-acas-hide">
                     <img class="ec-ACAS-t4-p1-a1-s3-img" src="images/ec-ACAS-t4-p1-a1-s3-display.png" height="222" width="224" alt="">
                     <p>The symbology, along with visual information relating to RAs, is integrated into the VSI (and EFIS displays).</p>
                     <p>An RA is a combination of the red and green arcs. The green arc indicates the required vertical rate and the red arc the vertical rates to avoid.</p>
@@ -212,8 +461,8 @@
                     <div class="ec-ACAS-t4-p1-a1-s3-question-2 ec-acas-display-none"></div>
                 </div>
                 
-                <div class="ec-ACAS-t4-p1-a1-s4 ec-acas-hide">
-                    <p>Slide 4</p>
+                <div class="ec-ACAS-t4-p1-a1-s4">
+                    <p><a class="ec-ACAS-t4-p1-a1-s4-launch" href="#">Select here to explore TCAS operation.</a></p>
                 </div>
                 
                 
@@ -383,6 +632,7 @@
         <script src="../scripts/source/ec-ACAS-t4-p1-a1-s1.js"></script>
         <script src="../scripts/source/ec-ACAS-t4-p1-a1-s2.js"></script>
         <script src="../scripts/source/ec-ACAS-t4-p1-a1-s3.js"></script>
+        <script src="../scripts/source/ec-ACAS-t4-p1-a1-s4.js"></script>
         
         <script type="text/javascript">
             
