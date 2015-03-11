@@ -8,7 +8,29 @@
         return;
     }
     
-    var module = {};
+    var module = {},
+        audioDictionary = {},
+        audioPath = 'audio',
+        audioArray = [
+                        't4p1a0LevelOff', 
+                        't4p1a1Traffic', 
+                        't4p1a2Monitor_Vertical_Speed', 
+                        't4p1a3Descend', 
+                        't4p1a4Climb', 
+                        't4p1a5Increase_Descent', 
+                        't4p1a6Increase_Climb', 
+                        't4p1a7Adjust_Vertical_Speed', 
+                        't4p1a8Descend_Now', 
+                        't4p1a9Climb_Now', 
+                        't4p1a10Crossing_Descend', 
+                        't4p1a11Crossing_Climb', 
+                        't4p1a12Maintain_Vertical_Speed', 
+                        't4p1a13Maintain_Crossing_Maintain', 
+                        't4p1a14Adjust_Vertical_Speed', 
+                        't4p1a15Clear_of_Conflict'
+                    ];
+    
+    ecSvgUtilities.createAudio(audioArray, audioPath, audioDictionary);
     
     $('.ec-ACAS-t4-p1-a1-s4-launch').click(function(){
         $('.ec-ACAS-t4-p1-a1-s4-window').show();
@@ -18,8 +40,37 @@
         $('.ec-ACAS-t4-p1-a1-s4-window').hide();
     });
     
-    $('.ec-ACAS-t4-p1-a1-s4-audio').click(function(){
-        console.log('clicked audio!');
+    $('.ec-ACAS-t4-p1-a1-s4-audio').click(function(e){
+        
+        switch($(e.target).attr('id')) {
+            case 'ec-ACAS-t4-p1-a1-s4-audio-1':
+                ecSvgUtilities.callAudio('t4p1a1Traffic'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-2':
+                ecSvgUtilities.callAudio('t4p1a7Adjust_Vertical_Speed'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-3':
+                ecSvgUtilities.callAudio('t4p1a0LevelOff'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-4':
+                ecSvgUtilities.callAudio('t4p1a2Monitor_Vertical_Speed'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-5':
+                ecSvgUtilities.callAudio('t4p1a12Maintain_Vertical_Speed'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-6':
+                ecSvgUtilities.callAudio('t4p1a4Climb'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-7':
+                ecSvgUtilities.callAudio('t4p1a6Increase_Climb'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-8':
+                ecSvgUtilities.callAudio('t4p1a9Climb_Now'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-9':
+                ecSvgUtilities.callAudio('t4p1a3Descend'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-10':
+                ecSvgUtilities.callAudio('t4p1a5Increase_Descent'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-11':
+                ecSvgUtilities.callAudio('t4p1a8Descend_Now'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-12':
+                ecSvgUtilities.callAudio('t4p1a14Adjust_Vertical_Speed'); break;
+            case 'ec-ACAS-t4-p1-a1-s4-audio-13':
+                ecSvgUtilities.callAudio('t4p1a15Clear_of_Conflict'); break;
+        }
+        
     });
     
     $('.ec-ACAS-t4-p1-a1-s4-button-replay').click(function(){
