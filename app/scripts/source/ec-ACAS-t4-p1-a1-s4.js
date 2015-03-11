@@ -22,70 +22,137 @@
         console.log('clicked audio!');
     });
     
+    $('.ec-ACAS-t4-p1-a1-s4-button-replay').click(function(){
+        $(this).hide();
+        for (var i = dragArray.length - 1; i >= 0; i--) {
+            var currentDrag = dragArray[i];
+            currentDrag.removeClass('ec-ACAS-t4-p1-a1-s4-drag-dropped');
+            currentDrag.attr('data-current-target', '');
+            currentDrag.css({'left': currentDrag.attr('data-current-initial-left'), 'top': currentDrag.attr('data-current-initial-top')});
+            currentDrag.find('.ec-ACAS-t4-p1-a1-s4-tick').hide();
+            currentDrag.find('.ec-ACAS-t4-p1-a1-s4-cross').hide();
+            $.pep.unbind(currentDrag);
+        }
+        initDrags();
+        // $.pep.unbind($('.ec-ACAS-t4-p1-a1-s4-drag'));
+        randomizePositions();
+    });
+    
     // TODO:
-    // randomise drags before initializing
+    // DONErandomise drags before initializing
     // Allow reset, which will need to reset start position: either startPos or unbind and rebind OR set startPos on shuffle!
-    // check if target has a drag already > send current one back to start pos.
+    // DONEcheck if target has a drag already > send current one back to start pos.
     // DONE NEED to remove has drag attribute from target if has no drag when drag is removed.
-    // BUT if drop on another target, that stays now!
+    // DONEBUT if drop on another target, that stays now!
     // check for all answered and whether correct.
     // Add audio with non drag click or add speaker icon in bottom right?
     // DONE Add instruction text and feedback icons and text.
     // Proof read whole course
     // TEST TEST TEST SVG!!! on LCMS!!!!
     var dragArray = [];
-    for (var i = 13; i >= 1; i--) {
-        var currentDrag = $('#ec-ACAS-t4-p1-a1-s4-drag-'+i);
-        var currentPep = currentDrag.pep({
-            useCSSTranslation: false,
-            shouldEase: false,
-            droppable:   '.ec-ACAS-t4-p1-a1-s4-target',
-            initiate: function(ev, obj){
-                /*console.log(obj.activeDropRegions.length);
-                if(obj.activeDropRegions.length === 1) {
-                    console.log('hi', obj.activeDropRegions[0][0]);
-                    $(obj.activeDropRegions[0][0]).attr('data-current-drag', '');
-                }*/
-                // $('#'+obj.$el.attr('data-current-target')).attr('data-current-drag', '');
-                
-                obj.$el.removeClass('ec-ACAS-t4-p1-a1-s4-drag-dropped');
-                $('.ec-ACAS-t4-p1-a1-s4-drag').css('z-index', '50');
-                obj.$el.css('z-index', '51');
-                $('.ec-ACAS-t4-p1-a1-s4-instructions').fadeOut();
-            },
-            start: function(ev, obj){
-                obj.noCenter = false;
-                // obj.$el.removeClass('ec-ACAS-t4-p1-a1-s4-drag-dropped');
-            },
-            stop: function(ev, obj){
-                handleCentering(ev, obj);
-            },
-            rest: handleCentering,
-            revert: true,
-            revertIf: function(){
-                return !this.activeDropRegions.length;
-            },
-            constrainTo: 'parent'
-        });
+    
+    function initDrags () {
         
-        // console.log(currentPep.__proto__);
-        // console.log(currentDrag.pep);
+        for (var i = 13; i >= 1; i--) {
+            var currentDrag = $('#ec-ACAS-t4-p1-a1-s4-drag-'+i);
+            currentDrag.attr('data-correct-target', 'ec-ACAS-t4-p1-a1-s4-target-'+i);
+            var currentPep = currentDrag.pep({
+                useCSSTranslation: false,
+                shouldEase: false,
+                droppable:   '.ec-ACAS-t4-p1-a1-s4-target',
+                initiate: function(ev, obj){
+                    obj.$el.removeClass('ec-ACAS-t4-p1-a1-s4-drag-dropped');
+                    $('.ec-ACAS-t4-p1-a1-s4-drag').css('z-index', '50');
+                    obj.$el.css('z-index', '51');
+                    $('.ec-ACAS-t4-p1-a1-s4-instructions').fadeOut();
+                },
+                start: function(ev, obj){
+                    obj.noCenter = false;
+                    // obj.$el.removeClass('ec-ACAS-t4-p1-a1-s4-drag-dropped');
+                },
+                stop: function(ev, obj){
+                    handleCentering(ev, obj);
+                },
+                rest: handleCentering,
+                revert: true,
+                revertIf: function(){
+                    return !this.activeDropRegions.length;
+                },
+                constrainTo: 'parent'
+            });
+            
+            // console.log(currentPep.__proto__);
+            // console.log(currentDrag.pep);
+            
+            dragArray.push(currentDrag);
+        }
         
-        dragArray.push(currentDrag);
+        // Reset position to absolute after pep.js sets parent to relative.
+        $('.ec-ACAS-t4-p1-a1-s4-window').css({'position': 'absolute'});
+        
     }
     
+    initDrags ();
     
+    function checkAllDropped (obj) {
+        // console.log('hi');
+        var allDropped = true;
+        $('.ec-ACAS-t4-p1-a1-s4-drag').each(function () {
+            var self = $(this);
+            self.find('.ec-ACAS-t4-p1-a1-s4-tick').hide();
+            self.find('.ec-ACAS-t4-p1-a1-s4-cross').hide();
+            if (!self.attr('data-current-target') || self.attr('data-current-target') === '') {
+                allDropped = false;
+            }
+        });
+        // console.log(allDropped);
+        if (allDropped) {
+            checkAnswers();
+        }
+        else {
+            $('.ec-ACAS-t4-p1-a1-s4-note').hide();
+        }
+    }
+    
+    function checkAnswers () {
+        
+        var allCorrect = true;
+        
+        $('.ec-ACAS-t4-p1-a1-s4-drag').each(function () {
+            var self = $(this);
+            if ( self.attr('data-correct-target') === self.attr('data-current-target') ) {
+                self.find('.ec-ACAS-t4-p1-a1-s4-tick').show();
+            }
+            else {
+                self.find('.ec-ACAS-t4-p1-a1-s4-cross').show();
+                allCorrect = false;
+            }
+        });
+        
+        if (allCorrect) {
+            $('.ec-ACAS-t4-p1-a1-s4-note').fadeIn();
+            $('.ec-ACAS-t4-p1-a1-s4-button-replay').fadeIn();
+        }
+        else {
+            $('.ec-ACAS-t4-p1-a1-s4-note').hide();
+        }
+    }
     
     function handleCentering(ev, obj){
         if ( obj.activeDropRegions.length > 0 ) {
             // console.log(obj.activeDropRegions);
             obj.$el.addClass('ec-ACAS-t4-p1-a1-s4-drag-dropped');
             centerWithin(ev, obj);
-        }   
+        }
+        else{
+            obj.$el.attr('data-current-target', '');
+        }
+        checkAllDropped (obj);
     }
     
     function centerWithin(ev, obj){
         var $parent = obj.activeDropRegions[0];
+        // get the parent that is closest to the mouse cursor as there may be more than one.
         for (var i = obj.activeDropRegions.length - 1; i >= 0; i--) {
             
             var boundingRect = obj.activeDropRegions[i][0].getBoundingClientRect();
@@ -101,17 +168,19 @@
             }
         };
         
+        // Record which target the drag has landed on
         obj.$el.attr('data-current-target', $parent.attr('id'));
-        
+        // Reset any other drags with the same target and check if all dropped.
         $('.ec-ACAS-t4-p1-a1-s4-drag').each(function () {
-            // $(this).attr('data-current-target')
             var self = $(this);
             if (self.attr('data-current-target') === obj.$el.attr('data-current-target') && self.attr('id') != obj.$el.attr('id')) {
-                // console.log('gotta live one!', obj.$el.attr('id'));
                 self.removeClass('ec-ACAS-t4-p1-a1-s4-drag-dropped');
+                self.attr('data-current-target', '');
                 self.css({'left': self.attr('data-current-initial-left'), 'top': self.attr('data-current-initial-top')});
             }
         });
+        
+        
         
         var pTop    = $parent.offset().top;
         var pLeft   = $parent.offset().left;
@@ -141,8 +210,7 @@
         obj.noCenter = false;
     }
     
-    // Reset position to absolute after pep.js sets parent to relative.
-    $('.ec-ACAS-t4-p1-a1-s4-window').css({'position': 'absolute'});
+    
     
     // set new positions and reset pep start properties
     function randomizePositions () {

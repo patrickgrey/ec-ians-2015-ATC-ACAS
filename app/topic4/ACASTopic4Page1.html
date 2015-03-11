@@ -62,6 +62,32 @@
                 margin-top: -10px;
             }
             
+            .ec-ACAS-t4-p1-a1-s4-note {
+                display: none;
+                position: absolute;
+                bottom: 5px;
+                left: 290px;
+                width: 200px;
+                text-align: center;
+                background: green;
+                color: white;
+                padding: 1em;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-note:after {
+                bottom: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-bottom-color: green;
+                border-width: 10px;
+                margin-left: -10px;
+            }
+            
             .ec-ACAS-t4-p1-a1-s4-target {
                 position: absolute;
                 width: 155px;
@@ -267,6 +293,25 @@
                 background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwMy8xMS8xNcOYduYAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAATUlEQVQYlYWNQQrAQAgDs6HP8JOa/5OeCmKlDeQyGRG20VtVnoxokeSIwAz/BEmmJG+CJANARODarp/x9e4rzMyTmWcOnXGDU+YEm3gD1QQyUKhApqwAAAAASUVORK5CYII=');
             }
             
+            .ec-ACAS-t4-p1-a1-s4-cross, .ec-ACAS-t4-p1-a1-s4-tick {
+                display: none;
+                position: absolute;
+                left: 5px;
+                bottom: 5px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: white;
+                border: 3px solid white;
+            }
+            
+            .ec-ACAS-t4-p1-a1-s4-button-replay {
+                position: absolute;
+                /*display: none;*/
+                left: 20px;
+                bottom: 10px;
+            }
+            
             
         </style>
 
@@ -281,8 +326,10 @@
         <div class="ec-ACAS-t4-p1-a1-s4-window">
         
             <a class="ec-ACAS-t4-p1-a1-s4-window-close" href="#">X</a>
+            <a class="ec-ACAS-t4-p1-a1-s4-button-replay" href="#"><img src="images/buttonReplay.png" height="41" width="41" alt="Replay button"></a>
             
             <div class="ec-ACAS-t4-p1-a1-s4-instructions">Drag the warnings you would hear to the matching example RAs. Select the speaker icon to hear each warning.</div>
+            <div class="ec-ACAS-t4-p1-a1-s4-note">Note: both apply to the same RA above is for TCAS version 7.0 below for version 7.1.</div>
             
             <div id="ec-ACAS-t4-p1-a1-s4-target-1" class="ec-ACAS-t4-p1-a1-s4-target "></div>
             <div id="ec-ACAS-t4-p1-a1-s4-target-2" class="ec-ACAS-t4-p1-a1-s4-target "></div>
@@ -299,30 +346,56 @@
             <div id="ec-ACAS-t4-p1-a1-s4-target-13" class="ec-ACAS-t4-p1-a1-s4-target "></div>
             
             <a id="ec-ACAS-t4-p1-a1-s4-drag-1" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Traffic,<br/>traffic 
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-1"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-2" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Adjust vertical speed,<br/>adjust
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-2"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-3" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Level off,<br/>level off
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-3"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-4" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Monitor vertical speed,<br/>monitor
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-4"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-5" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Maintain<br/>vertical speed
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-5"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-6" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Climb,<br/>climb
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-6"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-7" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Increase climb,<br/>increase climb
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-7"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-8" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Climb,<br/>climb now
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-8"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-9" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Descend,<br/>descend
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-9"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-10" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Increase descent,<br/>increase descent
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-10"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-11" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ">Descend,<br/>descend now
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-11"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-12" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-3line ">Adjust vertical speed, adjust /<br/>Level off, level off
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-12"></span></a>
             <a id="ec-ACAS-t4-p1-a1-s4-drag-13" href="#" class="ec-ACAS-t4-p1-a1-s4-drag ec-ACAS-t4-p1-a1-s4-drag-1line ">Clear of conflict
+            <span class="ec-ACAS-t4-p1-a1-s4-cross ec-ACAS-background-image-cross"></span>
+            <span class="ec-ACAS-t4-p1-a1-s4-tick ec-ACAS-background-image-tick"></span>
             <span class="ec-ACAS-t4-p1-a1-s4-audio ec-ACAS-t4-p1-a1-s4-audio-13"></span></a>
         </div>
         
