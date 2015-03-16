@@ -63,7 +63,7 @@
                 <h3>ACAS: definitions and concepts</h3>
                 <div class="ec-ACAS-top-container">
                     <div class="ec-ACAS-top-container-left">
-                        <img src="images/topic2Page2.gif" height="165" width="165" alt="ACAS">
+                        <img src="images/ec-acas-t2-p1-writing-photo.jpg" width="165" alt="ACAS">
                     </div>
                     <div class="ec-ACAS-top-container-right">
                         <p>The Airborne Collision Avoidance System (ACAS) concept is an airborne avionics system that acts independently of ground based systems, auto pilot and NAV systems. It acts as a last resort safety net based on secondary surveillance radar (SSR) transponder and Mode S transponder to provide advice to the pilot on potential conflict aircraft that are equipped with the same equipment.</p>
@@ -309,10 +309,10 @@
                         text-align: center;
                     }
                     
-                    .ec-acas-slide-1-flash object {
+                    /* .ec-acas-slide-1-flash object {
                         margin: 0 auto;
                         padding-top: 10px;
-                    }
+                    } */
                     
                     .ec-ACAS-slide-3-container {
                         /*padding-top: 50px;*/
@@ -381,10 +381,18 @@
                         color: #fff;
                         border-radius: 10px;
                     }
+                    
+                    .ec-ACAS-t2-p2-a2-s1-transponder {
+                        display: block;
+                        width: 480px;
+                        height: 453px;
+                        margin: 0 auto;
+                        margin-top: 10px;
+                    }
                 </style>
                 
                 <div class="ec-ACAS-slide-buttons">
-                    <p><strong><a href="#" class="ec-acase-previous ec-acas-hide">Previous</a> <span class="ec-ACAS-slide-x">1</span> of 5 <a href="#" class="ec-acase-next">Next</a></strong></p>
+                    <p><strong><a href="#" class="ec-acase-previous ec-acas-display-none">Previous</a> <span class="ec-ACAS-slide-x">1</span> of 5 <a href="#" class="ec-acase-next">Next</a></strong></p>
                 </div>
                 
                 <div class="ec-ACAS-slide-1">
@@ -395,13 +403,18 @@
                     <p><a class="ec-acas-slide-1-flash-open" href="#">How does this work? Click here for a more detailed explanation of the interaction between Mode S equipped aircraft.</a></p>
                     
                     <div class="ec-acas-slide-1-flash ec-acas-hide">
-                        <object type="application/x-shockwave-flash" 
+                        <!-- <object type="application/x-shockwave-flash" 
                             data="flash/transponder_functioning.swf" 
                             width="480" height="425">
                             <param name="movie" value="flash/transponder_functioning.swf" />
                             <param name="quality" value="high"/>
-                        </object>
-                        <p><a class="ec-acas-slide-1-flash-close" href="#">Close and return.</a></p>
+                        </object> -->
+                        
+                        <object class="ec-ACAS-t2-p2-a2-s1-transponder" data="images/ec-ACAS-t2-p2-a2-s1-transponder.svg" id="ec-ACAS-t2-p2-a2-s1-svg" type="image/svg+xml" width="480" height="453" ></object>
+                        
+                        
+                        <!-- ec-ACAS-t2-p2-a2-s1-transponder  ec-acas-hide -->
+                        <a class="ec-acas-slide-1-flash-close" href="#">Close and return.</a>
                     </div>
                 </div>
                 
@@ -456,10 +469,15 @@
         </div>
 
         <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/TweenMax.min.js"></script>
         <script src="../scripts/pages.js"></script>
+        <script src="../scripts/ecSvgLoadListener.js"></script>
+        <script src="../scripts/ecSvgUtilities.js"></script>
         <script src="../scripts/showHideFlash.js"></script>
         <script src="../scripts/EC_ACAS_Questions_Multi_Choice.js"></script>
         <script src="../scripts/jquery.pep.min.js"></script>
+        
+        <script src="../scripts/source/ec-ACAS-t2-p2-a2-s1.js"></script>
         
         <script type="text/javascript">
             // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
@@ -513,6 +531,14 @@
                     
                     var pagesScript = ec_ACAS_Pages || {};
                     
+                    ecSvgLoadListener.addSVGListener(
+                        document.getElementById('ec-ACAS-t2-p2-a2-s1-svg'), 
+                        ec_ACAS_t2_p2_a2_s1.init,
+                        {svgDocID: 'ec-ACAS-t2-p2-a2-s1-svg'}
+                    );
+                    
+                    // 
+                    
                     var questionFeedback = 'The main feature of TCAS is that it functions according to <strong>time</strong> criteria and not distances.</p>                    <p>From several successive replies, TCAS calculates a time to reach the <strong>CPA</strong> (Closest Point of Approach) with the intruder by --?-- the slant range by the <strong>closure rate</strong>.</p>                    <p>This time value is the main parameter for issuing alerts and the type of alert depends on its value. If the aircraft transmit their altitude, TCAS also computes the time to reach co-altitude.</p>';
                                         
                     var t2p1Slide2Question = [
@@ -544,12 +570,14 @@
                     
                     $('.ec-acas-slide-1-flash-open').click(function (event) {
                         event.preventDefault();
-                        $('.ec-acas-slide-1-flash').show();
+                        // $('.ec-acas-slide-1-flash').show();
+                        pagesScript.showHideClasses (['ec-acas-slide-1-flash'], []);
                     });
                     
                     $('.ec-acas-slide-1-flash-close').click(function (event) {
                         event.preventDefault();
-                        $('.ec-acas-slide-1-flash').hide();
+                        // $('.ec-acas-slide-1-flash').hide();
+                        pagesScript.showHideClasses ([], ['ec-acas-slide-1-flash']);
                     });
                     
                     var currentSlide = 1;
