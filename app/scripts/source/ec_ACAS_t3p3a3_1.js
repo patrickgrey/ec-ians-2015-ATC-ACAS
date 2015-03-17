@@ -58,7 +58,8 @@
             all.buttonReplay, all.buttonNext, all.buttonStart
         ];
         
-        createAudio();
+        // createAudio();
+        ecSvgUtilities.createAudio(audioArray, audioPath, all);
         addBehaviours();
         setStartPoint();
         defineTimelines();
@@ -102,7 +103,8 @@
         // currentTimeline = 1;
         timeline1
         .to(all.text3, dt, {delay:1, autoAlpha:1})
-        .call( callAudio, ['audio2'])
+        // .call( callAudio, ['audio2'])
+        .call( ecSvgUtilities.callAudio, ['Descend'])
         .to(all.acft1, dt, {delay:dt, x: '+=40', ease:Linear.easeNone})
         .to(all.acft1, dt*3, {x: '+=100',  y: '+=43', rotation: "+=23", ease:Linear.easeNone})
         .to(all.acft2, dt*4, {delay:-dt*4, x: '-=60',  y: '+=21', ease:Linear.easeNone})
@@ -115,14 +117,16 @@
         // currentTimeline = 2;
         timeline2
         .to(all.text4, dt, {delay:1, autoAlpha:1})
-        .call( callAudio, ['audio0'])
+        // .call( callAudio, ['audio0'])
+        .call( ecSvgUtilities.callAudio, ['Adjust_Vertical_Speed'])
         .to(all.acft1, dt*3, {delay:dt*2, x: '+=100',  y: '+=15', rotation: "-=23", ease:Linear.easeNone})
         .to(all.acft2, dt*1, {delay:-dt*3,  y: '+=20', rotation: "+=19", ease:Linear.easeNone})
         // .addPause()
         .to(all.acft2, dt*4, {delay:-dt*3, x: '-=150', ease:Linear.easeNone})
         .to(all.arrow3, dt, {autoAlpha: 1})
         .to(all.arrow4, dt, {autoAlpha: 1})
-        .call( callAudio, ['audio1'])
+        // .call( callAudio, ['audio1'])
+        .call( ecSvgUtilities.callAudio, ['Clear_Of_Conflict'])
         .to(all.buttonReplay, dt, {delay:1, autoAlpha:1})
         // .duration(0.1)
         .stop();
@@ -170,7 +174,7 @@
     /* UTILITY FUNCTIONS */
     
     var callAudio = function (audioName) {
-        console.log('play audio');
+        // console.log('play audio');
         all[audioName].play();
     };
     /**
@@ -180,6 +184,10 @@
      * I could add AUDIO tags to the page declaritively but
      * I think it is neater to have it all here.
      */
+    
+    // http://stackoverflow.com/questions/9563887/setting-html5-audio-position
+    // http://stackoverflow.com/questions/12940852/setting-currenttime-in-ie9
+    // 
     var createAudio = function () {
         var audio;
         for (var i = 0; i < audioArray.length; i++) {
