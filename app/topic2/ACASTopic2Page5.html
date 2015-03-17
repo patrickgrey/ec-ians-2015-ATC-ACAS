@@ -39,21 +39,75 @@
               of TCAS, the cockpit displays and controls, the various resolution advisories and the phraesology to be used when dealing with an RA.</p>
             <p>Activity 1: <a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash1">Familiarise yourself with the keywords from this topic.</a></p>
             <p><a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash2">Return to original activity.</a></p>
-            <p>END OF TOPIC</p>
-
-
-
             
         </div>
         
         <div class="ec-acas-container-right">
+            
+            <style>
+                .ec-acas-t2-p5-a1-details {
+                    margin-top: 2em;
+                    background: #379acc;
+                    color: white;
+                    padding: 10px;
+                    border: 10px solid #fff;
+                    -moz-box-shadow: 0 0 5px #666;
+                    -webkit-box-shadow: 0 0 5px #666;
+                    box-shadow: 0 0 5px #666;
+                }
+                
+                .ec-acas-t2-p5-a1-details-header {
+                    color: white;
+                }
+            </style>
+            
+            
             <div class="ec-ACAS-flash1">
-                <object type="application/x-shockwave-flash" 
+                
+                <h2>Conclusion</h2>
+                
+                <p class="ec-ACAS-instructions">Select the links below to see more detail.</p>
+                <p>There are three main <a class="ec-acas-t2-p5-a1-link-1" href="#">preconditions to the effective utilisation of TCAS</a>. However, also required are: </p>
+                <ul>
+                  <li><a class="ec-acas-t2-p5-a1-link-2" href="#">understanding and awareness</a> and</li>
+                  <li><a class="ec-acas-t2-p5-a1-link-3" href="#">vigilance</a></li>
+                  <li>Even so, it is necessary to add the following <a class="ec-acas-t2-p5-a1-link-4" href="#">proviso</a>.</li>
+                </ul>
+                
+                <div class="ec-acas-t2-p5-a1-details ec-acas-display-none">
+                    <div class="ec-acas-t2-p5-a1-details-1 ec-acas-display-none">
+                        <h3 class="ec-acas-t2-p5-a1-details-header">Preconditions to the effective utilisation of TCAS</h3>
+                        <p>The implementation of TCAS II brings a whole range of safety-related benefits when:</p>
+                        <ul>
+                          <li>the ATC system provides a high quality service,</li>
+                          <li>all airborne aircraft report their pressure-altitude via the transponder, and</li>
+                          <li>pilots correctly follow the RA issued by the TCAS II system.</li>
+                        </ul>
+                    </div>
+                    <div class="ec-acas-t2-p5-a1-details-2 ec-acas-display-none">
+                        <h3 class="ec-acas-t2-p5-a1-details-header">Understanding and awareness</h3>
+                        <p>Controllers, though aware of the improved flight safety due to the increating deployment of TCAS, also see some drawbacks. It is therefore essential that controllers have a good knowledge of the system's characteristics and of the procedures used by aircrew.</p>
+                        <p>Controllers are also required to provide the same ATC service, especially with regard to traffic information or the maintenance of the relevant ATC separation, whether the aircraft are fitted with TCAS or not.</p>
+                    </div>
+                    <div class="ec-acas-t2-p5-a1-details-3 ec-acas-display-none">
+                        <h3 class="ec-acas-t2-p5-a1-details-header">Vigilance</h3>
+                        <p>TAs and RAs are unplanned events, which call for fast and appropriate reactions from the crew, and therefore require specific training.</p>
+                        <p>Nevertheless, even in aircraft with a TCAS II onboard, the crew must continue to maintain a visual lookout to avoid collisions, because some aircraft, either do not transmit their altitude via the transponder, or are invisible to the TCAS II system because they are not equipped with a transponder.</p>
+                    </div>
+                    <div class="ec-acas-t2-p5-a1-details-4 ec-acas-display-none">
+                        <h3 class="ec-acas-t2-p5-a1-details-header">Proviso</h3>
+                        <p>However, one must be aware that ACAS is not a perfect system.</p>
+                        <p>ACAS cannot preclude all collision risks. Consequently, it is essential that ATC procedures are designed to provide flight safety without any reliance upon the use of ACAS.</p>
+                    </div>
+                </div>
+                
+                <!-- <object type="application/x-shockwave-flash" 
                     data="flash/summary_topic_01.swf" 
                     width="480" height="540">
                     <param name="movie" value="flash/summary_topic_01.swf" />
                     <param name="quality" value="high"/>
-                </object>
+                </object> -->
+                
             </div>
             <div class="ec-ACAS-flash2 ec-acas-hide">
                 <object type="application/x-shockwave-flash" 
@@ -73,6 +127,31 @@
 
             // Wait for the page to load first
             window.onload = function() {
+              
+              
+              function showDetail (detailNumber) {
+                for (var i = 5 - 1; i >= 1; i--) {
+                    $('.ec-acas-t2-p5-a1-details-'+i).hide();
+                };
+                  $('.ec-acas-t2-p5-a1-details').fadeIn();
+                  $('.ec-acas-t2-p5-a1-details-'+detailNumber).fadeIn();
+              }
+              
+              $('.ec-acas-t2-p5-a1-link-1').click(function (e) {
+                  showDetail('1');
+              });
+              
+              $('.ec-acas-t2-p5-a1-link-2').click(function (e) {
+                  showDetail('2');
+              });
+              
+              $('.ec-acas-t2-p5-a1-link-3').click(function (e) {
+                  showDetail('3');
+              });
+              
+              $('.ec-acas-t2-p5-a1-link-4').click(function (e) {
+                  showDetail('4');
+              });
 
               //Get a reference to the link on the page
               // with an id of "mylink"
