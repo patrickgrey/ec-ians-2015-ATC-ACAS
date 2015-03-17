@@ -20,7 +20,7 @@
         all,
         dt = 0.5, // defaultTime for animations
         audioPath = 'audio',
-        audioArray = ['Adjust_Vertical_Speed', 'Clear_Of_Conflict', 'Descend'],
+        audioArray = ['LevelOff', 'Clear_Of_Conflict', 'Descend'],
         hideOnStartArray,
         setButtonCursorArray,
         currentTimeline = 1, //  start on 1 as timeline0 called on init.
@@ -118,7 +118,7 @@
         timeline2
         .to(all.text4, dt, {delay:1, autoAlpha:1})
         // .call( callAudio, ['audio0'])
-        .call( ecSvgUtilities.callAudio, ['Adjust_Vertical_Speed'])
+        .call( ecSvgUtilities.callAudio, ['LevelOff'])
         .to(all.acft1, dt*3, {delay:dt*2, x: '+=100',  y: '+=15', rotation: "-=23", ease:Linear.easeNone})
         .to(all.acft2, dt*1, {delay:-dt*3,  y: '+=20', rotation: "+=19", ease:Linear.easeNone})
         // .addPause()
