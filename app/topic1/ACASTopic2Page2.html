@@ -220,6 +220,19 @@
                         
                     </style>
                     
+                    <!--[if lt IE 10]>
+                        <style>
+                            .tabs-style-underline  nav li {
+                                width: 33%;
+                                float: left;
+                            }
+                            
+                            .content-wrap {
+                                padding-top: 48px;
+                            }
+                        </style>
+                    <![endif]-->
+                    
                     <section>
                         <div class="tabs tabs-style-underline">
                             <nav>
@@ -545,8 +558,8 @@
                         {
                             'question': 'Which do you think is likely to be the more useful criterion on which to assess the danger of a mid-air collision between two aircraft in conflict:',
                             'choices':  [
-                                            {'text':'the distance between the aircraft?', 'correctness':'true', 'feedback':'<p>Correct! '+questionFeedback},
-                                            {'text':'the amount of time remaining before they are likely to collide?', 'correctness':'false', 'feedback':'<p>Wrong! ' + questionFeedback}
+                                            {'text':'the distance between the aircraft?', 'correctness':'false', 'feedback':'<p>Wrong! '+questionFeedback},
+                                            {'text':'the amount of time remaining before they are likely to collide?', 'correctness':'true', 'feedback':'<p>Correct! ' + questionFeedback}
                                         ]
                         }
                     ];
