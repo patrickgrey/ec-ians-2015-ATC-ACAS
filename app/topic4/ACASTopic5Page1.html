@@ -455,13 +455,25 @@ RA downlink research is now progressed in the following SESAR (Single European S
 
             })( window );
             
-            (function() {
+            (function($) {
 
                 [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
                     new CBPFWTabs( el );
                 });
+                
+                if (document.documentMode < 10) {
+                
+                    $('.tabs-style-underline  nav li').css({
+                        'width': '33.3%',
+                        'float': 'left'
+                    });
+                            
+                    $('.content-wrap').css({
+                        'padding-top': '48px'
+                    });
+                }
 
-            })();
+            })($);
         </script>
 
 </body>

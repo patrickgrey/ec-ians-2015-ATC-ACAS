@@ -33,13 +33,21 @@
             <p>The range of scanning can be up to 30 nm for Mode S transponders. 
                For technical reasons the system is most effective in situations  where both aircraft are carrying <a href="flash/ACAS_t01_p02_what_is_ACAS.swf" id="ec-ACAS-show-flash4">Mode 
               S transponders</a>,  but Mode A/C transponders can also be interrogated. If a transponder  does not supply altitude information, then RAs cannot be generated;  although the range and bearing information gathered by the system  in relation to such an intruder will allow it to generate TAs. </p>
-            <p>Click on the links above to look at these features in greater detail. </p>
 
             
         </div>
         
         <div class="ec-acas-container-right">
-            <div class="ec-ACAS-flash1">
+            <style>
+                .ec-acas-container-right-instruction {
+                    position: absolute;
+                    width: 520px;
+                    text-align: center;
+                    padding-top: 2.1em;
+                }
+            </style>
+            <p class="ec-acas-container-right-instruction ec-ACAS-instructions">Select the links opposite to look at these features in more detail.</p>
+            <div class="ec-ACAS-flash1 ec-acas-hide">
                 <object type="application/x-shockwave-flash" 
                     data="flash/logic_and_tracking.swf" 
                     width="480" height="540">
@@ -417,7 +425,7 @@
                     <p>The DMOD values for the various sensitivity levels are shown below:</p>
                     <table class="ec-ACAS-table">
                       <tr>
-                        <th colspan="4">DMON Values (NM)</th>
+                        <th colspan="4">DMOD Values (NM)</th>
                       </tr>
                       <tr class="ec-acas-t3p2-slide-3-th">
                         <td>Altitude</td>
@@ -621,10 +629,10 @@
                             }
                     });
                     
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);              
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4']);              
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash4', ['ec-ACAS-flash4'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash3']);              
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4', 'ec-acas-container-right-instruction']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4', 'ec-acas-container-right-instruction']);              
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4', 'ec-acas-container-right-instruction']);              
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash4', ['ec-ACAS-flash4'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-acas-container-right-instruction']);              
                 
                     var currentSlide = 1;
                     

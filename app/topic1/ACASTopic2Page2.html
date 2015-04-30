@@ -220,18 +220,7 @@
                         
                     </style>
                     
-                    <!--[if lt IE 10]>
-                        <style>
-                            .tabs-style-underline  nav li {
-                                width: 33%;
-                                float: left;
-                            }
-                            
-                            .content-wrap {
-                                padding-top: 48px;
-                            }
-                        </style>
-                    <![endif]-->
+                    
                     
                     <section>
                         <div class="tabs tabs-style-underline">
@@ -411,7 +400,7 @@
                 <div class="ec-ACAS-slide-1">
                     <h3>TCAS Overview: basics (i)</h3>
                     <p>Traffic Alert and Collision Avoidance System (TCAS II) is an on-board system designed to improve air safety by acting as a <strong>'last-resort' method</strong> of preventing mid-air collisions by recommending <strong>vertical</strong> manoeuvres to pilots when a risk of collision is detected.</p>
-                    <p>Through antennas, TCAS interrogates the !CAO standard compliant transponders of all aircraft in the vicinity. Based upon the replies received, the system tracks the slant range, altitude (when it is included in the reply message) and be.aring of surrounding traffic. The data is passed on to the collision avoidance logic for traffic and resolution advisory selection and display. ( see 'Types of Alert' later in this overview).</p>
+                    <p>Through antennas, TCAS interrogates the ICAO standard compliant transponders of all aircraft in the vicinity. Based upon the replies received, the system tracks the slant range, altitude (when it is included in the reply message) and bearing of surrounding traffic. The data is passed on to the collision avoidance logic for traffic and resolution advisory selection and display. ( see 'Types of Alert' later in this overview).</p>
                     <div class="ec-acas-slide-1-img"><img src="images/topic2Page2Slide1.gif" height="211" width="463" alt="TCAS Basics"></div>
                     <p><a class="ec-acas-slide-1-flash-open" href="#">How does this work? Click here for a more detailed explanation of the interaction between Mode S equipped aircraft.</a></p>
                     
@@ -552,7 +541,7 @@
                     
                     // 
                     
-                    var questionFeedback = 'The main feature of TCAS is that it functions according to <strong>time</strong> criteria and not distances.</p>                    <p>From several successive replies, TCAS calculates a time to reach the <strong>CPA</strong> (Closest Point of Approach) with the intruder by --?-- the slant range by the <strong>closure rate</strong>.</p>                    <p>This time value is the main parameter for issuing alerts and the type of alert depends on its value. If the aircraft transmit their altitude, TCAS also computes the time to reach co-altitude.</p>';
+                    var questionFeedback = 'The main feature of TCAS is that it functions according to <strong>time</strong> criteria and not distances.</p>                    <p>From several successive replies, TCAS calculates a time to reach the <strong>CPA</strong> (Closest Point of Approach) with the intruder by dividing the slant range by the <strong>closure rate</strong>.</p>                    <p>This time value is the main parameter for issuing alerts and the type of alert depends on its value. If the aircraft transmit their altitude, TCAS also computes the time to reach co-altitude.</p>';
                                         
                     var t2p1Slide2Question = [
                         {
@@ -717,13 +706,25 @@
 
             })( window );
             
-            (function() {
+            (function($) {
 
                 [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
                     new CBPFWTabs( el );
                 });
+                
+                if (document.documentMode < 10) {
+                
+                    $('.tabs-style-underline  nav li').css({
+                        'width': '33.3%',
+                        'float': 'left'
+                    });
+                            
+                    $('.content-wrap').css({
+                        'padding-top': '48px'
+                    });
+                }
 
-            })();
+            })($);
         </script>
 
 </body>

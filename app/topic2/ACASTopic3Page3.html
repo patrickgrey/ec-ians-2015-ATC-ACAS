@@ -48,9 +48,16 @@
         </div>
         
         <div class="ec-acas-container-right">
-        
-        
-            <div class="ec-ACAS-page ec-ACAS-page1">
+            <style>
+                .ec-acas-container-right-instruction {
+                    position: absolute;
+                    width: 520px;
+                    text-align: center;
+                    padding-top: 2.1em;
+                }
+            </style>
+            <p class="ec-acas-container-right-instruction ec-ACAS-instructions">Select the links opposite to look at these features in more detail.</p>
+            <div class="ec-ACAS-page ec-ACAS-page1 ec-acas-hide">
                 
                 <style>
                     .ec-acas-page-1-previous {
@@ -202,7 +209,7 @@
                 <div class="ec-ACAS-slide ec-ACAS-page-1-slide-3 ec-acas-hide">
                     <h3>Vertical thresholds</h3>
                     <p>Assuming that an aircraft has satisfied the horizontal test, TCAS must also analyse the conflict geometry in the vertical plane before issuing any alert. TCAS analyses the conflict geometry to determine the time left before the aircraft are at co-altitude. TAs and RAs will be triggered as soon as the times to co-altitude fall below tau values.</p>
-                    <p>If one of the aircraft involved is manoeuvring vertically then a refinement to the logic is activat ed in order to reduce the number of RAs produced during level-off manoeuvres.</p>
+                    <p>If one of the aircraft involved is manoeuvring vertically then a refinement to the logic is activated in order to reduce the number of RAs produced during level-off manoeuvres.</p>
                     <div class="ec-ACAS-t3-p3-a1-s3-img-container">
                         <a href="#" class="ec-acas-t3-p3-a1-s4-img2"><img src="images/ec-acas-t3-p3-a1-s4-img2.png" height="100" width="150" alt="Acft B"></a>
                         <a href="#" class="ec-acas-t3-p3-a1-s4-img1"><img src="images/ec-acas-t3-p3-a1-s4-img1.png" height="100" width="150" alt="Acft A"></a>
@@ -391,9 +398,9 @@
                     /**
                      * SLIDES
                      */
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page1', ['ec-ACAS-page1'], ['ec-ACAS-page2', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page2', ['ec-ACAS-page2'], ['ec-ACAS-page1', 'ec-ACAS-page3']);
-                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page3', ['ec-ACAS-page3'], ['ec-ACAS-page1', 'ec-ACAS-page2']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page1', ['ec-ACAS-page1'], ['ec-ACAS-page2', 'ec-ACAS-page3', 'ec-acas-container-right-instruction']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page2', ['ec-ACAS-page2'], ['ec-ACAS-page1', 'ec-ACAS-page3', 'ec-acas-container-right-instruction']);
+                    ec_ACAS_ShowHideFlash.init('ec-ACAS-show-page3', ['ec-ACAS-page3'], ['ec-ACAS-page1', 'ec-ACAS-page2', 'ec-acas-container-right-instruction']);
                     
                     var currentSlide = 1;
                     var currentSlideMax = 4;

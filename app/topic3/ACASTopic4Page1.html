@@ -610,12 +610,186 @@
             
             
             <div class="ec-ACAS-t4-p1-a2 ec-acas-hide">
-                <object type="application/x-shockwave-flash" 
+                <style>
+                    /* Styles and code created by http://tympanus.net/Development/TabStylesInspiration/ */
+                
+                    .tabs {
+                        position: relative;
+                        overflow: hidden;
+                        margin: 0 auto;
+                        width: 100%;
+                        font-weight: 300;
+                        /*font-size: 1.25em;*/
+                    }
+
+                    /* Nav */
+                    .tabs nav {
+                        text-align: center;
+                    }
+
+                    .tabs nav ul {
+                        position: relative;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: -moz-flex;
+                        display: -ms-flex;
+                        display: flex;
+                        margin: 0 auto;
+                        padding: 0;
+                        max-width: 1200px;
+                        list-style: none;
+                        -ms-box-orient: horizontal;
+                        -ms-box-pack: center;
+                        -webkit-flex-flow: row wrap;
+                        -moz-flex-flow: row wrap;
+                        -ms-flex-flow: row wrap;
+                        flex-flow: row wrap;
+                        -webkit-justify-content: center;
+                        -moz-justify-content: center;
+                        -ms-justify-content: center;
+                        justify-content: center;
+                    }
+
+                    .tabs nav ul li {
+                        position: relative;
+                        z-index: 1;
+                        display: block;
+                        margin: 0;
+                        text-align: center;
+                        -webkit-flex: 1;
+                        -moz-flex: 1;
+                        -ms-flex: 1;
+                        flex: 1;
+                    }
+
+                    .tabs nav a {
+                        position: relative;
+                        display: block;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        line-height: 2.5;
+                    }
+
+                    .tabs nav a span {
+                        vertical-align: middle;
+                        font-size: 1.25em;
+                    }
+
+                    .tabs nav li.tab-current a {
+                        color: #74777b;
+                        background: #fff;
+                    }
+
+                    .tabs nav a:focus {
+                        outline: none;
+                    }
+                    
+                    
+                    
+                    /* Content */
+                    .content-wrap {
+                        position: relative;
+                        border-right: 1px solid #e7ecea;
+                        border-bottom: 1px solid #e7ecea;
+                        border-left: 1px solid #e7ecea;
+                    }
+
+                    .content-wrap section {
+                        display: none;
+                        /*margin: 0 auto;*/
+                        padding: 1em;
+                        max-width: 1200px;
+                        /*text-align: center;*/
+                    }
+
+                    .content-wrap section.content-current {
+                        display: block;
+                    }
+                    
+                    
+                    /*****************************/
+                    /* Underline */
+                    /*****************************/
+
+                    .tabs-style-underline nav {
+                        background: #fff;
+                    }
+
+                    .tabs-style-underline nav a {
+                        padding: 0.25em 0 0.5em;
+                        border-top: 1px solid #e7ecea;
+                        border-bottom: 1px solid #e7ecea;
+                        border-left: 1px solid #e7ecea;
+                        -webkit-transition: color 0.2s;
+                        transition: color 0.2s;
+                        background: rgba(40,44,42,0.05);
+                    }
+
+                    .tabs-style-underline nav li:last-child a {
+                        border-right: 1px solid #e7ecea;
+                    }
+
+                    .tabs-style-underline nav li a::after {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 6px;
+                        background: #3c9dce;
+                        content: '';
+                        -webkit-transition: -webkit-transform 0.3s;
+                        transition: transform 0.3s;
+                        -webkit-transform: translate3d(0,150%,0);
+                        transform: translate3d(0,150%,0);
+                    }
+
+                    .tabs-style-underline nav li.tab-current a::after {
+                        -webkit-transform: translate3d(0,0,0);
+                        transform: translate3d(0,0,0);
+                    }
+
+                    .tabs-style-underline nav a span {
+                        font-weight: 700;
+                    }
+                    
+                    
+                    
+                    
+                </style>
+                
+                <h3>EFIS Displays</h3>
+                
+                <section>
+                    <div class="tabs tabs-style-underline">
+                        <nav>
+                            <ul>
+                                <li><a href="#section-underline-1" class="icon icon-home"><span>Primary flight display</span></a></li>
+                                <li><a href="#section-underline-2" class="icon icon-gift"><span>Navigation display</span></a></li>
+                            </ul>
+                        </nav>
+                        <div class="content-wrap">
+                            <section id="section-underline-1">
+                            <img src="images/ec-ACAS-t4-p1-a2-EFIS1.gif" height="249" width="275" alt="Primary flight display">
+                                <p>Two PFD concepts exist and systems currently show one or the other. On the <strong>EADI</strong> an RA is shown by a red or orange trapezoid area, showing the pilot the attitude values to be avoided. This provides direct guidance on the pitch angle to be achieved by the pilot. This form of display does not include any fly-to green area.</p>
+                                <p>On the <strong>vertical speed tape</strong> an RA is shown in the same way as in &apos;classic&apos; cockpits. A red area marks the range of vertical speeds to be avoided, a green area indicates to the pilot the required vertical speed, while limiting the deviation from the ATC cleared flight level.</p>
+                            </section>
+                            <section id="section-underline-2">
+                            <img src="images/ec-ACAS-t4-p1-a2-EFIS2.gif" height="256" width="274" alt="Navigation display">
+                                <p>Above you can see the Navigation display in &apos;rose&apos; mode.</p>
+                                <p>The traffic display is to be read in the same manner as the display found in VSI.</p>
+                            </section>
+                            
+                        </div><!-- /content -->
+                    </div><!-- /tabs -->
+                </section>
+                    
+                <!-- <object type="application/x-shockwave-flash" 
                     data="flash/EFIS_displays.swf" 
                     width="480" height="540">
                     <param name="movie" value="flash/EFIS_displays.swf" />
                     <param name="quality" value="high"/>
-                </object>
+                </object> -->
             </div>
             
             
@@ -717,12 +891,12 @@
                       <tr>
                         <td>RA to maintain vertical speed</td>
                         <td>Maintain vertical speed,<br/>maintain <a href="#" data-audio="12"><img src="images/ic_volume_up_24px.svg" class="ec-acas-t4p1-slide-3-audio-icon" alt="Play sound"></a></td>
-                        <td>Maintain vertical speed, maintain</td>
+                        <td>Maintain vertical speed, maintain <a href="#" data-audio="12"><img src="images/ic_volume_up_24px.svg" class="ec-acas-t4p1-slide-3-audio-icon" alt="Play sound"></a></td>
                       </tr>
                       <tr>
                         <td>RA to maintain vertical speed with altitude crossing</td>
                         <td>Maintain vertical speed,<br/>crossing maintain <a href="#" data-audio="13"><img src="images/ic_volume_up_24px.svg" class="ec-acas-t4p1-slide-3-audio-icon" alt="Play sound"></a></td>
-                        <td>Maintain vertical speed, crossing maintain</td>
+                        <td>Maintain vertical speed, crossing maintain <a href="#" data-audio="13"><img src="images/ic_volume_up_24px.svg" class="ec-acas-t4p1-slide-3-audio-icon" alt="Play sound"></a></td>
                       </tr>
                       <tr>
                         <td>RA to reduce vertical speed</td>
@@ -810,6 +984,98 @@
                 
                 return module;
             }($));
+
+            /**
+             * cbpFWTabs.js v1.0.0
+             * http://www.codrops.com
+             *
+             * Licensed under the MIT license.
+             * http://www.opensource.org/licenses/mit-license.php
+             * 
+             * Copyright 2014, Codrops
+             * http://www.codrops.com
+             */
+            ;( function( window ) {
+                
+                'use strict';
+
+                function extend( a, b ) {
+                    for( var key in b ) { 
+                        if( b.hasOwnProperty( key ) ) {
+                            a[key] = b[key];
+                        }
+                    }
+                    return a;
+                }
+
+                function CBPFWTabs( el, options ) {
+                    this.el = el;
+                    this.options = extend( {}, this.options );
+                    extend( this.options, options );
+                    this._init();
+                }
+
+                CBPFWTabs.prototype.options = {
+                    start : 0
+                };
+
+                CBPFWTabs.prototype._init = function() {
+                    // tabs elems
+                    this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
+                    // content items
+                    this.items = [].slice.call( this.el.querySelectorAll( '.content-wrap > section' ) );
+                    // current index
+                    this.current = -1;
+                    // show current content item
+                    this._show();
+                    // init events
+                    this._initEvents();
+                };
+
+                CBPFWTabs.prototype._initEvents = function() {
+                    var self = this;
+                    this.tabs.forEach( function( tab, idx ) {
+                        tab.addEventListener( 'click', function( ev ) {
+                            ev.preventDefault();
+                            self._show( idx );
+                        } );
+                    } );
+                };
+
+                CBPFWTabs.prototype._show = function( idx ) {
+                    if( this.current >= 0 ) {
+                        this.tabs[ this.current ].className = this.items[ this.current ].className = '';
+                    }
+                    // change current
+                    this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
+                    this.tabs[ this.current ].className = 'tab-current';
+                    this.items[ this.current ].className = 'content-current';
+                };
+
+                // add to global namespace
+                window.CBPFWTabs = CBPFWTabs;
+
+            })( window );
+            
+            (function($) {
+
+                [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+                    new CBPFWTabs( el );
+                });
+                
+                if (document.documentMode < 10) {
+                
+                    $('.tabs-style-underline  nav li').css({
+                        'width': '50%',
+                        'float': 'left'
+                    });
+                            
+                    $('.content-wrap').css({
+                        'padding-top': '48px'
+                    });
+                }
+
+            })($);
             
         </script>
 

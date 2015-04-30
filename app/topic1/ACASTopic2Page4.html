@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ATC-ACAS > topic 2 > page 4</title>
         <meta name="description" content="ATC-ACAS review site">
@@ -69,12 +70,18 @@
                         height: 475px;
                         background: rgba(0,0,0,0.85);
                         text-align: center;
+                        overflow: hidden;
+                        line-height: 50px;
                     }
                     
                     .ec-ACAS-activity-1-graphic-container iframe {
                         margin-top: 15px;
-                        width: 100%;
+                        width: 490px;
                         max-width: 490px;
+                        height: 390px !important;
+                        overflow: hidden;
+                        line-height: 50px;
+                        /*height: auto !important; */
                     }
                 </style>
                 
@@ -89,10 +96,11 @@
                 <p>The new ACAS II 7.1 version replaces the previous &quot;adjust vertical speed, adjust&quot; with the new &quot;Level off, level off&quot;  RA and reduce instances of level busts and not induce conflict with the third party.</p>
                 
                 <p><a href="images/topic2Page4Activity1Graphic.jpg"  class="ec-ACAS-activity-1-graphic-link" >Select here to watch a video about this.</a></p>
-                
+                <!--  -->
                 <div class="ec-ACAS-activity-1-graphic-container ec-acas-display-none">
+                    <div id="ytplayer"></div>
                     <!-- <img src="images/topic2Page4Activity1Graphic.jpg" alt=""> -->
-                    <iframe id="ec-ACAS-activity-1-player" width="420" height="315" src="//www.youtube.com/v/JZBXPfAPPFM?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    <!-- <iframe id="ec-ACAS-activity-1-player" width="490" height="390" src="//www.youtube.com/v/JZBXPfAPPFM?version=3&enablejsapi=1&wmode=opaque" frameborder="0"  wmode="Opaque"></iframe> -->
                     <!-- http://www.youtube.com/v/JZBXPfAPPFM?version=3&enablejsapi=1 -->
                     <p><a class="ec-ACAS-activity-1-graphic-close" href="#">Close and return.</a></p>
                 </div>
@@ -197,7 +205,7 @@
                 </div>
                 
                 <p>The display in the cockpit, suggests that the aircraft above is flying towards aircraft A. In fact it is crossing at 90&deg;. TCAS traffic displays show the relative positions of traffic <strong>not</strong> their headings.</p>
-                <p>Pilots can sometimes be confused by the TCAS traffic displays in the EFIS navigation display (EHSI) or the VS! in the cockpit.</p>
+                <p>Pilots can sometimes be confused by the TCAS traffic displays in the EFIS navigation display (EHSI) or the VSI in the cockpit.</p>
                 <p>Looking at the cockpit display and reading it as a radar picture, a pilot might be tempted to turn to the right if trying to avoid the other aircraft. This could be disastrous as it could take him even closer to an intruding aircraft. We shall return to this point in topics 2 and 3.</p>
                 
             </div>
@@ -261,6 +269,25 @@
                 return module;
             }($));
             
+        </script>
+        
+        <script>
+          // Load the IFrame Player API code asynchronously.
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/player_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          // Replace the 'ytplayer' element with an <iframe> and
+          // YouTube player after the API code downloads.
+          var player;
+          function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+              height: '390',
+              width: '490',
+              videoId: 'JZBXPfAPPFM'
+            });
+          }
         </script>
 
 </body>

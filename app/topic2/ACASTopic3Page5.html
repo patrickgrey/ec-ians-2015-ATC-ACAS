@@ -38,7 +38,16 @@
         </div>
         
         <div class="ec-acas-container-right">
-            <div class="ec-ACAS-flash1">
+            <style>
+                .ec-acas-container-right-instruction {
+                    position: absolute;
+                    width: 520px;
+                    text-align: center;
+                    padding-top: 2.1em;
+                }
+            </style>
+            <p class="ec-acas-container-right-instruction ec-ACAS-instructions">Select the links opposite to look at these features in more detail.</p>
+            <div class="ec-ACAS-flash1 ec-acas-hide">
                 <object type="application/x-shockwave-flash" 
                     data="flash/rvsm_situation_1.swf" 
                     width="480" height="540">
@@ -71,9 +80,9 @@
         <script type="text/javascript">
             // Set the links to show and hide Flash containers. Uses module from showHideFlash.js
             window.onload = function() {
-                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);
-                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4']);              
-                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4']);
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash1', ['ec-ACAS-flash1'], ['ec-ACAS-flash2', 'ec-ACAS-flash3', 'ec-ACAS-flash4', 'ec-acas-container-right-instruction']);
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash2', ['ec-ACAS-flash2'], ['ec-ACAS-flash1', 'ec-ACAS-flash3', 'ec-ACAS-flash4', 'ec-acas-container-right-instruction']);              
+                ec_ACAS_ShowHideFlash.init('ec-ACAS-show-flash3', ['ec-ACAS-flash3'], ['ec-ACAS-flash1', 'ec-ACAS-flash2', 'ec-ACAS-flash4', 'ec-acas-container-right-instruction']);
             };
         </script>
 
